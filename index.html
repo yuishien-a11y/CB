@@ -124,6 +124,7 @@
     </div>
     <div class="top-actions">
       <a class="btn" href="https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html" target="_blank">↗ 櫃買中心</a>
+      <input type="date" id="datePicker" style="font-size:13px;padding:5px 10px;border-radius:8px;border:0.5px solid var(--border2);background:var(--bg);color:var(--text);height:32px;" onchange="loadData()">
       <button class="btn" onclick="loadData()">↺ 重新整理</button>
     </div>
   </div>
@@ -376,17 +377,52 @@ function renderCharts(data) {
   });
 }
 
+// ★ 設定你的 Cloudflare Worker 網址（部署後替換這行）
+const WORKER_URL = 'https://tpex-proxy.yuishien.workers.dev';
+
+function getSelectedDate() {
+  const picker = document.getElementById('datePicker');
+  if (picker.value) {
+    const d = new Date(picker.value);
+    const y = d.getFullYear() - 1911;
+    const m = String(d.getMonth()+1).padStart(2,'0');
+    const dd = String(d.getDate()).padStart(2,'0');
+    return `${y}/${m}/${dd}`;
+  }
+  const now = new Date();
+  const y = now.getFullYear() - 1911;
+  const m = String(now.getMonth()+1).padStart(2,'0');
+  const dd = String(now.getDate()).padStart(2,'0');
+  return `${y}/${m}/${dd}`;
+}
+
+// 設定日期選擇器預設為今天
+(function initDatePicker() {
+  const today = new Date();
+  const iso = today.toISOString().split('T')[0];
+  document.getElementById('datePicker').value = iso;
+  // 最早可查詢日期
+  document.getElementById('datePicker').min = '2010-01-01';
+  document.getElementById('datePicker').max = iso;
+})();
+
 async function loadData() {
   document.getElementById('table-area').innerHTML = '<div class="msg">資料載入中…</div>';
   document.getElementById('warn-area').innerHTML = '';
+  const dateStr = getSelectedDate();
+
+  // 如果 Worker 網址還沒設定，直接用範例資料
+  if (WORKER_URL.includes('YOUR_SUBDOMAIN')) {
+    allData = SAMPLE;
+    document.getElementById('warn-area').innerHTML =
+      '<div class="warn-box">⚠ 請先設定 Cloudflare Worker 網址（見下方說明），目前顯示範例資料。</div>';
+    document.getElementById('dataDate').innerHTML = `範例資料 &nbsp;·&nbsp; 查詢日期：${dateStr}（民國）`;
+    renderMetrics(allData); renderTable(); renderCharts(allData);
+    return;
+  }
 
   try {
-    const now = new Date();
-    const y = now.getFullYear() - 1911;
-    const m = String(now.getMonth()+1).padStart(2,'0');
-    const d = String(now.getDate()).padStart(2,'0');
-    const dateStr = `${y}/${m}/${d}`;
-    const url = `https://www.tpex.org.tw/www/zh-tw/bond/statistics/cbDailyBulletin?o=json&d=${dateStr}&s=0,asc&l=zh-tw`;
+    const url = `${WORKER_URL}?d=${encodeURIComponent(dateStr)}`;
     const res = await fetch(url);
     const json = await res.json();
     const rows = json.aaData || json.data || [];
@@ -399,15 +435,15 @@ async function loadData() {
         const premium = theory > 0 ? parseFloat(((cbP / theory - 1) * 100).toFixed(2)) : 0;
         return { code: String(r[0]||''), name: String(r[1]||''), cbPrice: cbP, theoryPrice: theory, convPrice: convP, stockPrice: stockP, premium };
       }).filter(x => x.cbPrice > 80 && x.cbPrice < 250 && x.code);
+      if (allData.length === 0) throw new Error('empty');
       document.getElementById('dataDate').innerHTML =
         `資料日期：${dateStr}（民國） &nbsp;·&nbsp; 來源：<a href="https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html" target="_blank">證券櫃檯買賣中心</a>`;
     } else { throw new Error('empty'); }
   } catch(e) {
     allData = SAMPLE;
     document.getElementById('warn-area').innerHTML =
-      '<div class="warn-box">⚠ 無法取得即時資料（建議部署後端 Proxy 解決 CORS 限制），目前顯示內建範例資料。</div>';
-    document.getElementById('dataDate').innerHTML =
-      `範例資料（來源：圖片教材） &nbsp;·&nbsp; 即時資料請至 <a href="https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html" target="_blank">櫃買中心</a> 查詢`;
+      `<div class="warn-box">⚠ ${dateStr} 無資料（可能為假日或尚未公布），顯示範例資料。</div>`;
+    document.getElementById('dataDate').innerHTML = `範例資料 &nbsp;·&nbsp; 查詢日期：${dateStr}（民國）`;
   }
   renderMetrics(allData);
   renderTable();
