@@ -1,163 +1,66 @@
-name: 每日更新可轉債資料
+export default {
+  async fetch(request) {
+    const corsHeaders = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    };
+    if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
 
-on:
-  schedule:
-    - cron: '30 8 * * 1-5'  # 台灣時間 16:30（UTC+8），週一到週五收盤後
-  workflow_dispatch:          # 允許手動觸發
+    const url = new URL(request.url);
+    const dateParam = url.searchParams.get('d') || new Date().toISOString().split('T')[0];
+    const [yyyy, mm, dd] = dateParam.split('-');
+    const csvUrl = `https://www.tpex.org.tw/storage/bond_zone/tradeinfo/cb/${yyyy}/${yyyy}${mm}/RSta0113.${yyyy}${mm}${dd}-C.csv`;
 
-jobs:
-  fetch-cb-data:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+    try {
+      // 指定從亞洲節點發出請求（Cloudflare TPE/NRT 節點）
+      const res = await fetch(csvUrl, {
+        cf: {
+          // 強制用亞洲節點
+          resolveOverride: 'www.tpex.org.tw',
+        },
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'zh-TW,zh;q=0.9',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Referer': 'https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'same-origin',
+          'Cache-Control': 'no-cache',
+        }
+      });
 
-      - name: 設定今日日期
-        id: date
-        run: |
-          echo "TODAY=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
-          echo "TODAY_ISO=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-          echo "YEAR=$(date +'%Y')" >> $GITHUB_OUTPUT
-          echo "YEARMONTH=$(date +'%Y%m')" >> $GITHUB_OUTPUT
+      if (!res.ok) {
+        return new Response(JSON.stringify({ 
+          error: `HTTP ${res.status}`, 
+          date: dateParam,
+          url: csvUrl,
+          cf_ray: request.headers.get('cf-ray'),
+          cf_ipcountry: request.headers.get('cf-ipcountry'),
+        }), { status: res.status, headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+      }
 
-      - name: 下載可轉債基本資料（轉換價）
-        run: |
-          curl -L \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-            -H "Referer: https://data.gov.tw/dataset/11406" \
-            -H "Accept: text/html,application/xhtml+xml,*/*" \
-            --compressed \
-            -o ISSBD5_raw.csv \
-            "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv" || echo "ISSBD5 下載失敗，跳過"
+      const buffer = await res.arrayBuffer();
+      const text = new TextDecoder('big5').decode(buffer);
+      
+      if (!text.includes('BODY') || !text.includes('TITLE')) {
+        return new Response(JSON.stringify({ 
+          error: '回傳內容不是 CB 資料', 
+          preview: text.substring(0, 200),
+          date: dateParam 
+        }), { status: 404, headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+      }
 
-      - name: 下載可轉債日統計（行情資料）
-        run: |
-          TODAY=${{ steps.date.outputs.TODAY }}
-          YEAR=${{ steps.date.outputs.YEAR }}
-          YEARMONTH=${{ steps.date.outputs.YEARMONTH }}
-          CSV_URL="https://www.tpex.org.tw/storage/bond_zone/tradeinfo/cb/${YEAR}/${YEARMONTH}/RSta0113.${TODAY}-C.csv"
-          echo "嘗試下載: $CSV_URL"
-          HTTP_STATUS=$(curl -L -w "%{http_code}" \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-            -H "Referer: https://www.tpex.org.tw/zh-tw/bond/info/statistics-cb/day.html" \
-            -H "Accept: text/html,application/xhtml+xml,*/*" \
-            --compressed \
-            -o daily_raw.csv \
-            "$CSV_URL")
-          echo "HTTP狀態碼: $HTTP_STATUS"
-          if [ "$HTTP_STATUS" = "200" ]; then
-            echo "日統計下載成功"
-            wc -l daily_raw.csv
-          else
-            echo "日統計下載失敗（HTTP $HTTP_STATUS），檔案可能尚未公布"
-            echo "" > daily_raw.csv
-          fi
+      return new Response(text, {
+        headers: { ...corsHeaders, 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=3600' }
+      });
 
-      - name: 安裝 Python 套件
-        run: pip install chardet
-
-      - name: 解析資料產生 JSON 檔案
-        run: |
-          python3 << 'PYEOF'
-          import csv, json, chardet, re, os
-          from datetime import datetime
-
-          today_str = os.environ.get('TODAY_ISO', datetime.now().strftime('%Y-%m-%d'))
-
-          # ===== 解析 ISSBD5（轉換價基本資料） =====
-          conv_map = {}
-          if os.path.exists('ISSBD5_raw.csv') and os.path.getsize('ISSBD5_raw.csv') > 1000:
-            with open('ISSBD5_raw.csv', 'rb') as f:
-              raw = f.read()
-            enc = chardet.detect(raw).get('encoding','big5')
-            text = raw.decode(enc, errors='replace')
-            lines = text.strip().split('\n')
-            header = None
-            for i, line in enumerate(lines):
-              cols = [c.strip().strip('"') for c in line.split(',')]
-              if i == 0:
-                header = cols
-                continue
-              if len(cols) < 10: continue
-              cb_code = cols[3].strip()
-              if not re.match(r'^\d{4,6}$', cb_code): continue
-              mat_raw = cols[8].strip()
-              maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}" if len(mat_raw)==8 and mat_raw.isdigit() else ''
-              issue_raw = cols[7].strip()
-              issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}" if len(issue_raw)==8 and issue_raw.isdigit() else ''
-              stock_code = cols[1].strip()
-              company = cols[2].strip()
-              conv_price = 0
-              for idx in range(len(cols)-1, 19, -1):
-                v = cols[idx].replace(',','').strip()
-                if '.' in v:
-                  try:
-                    fv = float(v)
-                    if 0 < fv < 9999: conv_price = fv; break
-                  except: pass
-              conv_map[cb_code] = {'stock_code': stock_code, 'company': company, 'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date}
-            print(f"ISSBD5 解析完成：{len(conv_map)} 筆")
-          else:
-            # 若下載失敗，讀取現有的 conv_price.json
-            if os.path.exists('conv_price.json'):
-              with open('conv_price.json','r',encoding='utf-8') as f:
-                old = json.load(f)
-              conv_map = old.get('data', {})
-              print(f"使用現有 conv_price.json：{len(conv_map)} 筆")
-
-          # 儲存 conv_price.json
-          conv_output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(conv_map), 'data': conv_map}
-          with open('conv_price.json', 'w', encoding='utf-8') as f:
-            json.dump(conv_output, f, ensure_ascii=False, indent=2)
-
-          # ===== 解析日統計 CSV（行情資料） =====
-          daily_rows = []
-          if os.path.exists('daily_raw.csv') and os.path.getsize('daily_raw.csv') > 500:
-            with open('daily_raw.csv', 'rb') as f:
-              raw2 = f.read()
-            enc2 = chardet.detect(raw2).get('encoding','big5')
-            csvtext = raw2.decode(enc2, errors='replace')
-            for line in csvtext.split('\n'):
-              line = line.strip()
-              if not line.startswith('BODY'): continue
-              cols = line.split('","')
-              cols = [c.replace('BODY,"','').replace('"','').strip() for c in cols]
-              if len(cols) < 15: continue
-              if cols[2] != '等價': continue
-              code = cols[0].replace('BODY,','').strip()
-              if not code or not re.match(r'^\d+', code) or code == '合計': continue
-              cb_price = float(cols[3].replace(',','')) if cols[3].replace(',','').replace('.','').isdigit() else (float(cols[12].replace(',','')) if cols[12].replace(',','').replace('.','').isdigit() else 0)
-              if cb_price < 70 or cb_price > 600: continue
-              def safe_float(s):
-                try: return float(s.replace(',','').strip())
-                except: return 0
-              daily_rows.append({
-                'code': code,
-                'name': cols[1].strip(),
-                'cb_price': cb_price,
-                'change': safe_float(cols[4]),
-                'open': safe_float(cols[5]),
-                'high': safe_float(cols[6]),
-                'low': safe_float(cols[7]),
-                'ref_price': safe_float(cols[12]),
-                'stop_up': safe_float(cols[13]),
-                'stop_dn': safe_float(cols[14]),
-              })
-            print(f"日統計解析完成：{len(daily_rows)} 筆")
-
-          # 儲存 daily_data.json
-          daily_output = {'date': today_str, 'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(daily_rows), 'rows': daily_rows}
-          with open('daily_data.json', 'w', encoding='utf-8') as f:
-            json.dump(daily_output, f, ensure_ascii=False, indent=2)
-          print(f"daily_data.json 儲存完成")
-          PYEOF
-        env:
-          TODAY_ISO: ${{ steps.date.outputs.TODAY_ISO }}
-
-      - name: Commit & Push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add conv_price.json daily_data.json
-          git diff --staged --quiet || git commit -m "chore: 每日更新可轉債資料 ${{ steps.date.outputs.TODAY_ISO }}"
-          git push
+    } catch(e) {
+      return new Response(JSON.stringify({ error: e.message, date: dateParam }), {
+        status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      });
+    }
+  }
+};
