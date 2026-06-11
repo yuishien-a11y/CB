@@ -1,0 +1,2694 @@
+{
+  "updated": "2026-06-11 02:08",
+  "count": 384,
+  "data": {
+    "11011": {
+      "stock_code": "1101",
+      "company": "台泥",
+      "conv_price": 36.5,
+      "maturity": "2029-12-10",
+      "issue_date": "2024-12-10"
+    },
+    "12561": {
+      "stock_code": "1256",
+      "company": "鮮活果汁-KY",
+      "conv_price": 190.0,
+      "maturity": "2028-10-08",
+      "issue_date": "2025-10-08"
+    },
+    "13166": {
+      "stock_code": "1316",
+      "company": "上曜",
+      "conv_price": 17.8,
+      "maturity": "2027-12-27",
+      "issue_date": "2024-12-27"
+    },
+    "13382": {
+      "stock_code": "1338",
+      "company": "廣華-KY",
+      "conv_price": 39.4,
+      "maturity": "2028-12-01",
+      "issue_date": "2023-12-01"
+    },
+    "140201": {
+      "stock_code": "1402",
+      "company": "遠東新",
+      "conv_price": 45.4,
+      "maturity": "2029-08-08",
+      "issue_date": "2024-08-08"
+    },
+    "140202": {
+      "stock_code": "1402",
+      "company": "遠東新",
+      "conv_price": 33.7,
+      "maturity": "2029-08-08",
+      "issue_date": "2024-08-08"
+    },
+    "14363": {
+      "stock_code": "1436",
+      "company": "華友聯",
+      "conv_price": 182.5,
+      "maturity": "2027-08-27",
+      "issue_date": "2024-08-27"
+    },
+    "14364": {
+      "stock_code": "1436",
+      "company": "華友聯",
+      "conv_price": 140.3,
+      "maturity": "2028-03-18",
+      "issue_date": "2025-03-18"
+    },
+    "14381": {
+      "stock_code": "1438",
+      "company": "三地開發",
+      "conv_price": 57.5,
+      "maturity": "2029-12-19",
+      "issue_date": "2024-12-19"
+    },
+    "14664": {
+      "stock_code": "1466",
+      "company": "聚隆",
+      "conv_price": 18.8,
+      "maturity": "2028-06-20",
+      "issue_date": "2025-06-20"
+    },
+    "14722": {
+      "stock_code": "1472",
+      "company": "三洋實業",
+      "conv_price": 102.0,
+      "maturity": "2028-05-29",
+      "issue_date": "2025-05-29"
+    },
+    "14723": {
+      "stock_code": "1472",
+      "company": "三洋實業",
+      "conv_price": 105.0,
+      "maturity": "2028-06-17",
+      "issue_date": "2025-06-17"
+    },
+    "14743": {
+      "stock_code": "1474",
+      "company": "弘裕",
+      "conv_price": 14.5,
+      "maturity": "2028-03-31",
+      "issue_date": "2025-03-31"
+    },
+    "15142": {
+      "stock_code": "1514",
+      "company": "亞力",
+      "conv_price": 113.2,
+      "maturity": "2030-01-13",
+      "issue_date": "2025-01-13"
+    },
+    "15261": {
+      "stock_code": "1526",
+      "company": "日馳",
+      "conv_price": 38.0,
+      "maturity": "2026-09-19",
+      "issue_date": "2023-09-19"
+    },
+    "15364": {
+      "stock_code": "1536",
+      "company": "和大",
+      "conv_price": 72.26,
+      "maturity": "2027-08-12",
+      "issue_date": "2024-08-12"
+    },
+    "15601": {
+      "stock_code": "1560",
+      "company": "中砂",
+      "conv_price": 292.1,
+      "maturity": "2029-06-24",
+      "issue_date": "2024-06-24"
+    },
+    "15864": {
+      "stock_code": "1586",
+      "company": "和勤",
+      "conv_price": 33.39,
+      "maturity": "2026-08-30",
+      "issue_date": "2023-08-30"
+    },
+    "15865": {
+      "stock_code": "1586",
+      "company": "和勤",
+      "conv_price": 32.74,
+      "maturity": "2026-08-31",
+      "issue_date": "2023-08-31"
+    },
+    "15894": {
+      "stock_code": "1589",
+      "company": "永冠-KY",
+      "conv_price": 62.3,
+      "maturity": "2028-02-20",
+      "issue_date": "2023-02-20"
+    },
+    "15952": {
+      "stock_code": "1595",
+      "company": "川寶",
+      "conv_price": 38.3,
+      "maturity": "2029-09-02",
+      "issue_date": "2024-09-02"
+    },
+    "15984": {
+      "stock_code": "1598",
+      "company": "岱宇",
+      "conv_price": 33.6,
+      "maturity": "2028-03-03",
+      "issue_date": "2025-03-03"
+    },
+    "16095": {
+      "stock_code": "1609",
+      "company": "大亞",
+      "conv_price": 53.1,
+      "maturity": "2029-09-30",
+      "issue_date": "2024-09-30"
+    },
+    "17172": {
+      "stock_code": "1717",
+      "company": "長興",
+      "conv_price": 76.0,
+      "maturity": "2031-06-08",
+      "issue_date": "2026-06-08"
+    },
+    "17813": {
+      "stock_code": "1781",
+      "company": "合世",
+      "conv_price": 18.0,
+      "maturity": "2027-09-24",
+      "issue_date": "2024-09-24"
+    },
+    "17863": {
+      "stock_code": "1786",
+      "company": "科妍",
+      "conv_price": 116.5,
+      "maturity": "2028-08-01",
+      "issue_date": "2025-08-01"
+    },
+    "19094": {
+      "stock_code": "1909",
+      "company": "榮成",
+      "conv_price": 26.2,
+      "maturity": "2026-12-20",
+      "issue_date": "2021-12-20"
+    },
+    "20344": {
+      "stock_code": "2034",
+      "company": "允強",
+      "conv_price": 25.6,
+      "maturity": "2029-10-02",
+      "issue_date": "2024-10-02"
+    },
+    "20662": {
+      "stock_code": "2066",
+      "company": "世德",
+      "conv_price": 101.0,
+      "maturity": "2026-07-31",
+      "issue_date": "2023-07-31"
+    },
+    "21043": {
+      "stock_code": "2104",
+      "company": "國際中橡",
+      "conv_price": 21.2,
+      "maturity": "2028-10-13",
+      "issue_date": "2023-10-13"
+    },
+    "22013": {
+      "stock_code": "2201",
+      "company": "裕隆",
+      "conv_price": 82.0,
+      "maturity": "2028-05-25",
+      "issue_date": "2023-05-25"
+    },
+    "22283": {
+      "stock_code": "2228",
+      "company": "劍麟",
+      "conv_price": 95.51,
+      "maturity": "2027-08-29",
+      "issue_date": "2024-08-29"
+    },
+    "22331": {
+      "stock_code": "2233",
+      "company": "宇隆",
+      "conv_price": 250.0,
+      "maturity": "2029-01-23",
+      "issue_date": "2026-01-23"
+    },
+    "22363": {
+      "stock_code": "2236",
+      "company": "百達-KY",
+      "conv_price": 118.1,
+      "maturity": "2031-02-10",
+      "issue_date": "2026-02-10"
+    },
+    "22471": {
+      "stock_code": "2247",
+      "company": "汎德永業",
+      "conv_price": 307.6,
+      "maturity": "2028-06-26",
+      "issue_date": "2025-06-26"
+    },
+    "22472": {
+      "stock_code": "2247",
+      "company": "汎德永業",
+      "conv_price": 297.8,
+      "maturity": "2028-06-30",
+      "issue_date": "2025-06-30"
+    },
+    "23291": {
+      "stock_code": "2329",
+      "company": "華泰",
+      "conv_price": 51.3,
+      "maturity": "2029-03-18",
+      "issue_date": "2026-03-18"
+    },
+    "23372": {
+      "stock_code": "2337",
+      "company": "旺宏",
+      "conv_price": 23.0,
+      "maturity": "2028-03-24",
+      "issue_date": "2025-03-24"
+    },
+    "23383": {
+      "stock_code": "2338",
+      "company": "光罩",
+      "conv_price": 88.8,
+      "maturity": "2026-08-03",
+      "issue_date": "2021-08-03"
+    },
+    "23511": {
+      "stock_code": "2351",
+      "company": "順德",
+      "conv_price": 75.0,
+      "maturity": "2028-06-17",
+      "issue_date": "2025-06-17"
+    },
+    "23683": {
+      "stock_code": "2368",
+      "company": "金像電",
+      "conv_price": 450.0,
+      "maturity": "2030-11-24",
+      "issue_date": "2025-11-24"
+    },
+    "23742": {
+      "stock_code": "2374",
+      "company": "佳能",
+      "conv_price": 86.8,
+      "maturity": "2031-02-02",
+      "issue_date": "2026-02-02"
+    },
+    "24023": {
+      "stock_code": "2402",
+      "company": "毅嘉",
+      "conv_price": 55.0,
+      "maturity": "2028-11-19",
+      "issue_date": "2025-11-19"
+    },
+    "24271": {
+      "stock_code": "2427",
+      "company": "三商電",
+      "conv_price": 28.0,
+      "maturity": "2028-12-13",
+      "issue_date": "2023-12-13"
+    },
+    "24361": {
+      "stock_code": "2436",
+      "company": "偉詮電",
+      "conv_price": 61.2,
+      "maturity": "2026-09-11",
+      "issue_date": "2023-09-11"
+    },
+    "24394": {
+      "stock_code": "2439",
+      "company": "美律",
+      "conv_price": 143.1,
+      "maturity": "2027-07-10",
+      "issue_date": "2024-07-10"
+    },
+    "24395": {
+      "stock_code": "2439",
+      "company": "美律",
+      "conv_price": 139.0,
+      "maturity": "2027-07-22",
+      "issue_date": "2024-07-22"
+    },
+    "24423": {
+      "stock_code": "2442",
+      "company": "新美齊",
+      "conv_price": 26.1,
+      "maturity": "2027-11-29",
+      "issue_date": "2024-11-29"
+    },
+    "24424": {
+      "stock_code": "2442",
+      "company": "新美齊",
+      "conv_price": 26.4,
+      "maturity": "2027-12-25",
+      "issue_date": "2024-12-25"
+    },
+    "24552": {
+      "stock_code": "2455",
+      "company": "全新",
+      "conv_price": 162.9,
+      "maturity": "2029-01-23",
+      "issue_date": "2026-01-23"
+    },
+    "24553": {
+      "stock_code": "2455",
+      "company": "全新",
+      "conv_price": 153.5,
+      "maturity": "2029-01-27",
+      "issue_date": "2026-01-27"
+    },
+    "24624": {
+      "stock_code": "2462",
+      "company": "良得電",
+      "conv_price": 33.53,
+      "maturity": "2026-08-11",
+      "issue_date": "2023-08-11"
+    },
+    "24642": {
+      "stock_code": "2464",
+      "company": "盟立",
+      "conv_price": 80.0,
+      "maturity": "2027-09-16",
+      "issue_date": "2024-09-16"
+    },
+    "24672": {
+      "stock_code": "2467",
+      "company": "志聖",
+      "conv_price": 250.6,
+      "maturity": "2029-01-09",
+      "issue_date": "2026-01-09"
+    },
+    "24673": {
+      "stock_code": "2467",
+      "company": "志聖",
+      "conv_price": 246.6,
+      "maturity": "2029-01-22",
+      "issue_date": "2026-01-22"
+    },
+    "24762": {
+      "stock_code": "2476",
+      "company": "鉅祥",
+      "conv_price": 72.2,
+      "maturity": "2027-01-26",
+      "issue_date": "2024-01-26"
+    },
+    "24866": {
+      "stock_code": "2486",
+      "company": "一詮",
+      "conv_price": 126.0,
+      "maturity": "2027-07-01",
+      "issue_date": "2024-07-01"
+    },
+    "25283": {
+      "stock_code": "2528",
+      "company": "皇普",
+      "conv_price": 46.4,
+      "maturity": "2029-12-31",
+      "issue_date": "2024-12-31"
+    },
+    "25284": {
+      "stock_code": "2528",
+      "company": "皇普",
+      "conv_price": 45.0,
+      "maturity": "2030-01-17",
+      "issue_date": "2025-01-17"
+    },
+    "25303": {
+      "stock_code": "2530",
+      "company": "華建",
+      "conv_price": 34.7,
+      "maturity": "2028-06-23",
+      "issue_date": "2025-06-23"
+    },
+    "25304": {
+      "stock_code": "2530",
+      "company": "華建",
+      "conv_price": 32.5,
+      "maturity": "2028-06-30",
+      "issue_date": "2025-06-30"
+    },
+    "25483": {
+      "stock_code": "2548",
+      "company": "華固",
+      "conv_price": 138.0,
+      "maturity": "2029-10-02",
+      "issue_date": "2024-10-02"
+    },
+    "25484": {
+      "stock_code": "2548",
+      "company": "華固",
+      "conv_price": 136.3,
+      "maturity": "2029-10-18",
+      "issue_date": "2024-10-18"
+    },
+    "26417": {
+      "stock_code": "2641",
+      "company": "正德",
+      "conv_price": 22.7,
+      "maturity": "2027-07-26",
+      "issue_date": "2024-07-26"
+    },
+    "26418": {
+      "stock_code": "2641",
+      "company": "正德",
+      "conv_price": 19.3,
+      "maturity": "2030-08-06",
+      "issue_date": "2025-08-06"
+    },
+    "27271": {
+      "stock_code": "2727",
+      "company": "王品",
+      "conv_price": 295.0,
+      "maturity": "2028-03-29",
+      "issue_date": "2023-03-29"
+    },
+    "27323": {
+      "stock_code": "2732",
+      "company": "六角",
+      "conv_price": 137.7,
+      "maturity": "2027-01-26",
+      "issue_date": "2024-01-26"
+    },
+    "27324": {
+      "stock_code": "2732",
+      "company": "六角",
+      "conv_price": 74.3,
+      "maturity": "2028-12-08",
+      "issue_date": "2025-12-08"
+    },
+    "27431": {
+      "stock_code": "2743",
+      "company": "山富",
+      "conv_price": 135.0,
+      "maturity": "2028-08-28",
+      "issue_date": "2025-08-28"
+    },
+    "27451": {
+      "stock_code": "2745",
+      "company": "五福",
+      "conv_price": 111.3,
+      "maturity": "2029-01-05",
+      "issue_date": "2026-01-05"
+    },
+    "27531": {
+      "stock_code": "2753",
+      "company": "八方雲集",
+      "conv_price": 212.0,
+      "maturity": "2028-10-09",
+      "issue_date": "2025-10-09"
+    },
+    "27532": {
+      "stock_code": "2753",
+      "company": "八方雲集",
+      "conv_price": 210.0,
+      "maturity": "2028-10-20",
+      "issue_date": "2025-10-20"
+    },
+    "27551": {
+      "stock_code": "2755",
+      "company": "揚秦",
+      "conv_price": 106.0,
+      "maturity": "2028-01-15",
+      "issue_date": "2025-01-15"
+    },
+    "27561": {
+      "stock_code": "2756",
+      "company": "聯發國際",
+      "conv_price": 94.3,
+      "maturity": "2027-05-30",
+      "issue_date": "2024-05-30"
+    },
+    "29061": {
+      "stock_code": "2906",
+      "company": "高林",
+      "conv_price": 18.0,
+      "maturity": "2026-09-20",
+      "issue_date": "2023-09-20"
+    },
+    "30112": {
+      "stock_code": "3011",
+      "company": "今皓",
+      "conv_price": 12.5,
+      "maturity": "2029-03-26",
+      "issue_date": "2026-03-26"
+    },
+    "30134": {
+      "stock_code": "3013",
+      "company": "晟銘電",
+      "conv_price": 144.5,
+      "maturity": "2027-10-18",
+      "issue_date": "2024-10-18"
+    },
+    "30165": {
+      "stock_code": "3016",
+      "company": "嘉晶",
+      "conv_price": 72.6,
+      "maturity": "2027-07-26",
+      "issue_date": "2024-07-26"
+    },
+    "30321": {
+      "stock_code": "3032",
+      "company": "偉訓",
+      "conv_price": 105.9,
+      "maturity": "2028-11-13",
+      "issue_date": "2025-11-13"
+    },
+    "30322": {
+      "stock_code": "3032",
+      "company": "偉訓",
+      "conv_price": 101.9,
+      "maturity": "2030-11-25",
+      "issue_date": "2025-11-25"
+    },
+    "30336": {
+      "stock_code": "3033",
+      "company": "威健",
+      "conv_price": 34.27,
+      "maturity": "2027-06-01",
+      "issue_date": "2022-06-01"
+    },
+    "30337": {
+      "stock_code": "3033",
+      "company": "威健",
+      "conv_price": 36.67,
+      "maturity": "2029-09-11",
+      "issue_date": "2024-09-11"
+    },
+    "30371": {
+      "stock_code": "3037",
+      "company": "欣興",
+      "conv_price": 165.4,
+      "maturity": "2030-11-03",
+      "issue_date": "2025-11-03"
+    },
+    "30401": {
+      "stock_code": "3040",
+      "company": "遠見",
+      "conv_price": 48.3,
+      "maturity": "2028-06-30",
+      "issue_date": "2025-06-30"
+    },
+    "30454": {
+      "stock_code": "3045",
+      "company": "台灣大",
+      "conv_price": 123.0,
+      "maturity": "2030-02-24",
+      "issue_date": "2025-02-24"
+    },
+    "30455": {
+      "stock_code": "3045",
+      "company": "台灣大",
+      "conv_price": 115.8,
+      "maturity": "2030-02-25",
+      "issue_date": "2025-02-25"
+    },
+    "30882": {
+      "stock_code": "3088",
+      "company": "艾訊",
+      "conv_price": 109.5,
+      "maturity": "2026-08-28",
+      "issue_date": "2023-08-28"
+    },
+    "30922": {
+      "stock_code": "3092",
+      "company": "鴻碩",
+      "conv_price": 37.6,
+      "maturity": "2026-07-04",
+      "issue_date": "2023-07-04"
+    },
+    "30954": {
+      "stock_code": "3095",
+      "company": "及成",
+      "conv_price": 41.1,
+      "maturity": "2028-02-25",
+      "issue_date": "2025-02-25"
+    },
+    "31222": {
+      "stock_code": "3122",
+      "company": "笙泉",
+      "conv_price": 42.3,
+      "maturity": "2027-05-03",
+      "issue_date": "2024-05-03"
+    },
+    "31282": {
+      "stock_code": "3128",
+      "company": "昇銳",
+      "conv_price": 44.1,
+      "maturity": "2026-07-03",
+      "issue_date": "2023-07-03"
+    },
+    "31311": {
+      "stock_code": "3131",
+      "company": "弘塑",
+      "conv_price": 1762.2,
+      "maturity": "2030-07-30",
+      "issue_date": "2025-07-30"
+    },
+    "31312": {
+      "stock_code": "3131",
+      "company": "弘塑",
+      "conv_price": 1626.6,
+      "maturity": "2030-08-05",
+      "issue_date": "2025-08-05"
+    },
+    "31351": {
+      "stock_code": "3135",
+      "company": "凌航",
+      "conv_price": 52.19,
+      "maturity": "2028-12-04",
+      "issue_date": "2025-12-04"
+    },
+    "31352": {
+      "stock_code": "3135",
+      "company": "凌航",
+      "conv_price": 129.9,
+      "maturity": "2029-05-05",
+      "issue_date": "2026-05-05"
+    },
+    "31413": {
+      "stock_code": "3141",
+      "company": "晶宏",
+      "conv_price": 95.0,
+      "maturity": "2027-05-20",
+      "issue_date": "2024-05-20"
+    },
+    "31672": {
+      "stock_code": "3167",
+      "company": "大量",
+      "conv_price": 170.0,
+      "maturity": "2028-08-06",
+      "issue_date": "2025-08-06"
+    },
+    "31882": {
+      "stock_code": "3188",
+      "company": "鑫龍騰",
+      "conv_price": 31.4,
+      "maturity": "2028-06-20",
+      "issue_date": "2025-06-20"
+    },
+    "32071": {
+      "stock_code": "3207",
+      "company": "耀勝",
+      "conv_price": 105.47,
+      "maturity": "2027-03-25",
+      "issue_date": "2024-03-25"
+    },
+    "32571": {
+      "stock_code": "3257",
+      "company": "虹冠電",
+      "conv_price": 75.0,
+      "maturity": "2029-11-01",
+      "issue_date": "2024-11-01"
+    },
+    "32608": {
+      "stock_code": "3260",
+      "company": "威剛",
+      "conv_price": 244.0,
+      "maturity": "2029-01-08",
+      "issue_date": "2026-01-08"
+    },
+    "32723": {
+      "stock_code": "3272",
+      "company": "東碩",
+      "conv_price": 34.2,
+      "maturity": "2029-03-07",
+      "issue_date": "2024-03-07"
+    },
+    "32843": {
+      "stock_code": "3284",
+      "company": "太普高",
+      "conv_price": 23.91,
+      "maturity": "2028-09-15",
+      "issue_date": "2025-09-15"
+    },
+    "32943": {
+      "stock_code": "3294",
+      "company": "英濟",
+      "conv_price": 41.8,
+      "maturity": "2029-06-18",
+      "issue_date": "2026-06-18"
+    },
+    "33035": {
+      "stock_code": "3303",
+      "company": "岱稜",
+      "conv_price": 62.0,
+      "maturity": "2029-11-26",
+      "issue_date": "2024-11-26"
+    },
+    "33055": {
+      "stock_code": "3305",
+      "company": "昇貿",
+      "conv_price": 78.3,
+      "maturity": "2026-12-25",
+      "issue_date": "2023-12-25"
+    },
+    "33121": {
+      "stock_code": "3312",
+      "company": "弘憶股",
+      "conv_price": 76.8,
+      "maturity": "2027-06-25",
+      "issue_date": "2024-06-25"
+    },
+    "33133": {
+      "stock_code": "3313",
+      "company": "斐成",
+      "conv_price": 16.5,
+      "maturity": "2027-11-29",
+      "issue_date": "2024-11-29"
+    },
+    "33225": {
+      "stock_code": "3322",
+      "company": "建舜電",
+      "conv_price": 23.78,
+      "maturity": "2027-09-02",
+      "issue_date": "2024-09-02"
+    },
+    "33245": {
+      "stock_code": "3324",
+      "company": "雙鴻",
+      "conv_price": 754.0,
+      "maturity": "2029-07-31",
+      "issue_date": "2024-07-31"
+    },
+    "33246": {
+      "stock_code": "3324",
+      "company": "雙鴻",
+      "conv_price": 1124.0,
+      "maturity": "2031-03-02",
+      "issue_date": "2026-03-02"
+    },
+    "33247": {
+      "stock_code": "3324",
+      "company": "雙鴻",
+      "conv_price": 1105.0,
+      "maturity": "2031-03-16",
+      "issue_date": "2026-03-16"
+    },
+    "33466": {
+      "stock_code": "3346",
+      "company": "麗清",
+      "conv_price": 38.8,
+      "maturity": "2027-11-27",
+      "issue_date": "2024-11-27"
+    },
+    "33571": {
+      "stock_code": "3357",
+      "company": "臺慶科",
+      "conv_price": 118.0,
+      "maturity": "2026-10-31",
+      "issue_date": "2023-10-31"
+    },
+    "33621": {
+      "stock_code": "3362",
+      "company": "先進光",
+      "conv_price": 254.0,
+      "maturity": "2029-07-16",
+      "issue_date": "2024-07-16"
+    },
+    "33763": {
+      "stock_code": "3376",
+      "company": "新日興",
+      "conv_price": 202.0,
+      "maturity": "2029-08-23",
+      "issue_date": "2024-08-23"
+    },
+    "33881": {
+      "stock_code": "3388",
+      "company": "崇越電",
+      "conv_price": 73.6,
+      "maturity": "2027-11-09",
+      "issue_date": "2022-11-09"
+    },
+    "33902": {
+      "stock_code": "3390",
+      "company": "旭軟",
+      "conv_price": 26.2,
+      "maturity": "2028-02-21",
+      "issue_date": "2025-02-21"
+    },
+    "34163": {
+      "stock_code": "3416",
+      "company": "融程電",
+      "conv_price": 136.8,
+      "maturity": "2027-01-25",
+      "issue_date": "2024-01-25"
+    },
+    "34793": {
+      "stock_code": "3479",
+      "company": "安勤",
+      "conv_price": 121.5,
+      "maturity": "2027-01-22",
+      "issue_date": "2024-01-22"
+    },
+    "34834": {
+      "stock_code": "3483",
+      "company": "力致",
+      "conv_price": 168.0,
+      "maturity": "2027-05-22",
+      "issue_date": "2024-05-22"
+    },
+    "34843": {
+      "stock_code": "3484",
+      "company": "崧騰",
+      "conv_price": 48.1,
+      "maturity": "2028-04-24",
+      "issue_date": "2023-04-24"
+    },
+    "34913": {
+      "stock_code": "3491",
+      "company": "昇達科",
+      "conv_price": 1788.0,
+      "maturity": "2031-06-09",
+      "issue_date": "2026-06-09"
+    },
+    "35161": {
+      "stock_code": "3516",
+      "company": "亞帝歐",
+      "conv_price": 26.7,
+      "maturity": "2027-10-18",
+      "issue_date": "2024-10-18"
+    },
+    "35181": {
+      "stock_code": "3518",
+      "company": "柏騰",
+      "conv_price": 35.0,
+      "maturity": "2027-08-15",
+      "issue_date": "2024-08-15"
+    },
+    "35221": {
+      "stock_code": "3522",
+      "company": "御頂",
+      "conv_price": 19.5,
+      "maturity": "2026-12-18",
+      "issue_date": "2023-12-18"
+    },
+    "35265": {
+      "stock_code": "3526",
+      "company": "凡甲",
+      "conv_price": 207.3,
+      "maturity": "2027-02-14",
+      "issue_date": "2022-02-14"
+    },
+    "35266": {
+      "stock_code": "3526",
+      "company": "凡甲",
+      "conv_price": 223.2,
+      "maturity": "2029-01-29",
+      "issue_date": "2024-01-29"
+    },
+    "35267": {
+      "stock_code": "3526",
+      "company": "凡甲",
+      "conv_price": 269.6,
+      "maturity": "2030-07-24",
+      "issue_date": "2025-07-24"
+    },
+    "35431": {
+      "stock_code": "3543",
+      "company": "州巧",
+      "conv_price": 46.3,
+      "maturity": "2028-12-26",
+      "issue_date": "2025-12-26"
+    },
+    "35482": {
+      "stock_code": "3548",
+      "company": "兆利",
+      "conv_price": 199.0,
+      "maturity": "2027-01-08",
+      "issue_date": "2024-01-08"
+    },
+    "35483": {
+      "stock_code": "3548",
+      "company": "兆利",
+      "conv_price": 170.0,
+      "maturity": "2030-02-25",
+      "issue_date": "2025-02-25"
+    },
+    "35513": {
+      "stock_code": "3551",
+      "company": "世禾",
+      "conv_price": 173.0,
+      "maturity": "2028-10-28",
+      "issue_date": "2025-10-28"
+    },
+    "35642": {
+      "stock_code": "3564",
+      "company": "其陽",
+      "conv_price": 85.0,
+      "maturity": "2027-09-03",
+      "issue_date": "2024-09-03"
+    },
+    "35831": {
+      "stock_code": "3583",
+      "company": "辛耘",
+      "conv_price": 359.7,
+      "maturity": "2027-06-07",
+      "issue_date": "2024-06-07"
+    },
+    "35832": {
+      "stock_code": "3583",
+      "company": "辛耘",
+      "conv_price": 347.5,
+      "maturity": "2027-06-19",
+      "issue_date": "2024-06-19"
+    },
+    "35871": {
+      "stock_code": "3587",
+      "company": "閎康",
+      "conv_price": 218.0,
+      "maturity": "2026-06-20",
+      "issue_date": "2023-06-20"
+    },
+    "35872": {
+      "stock_code": "3587",
+      "company": "閎康",
+      "conv_price": 198.0,
+      "maturity": "2031-02-04",
+      "issue_date": "2026-02-04"
+    },
+    "35914": {
+      "stock_code": "3591",
+      "company": "艾笛森",
+      "conv_price": 25.5,
+      "maturity": "2027-11-22",
+      "issue_date": "2024-11-22"
+    },
+    "36053": {
+      "stock_code": "3605",
+      "company": "宏致",
+      "conv_price": 51.0,
+      "maturity": "2027-08-06",
+      "issue_date": "2024-08-06"
+    },
+    "36173": {
+      "stock_code": "3617",
+      "company": "碩天",
+      "conv_price": 305.0,
+      "maturity": "2028-06-16",
+      "issue_date": "2025-06-16"
+    },
+    "36804": {
+      "stock_code": "3680",
+      "company": "家登",
+      "conv_price": 374.9,
+      "maturity": "2026-10-18",
+      "issue_date": "2023-10-18"
+    },
+    "36805": {
+      "stock_code": "3680",
+      "company": "家登",
+      "conv_price": 488.9,
+      "maturity": "2031-05-08",
+      "issue_date": "2026-05-08"
+    },
+    "36806": {
+      "stock_code": "3680",
+      "company": "家登",
+      "conv_price": 483.0,
+      "maturity": "2031-05-21",
+      "issue_date": "2026-05-21"
+    },
+    "36841": {
+      "stock_code": "3684",
+      "company": "榮昌",
+      "conv_price": 50.7,
+      "maturity": "2028-10-28",
+      "issue_date": "2025-10-28"
+    },
+    "36872": {
+      "stock_code": "3687",
+      "company": "歐買尬",
+      "conv_price": 75.9,
+      "maturity": "2028-10-02",
+      "issue_date": "2025-10-02"
+    },
+    "36873": {
+      "stock_code": "3687",
+      "company": "歐買尬",
+      "conv_price": 80.1,
+      "maturity": "2028-10-03",
+      "issue_date": "2025-10-03"
+    },
+    "36894": {
+      "stock_code": "3689",
+      "company": "湧德",
+      "conv_price": 65.7,
+      "maturity": "2027-03-05",
+      "issue_date": "2024-03-05"
+    },
+    "36913": {
+      "stock_code": "3691",
+      "company": "碩禾",
+      "conv_price": 118.0,
+      "maturity": "2027-08-30",
+      "issue_date": "2024-08-30"
+    },
+    "37022": {
+      "stock_code": "3702",
+      "company": "大聯大",
+      "conv_price": 80.5,
+      "maturity": "2027-11-11",
+      "issue_date": "2024-11-11"
+    },
+    "37023": {
+      "stock_code": "3702",
+      "company": "大聯大",
+      "conv_price": 78.0,
+      "maturity": "2027-11-21",
+      "issue_date": "2024-11-21"
+    },
+    "370201": {
+      "stock_code": "3702",
+      "company": "大聯大",
+      "conv_price": 160.8,
+      "maturity": "2029-01-14",
+      "issue_date": "2026-01-14"
+    },
+    "37075": {
+      "stock_code": "3707",
+      "company": "漢磊",
+      "conv_price": 40.1,
+      "maturity": "2030-08-20",
+      "issue_date": "2025-08-20"
+    },
+    "37083": {
+      "stock_code": "3708",
+      "company": "上緯投控",
+      "conv_price": 99.0,
+      "maturity": "2026-09-27",
+      "issue_date": "2021-09-27"
+    },
+    "37084": {
+      "stock_code": "3708",
+      "company": "上緯投控",
+      "conv_price": 95.0,
+      "maturity": "2026-09-28",
+      "issue_date": "2021-09-28"
+    },
+    "37151": {
+      "stock_code": "3715",
+      "company": "定穎投控",
+      "conv_price": 140.0,
+      "maturity": "2029-01-21",
+      "issue_date": "2026-01-21"
+    },
+    "37152": {
+      "stock_code": "3715",
+      "company": "定穎投控",
+      "conv_price": 159.0,
+      "maturity": "2029-03-24",
+      "issue_date": "2026-03-24"
+    },
+    "37171": {
+      "stock_code": "3717",
+      "company": "聯嘉投控",
+      "conv_price": 17.5,
+      "maturity": "2029-01-21",
+      "issue_date": "2026-01-21"
+    },
+    "41135": {
+      "stock_code": "4113",
+      "company": "聯上",
+      "conv_price": 26.3,
+      "maturity": "2030-10-27",
+      "issue_date": "2025-10-27"
+    },
+    "41136": {
+      "stock_code": "4113",
+      "company": "聯上",
+      "conv_price": 20.45,
+      "maturity": "2031-03-20",
+      "issue_date": "2026-03-20"
+    },
+    "41236": {
+      "stock_code": "4123",
+      "company": "晟德",
+      "conv_price": 48.0,
+      "maturity": "2028-04-26",
+      "issue_date": "2023-04-26"
+    },
+    "41237": {
+      "stock_code": "4123",
+      "company": "晟德",
+      "conv_price": 49.0,
+      "maturity": "2028-04-27",
+      "issue_date": "2023-04-27"
+    },
+    "41238": {
+      "stock_code": "4123",
+      "company": "晟德",
+      "conv_price": 43.0,
+      "maturity": "2031-05-04",
+      "issue_date": "2026-05-04"
+    },
+    "41239": {
+      "stock_code": "4123",
+      "company": "晟德",
+      "conv_price": 42.0,
+      "maturity": "2031-05-14",
+      "issue_date": "2026-05-14"
+    },
+    "41295": {
+      "stock_code": "4129",
+      "company": "聯合",
+      "conv_price": 109.8,
+      "maturity": "2030-05-29",
+      "issue_date": "2025-05-29"
+    },
+    "41372": {
+      "stock_code": "4137",
+      "company": "麗豐-KY",
+      "conv_price": 166.0,
+      "maturity": "2027-08-12",
+      "issue_date": "2024-08-12"
+    },
+    "41645": {
+      "stock_code": "4164",
+      "company": "承業醫",
+      "conv_price": 48.4,
+      "maturity": "2030-06-20",
+      "issue_date": "2025-06-20"
+    },
+    "41684": {
+      "stock_code": "4168",
+      "company": "醣聯",
+      "conv_price": 24.0,
+      "maturity": "2028-09-18",
+      "issue_date": "2025-09-18"
+    },
+    "41903": {
+      "stock_code": "4190",
+      "company": "佐登-KY",
+      "conv_price": 56.1,
+      "maturity": "2027-07-11",
+      "issue_date": "2024-07-11"
+    },
+    "44163": {
+      "stock_code": "4416",
+      "company": "三圓",
+      "conv_price": 81.0,
+      "maturity": "2027-09-30",
+      "issue_date": "2022-09-30"
+    },
+    "44383": {
+      "stock_code": "4438",
+      "company": "廣越",
+      "conv_price": 76.0,
+      "maturity": "2028-09-30",
+      "issue_date": "2025-09-30"
+    },
+    "44391": {
+      "stock_code": "4439",
+      "company": "冠星-KY",
+      "conv_price": 103.0,
+      "maturity": "2028-03-03",
+      "issue_date": "2025-03-03"
+    },
+    "44421": {
+      "stock_code": "4442",
+      "company": "竣邦-KY",
+      "conv_price": 49.0,
+      "maturity": "2028-07-28",
+      "issue_date": "2025-07-28"
+    },
+    "45031": {
+      "stock_code": "4503",
+      "company": "金雨",
+      "conv_price": 46.0,
+      "maturity": "2029-05-13",
+      "issue_date": "2026-05-13"
+    },
+    "45102": {
+      "stock_code": "4510",
+      "company": "高鋒",
+      "conv_price": 49.2,
+      "maturity": "2028-02-26",
+      "issue_date": "2025-02-26"
+    },
+    "45421": {
+      "stock_code": "4542",
+      "company": "科嶠",
+      "conv_price": 86.8,
+      "maturity": "2027-09-06",
+      "issue_date": "2024-09-06"
+    },
+    "45491": {
+      "stock_code": "4549",
+      "company": "桓達",
+      "conv_price": 166.0,
+      "maturity": "2027-11-07",
+      "issue_date": "2024-11-07"
+    },
+    "45554": {
+      "stock_code": "4555",
+      "company": "氣立",
+      "conv_price": 44.0,
+      "maturity": "2028-06-09",
+      "issue_date": "2025-06-09"
+    },
+    "45581": {
+      "stock_code": "4558",
+      "company": "寶緯",
+      "conv_price": 29.8,
+      "maturity": "2028-08-28",
+      "issue_date": "2025-08-28"
+    },
+    "45641": {
+      "stock_code": "4564",
+      "company": "元翎",
+      "conv_price": 27.0,
+      "maturity": "2026-09-26",
+      "issue_date": "2023-09-26"
+    },
+    "45663": {
+      "stock_code": "4566",
+      "company": "時碩工業",
+      "conv_price": 52.0,
+      "maturity": "2026-11-27",
+      "issue_date": "2023-11-27"
+    },
+    "45691": {
+      "stock_code": "4569",
+      "company": "六方科-KY",
+      "conv_price": 212.0,
+      "maturity": "2028-01-15",
+      "issue_date": "2025-01-15"
+    },
+    "45721": {
+      "stock_code": "4572",
+      "company": "駐龍",
+      "conv_price": 175.0,
+      "maturity": "2027-07-16",
+      "issue_date": "2024-07-16"
+    },
+    "45811": {
+      "stock_code": "4581",
+      "company": "光隆精密-KY",
+      "conv_price": 53.4,
+      "maturity": "2028-08-15",
+      "issue_date": "2025-08-15"
+    },
+    "47148": {
+      "stock_code": "4714",
+      "company": "永捷",
+      "conv_price": 16.1,
+      "maturity": "2029-05-04",
+      "issue_date": "2026-05-04"
+    },
+    "47223": {
+      "stock_code": "4722",
+      "company": "國精化",
+      "conv_price": 141.3,
+      "maturity": "2028-10-01",
+      "issue_date": "2025-10-01"
+    },
+    "47224": {
+      "stock_code": "4722",
+      "company": "國精化",
+      "conv_price": 265.7,
+      "maturity": "2029-05-26",
+      "issue_date": "2026-05-26"
+    },
+    "47393": {
+      "stock_code": "4739",
+      "company": "康普",
+      "conv_price": 110.0,
+      "maturity": "2026-10-28",
+      "issue_date": "2021-10-28"
+    },
+    "47394": {
+      "stock_code": "4739",
+      "company": "康普",
+      "conv_price": 71.0,
+      "maturity": "2030-12-17",
+      "issue_date": "2025-12-17"
+    },
+    "47471": {
+      "stock_code": "4747",
+      "company": "強生製藥",
+      "conv_price": 72.55,
+      "maturity": "2026-06-12",
+      "issue_date": "2023-06-12"
+    },
+    "47491": {
+      "stock_code": "4749",
+      "company": "新應材",
+      "conv_price": 1072.0,
+      "maturity": "2029-05-28",
+      "issue_date": "2026-05-28"
+    },
+    "47602": {
+      "stock_code": "4760",
+      "company": "勤凱科技",
+      "conv_price": 303.5,
+      "maturity": "2029-05-22",
+      "issue_date": "2026-05-22"
+    },
+    "47721": {
+      "stock_code": "4772",
+      "company": "台特化",
+      "conv_price": 323.8,
+      "maturity": "2028-11-27",
+      "issue_date": "2025-11-27"
+    },
+    "49231": {
+      "stock_code": "4923",
+      "company": "力士",
+      "conv_price": 34.66,
+      "maturity": "2029-01-29",
+      "issue_date": "2026-01-29"
+    },
+    "49311": {
+      "stock_code": "4931",
+      "company": "新盛力",
+      "conv_price": 175.0,
+      "maturity": "2029-05-29",
+      "issue_date": "2026-05-29"
+    },
+    "49674": {
+      "stock_code": "4967",
+      "company": "十銓",
+      "conv_price": 147.0,
+      "maturity": "2029-01-15",
+      "issue_date": "2026-01-15"
+    },
+    "49793": {
+      "stock_code": "4979",
+      "company": "華星光",
+      "conv_price": 178.0,
+      "maturity": "2027-12-09",
+      "issue_date": "2024-12-09"
+    },
+    "49794": {
+      "stock_code": "4979",
+      "company": "華星光",
+      "conv_price": 206.0,
+      "maturity": "2027-12-25",
+      "issue_date": "2024-12-25"
+    },
+    "50097": {
+      "stock_code": "5009",
+      "company": "榮剛",
+      "conv_price": 59.2,
+      "maturity": "2026-07-31",
+      "issue_date": "2023-07-31"
+    },
+    "52011": {
+      "stock_code": "5201",
+      "company": "凱衛",
+      "conv_price": 41.2,
+      "maturity": "2028-10-15",
+      "issue_date": "2025-10-15"
+    },
+    "52091": {
+      "stock_code": "5209",
+      "company": "新鼎",
+      "conv_price": 177.0,
+      "maturity": "2026-10-06",
+      "issue_date": "2023-10-06"
+    },
+    "52121": {
+      "stock_code": "5212",
+      "company": "凌網",
+      "conv_price": 66.5,
+      "maturity": "2029-10-15",
+      "issue_date": "2024-10-15"
+    },
+    "52303": {
+      "stock_code": "5230",
+      "company": "雷笛克光學",
+      "conv_price": 22.8,
+      "maturity": "2026-07-24",
+      "issue_date": "2023-07-24"
+    },
+    "52441": {
+      "stock_code": "5244",
+      "company": "弘凱",
+      "conv_price": 46.0,
+      "maturity": "2029-09-25",
+      "issue_date": "2024-09-25"
+    },
+    "52452": {
+      "stock_code": "5245",
+      "company": "智晶",
+      "conv_price": 35.0,
+      "maturity": "2027-12-18",
+      "issue_date": "2024-12-18"
+    },
+    "52635": {
+      "stock_code": "5263",
+      "company": "智崴",
+      "conv_price": 112.0,
+      "maturity": "2027-03-04",
+      "issue_date": "2024-03-04"
+    },
+    "52844": {
+      "stock_code": "5284",
+      "company": "jpp-KY",
+      "conv_price": 353.0,
+      "maturity": "2029-05-05",
+      "issue_date": "2026-05-05"
+    },
+    "52845": {
+      "stock_code": "5284",
+      "company": "jpp-KY",
+      "conv_price": 322.6,
+      "maturity": "2029-05-11",
+      "issue_date": "2026-05-11"
+    },
+    "53064": {
+      "stock_code": "5306",
+      "company": "桂盟",
+      "conv_price": 130.5,
+      "maturity": "2026-11-08",
+      "issue_date": "2023-11-08"
+    },
+    "53095": {
+      "stock_code": "5309",
+      "company": "系統電",
+      "conv_price": 39.7,
+      "maturity": "2026-08-08",
+      "issue_date": "2023-08-08"
+    },
+    "53096": {
+      "stock_code": "5309",
+      "company": "系統電",
+      "conv_price": 63.5,
+      "maturity": "2030-12-12",
+      "issue_date": "2025-12-12"
+    },
+    "53097": {
+      "stock_code": "5309",
+      "company": "系統電",
+      "conv_price": 55.0,
+      "maturity": "2028-12-15",
+      "issue_date": "2025-12-15"
+    },
+    "53211": {
+      "stock_code": "5321",
+      "company": "美而快",
+      "conv_price": 92.0,
+      "maturity": "2027-03-04",
+      "issue_date": "2024-03-04"
+    },
+    "53887": {
+      "stock_code": "5388",
+      "company": "中磊",
+      "conv_price": 145.0,
+      "maturity": "2028-12-06",
+      "issue_date": "2023-12-06"
+    },
+    "54342": {
+      "stock_code": "5434",
+      "company": "崇越",
+      "conv_price": 200.0,
+      "maturity": "2026-06-29",
+      "issue_date": "2023-06-29"
+    },
+    "54391": {
+      "stock_code": "5439",
+      "company": "高技",
+      "conv_price": 300.0,
+      "maturity": "2030-09-09",
+      "issue_date": "2025-09-09"
+    },
+    "54501": {
+      "stock_code": "5450",
+      "company": "南良",
+      "conv_price": 18.8,
+      "maturity": "2028-03-21",
+      "issue_date": "2023-03-21"
+    },
+    "54573": {
+      "stock_code": "5457",
+      "company": "宣德",
+      "conv_price": 69.5,
+      "maturity": "2027-03-06",
+      "issue_date": "2024-03-06"
+    },
+    "54642": {
+      "stock_code": "5464",
+      "company": "霖宏",
+      "conv_price": 33.4,
+      "maturity": "2029-05-25",
+      "issue_date": "2026-05-25"
+    },
+    "55344": {
+      "stock_code": "5534",
+      "company": "長虹",
+      "conv_price": 80.0,
+      "maturity": "2031-03-11",
+      "issue_date": "2026-03-11"
+    },
+    "56086": {
+      "stock_code": "5608",
+      "company": "四維航",
+      "conv_price": 23.8,
+      "maturity": "2026-06-21",
+      "issue_date": "2023-06-21"
+    },
+    "56087": {
+      "stock_code": "5608",
+      "company": "四維航",
+      "conv_price": 19.3,
+      "maturity": "2027-12-17",
+      "issue_date": "2024-12-17"
+    },
+    "60152": {
+      "stock_code": "6015",
+      "company": "宏遠證",
+      "conv_price": 10.92,
+      "maturity": "2029-01-05",
+      "issue_date": "2024-01-05"
+    },
+    "61011": {
+      "stock_code": "6101",
+      "company": "寬魚國際",
+      "conv_price": 36.9,
+      "maturity": "2029-01-29",
+      "issue_date": "2026-01-29"
+    },
+    "61012": {
+      "stock_code": "6101",
+      "company": "寬魚國際",
+      "conv_price": 38.9,
+      "maturity": "2029-01-30",
+      "issue_date": "2026-01-30"
+    },
+    "61041": {
+      "stock_code": "6104",
+      "company": "創惟",
+      "conv_price": 132.0,
+      "maturity": "2027-08-26",
+      "issue_date": "2022-08-26"
+    },
+    "61112": {
+      "stock_code": "6111",
+      "company": "大宇資",
+      "conv_price": 67.0,
+      "maturity": "2027-09-10",
+      "issue_date": "2024-09-10"
+    },
+    "61171": {
+      "stock_code": "6117",
+      "company": "迎廣",
+      "conv_price": 84.0,
+      "maturity": "2027-05-27",
+      "issue_date": "2024-05-27"
+    },
+    "61172": {
+      "stock_code": "6117",
+      "company": "迎廣",
+      "conv_price": 79.3,
+      "maturity": "2028-05-28",
+      "issue_date": "2025-05-28"
+    },
+    "61255": {
+      "stock_code": "6125",
+      "company": "廣運",
+      "conv_price": 114.0,
+      "maturity": "2027-06-21",
+      "issue_date": "2024-06-21"
+    },
+    "61263": {
+      "stock_code": "6126",
+      "company": "信音",
+      "conv_price": 28.5,
+      "maturity": "2026-11-30",
+      "issue_date": "2023-11-30"
+    },
+    "61506": {
+      "stock_code": "6150",
+      "company": "撼訊",
+      "conv_price": 90.2,
+      "maturity": "2027-03-07",
+      "issue_date": "2024-03-07"
+    },
+    "61565": {
+      "stock_code": "6156",
+      "company": "松上",
+      "conv_price": 30.1,
+      "maturity": "2028-06-25",
+      "issue_date": "2025-06-25"
+    },
+    "61635": {
+      "stock_code": "6163",
+      "company": "華電網",
+      "conv_price": 25.02,
+      "maturity": "2028-10-16",
+      "issue_date": "2025-10-16"
+    },
+    "61777": {
+      "stock_code": "6177",
+      "company": "達麗",
+      "conv_price": 52.3,
+      "maturity": "2028-06-25",
+      "issue_date": "2025-06-25"
+    },
+    "61793": {
+      "stock_code": "6179",
+      "company": "亞通",
+      "conv_price": 37.5,
+      "maturity": "2026-07-25",
+      "issue_date": "2023-07-25"
+    },
+    "61794": {
+      "stock_code": "6179",
+      "company": "亞通",
+      "conv_price": 30.2,
+      "maturity": "2027-08-28",
+      "issue_date": "2024-08-28"
+    },
+    "61827": {
+      "stock_code": "6182",
+      "company": "合晶",
+      "conv_price": 70.0,
+      "maturity": "2026-07-27",
+      "issue_date": "2021-07-27"
+    },
+    "61828": {
+      "stock_code": "6182",
+      "company": "合晶",
+      "conv_price": 33.8,
+      "maturity": "2029-09-27",
+      "issue_date": "2024-09-27"
+    },
+    "61843": {
+      "stock_code": "6184",
+      "company": "大豐電",
+      "conv_price": 55.5,
+      "maturity": "2027-03-06",
+      "issue_date": "2024-03-06"
+    },
+    "61876": {
+      "stock_code": "6187",
+      "company": "萬潤",
+      "conv_price": 1150.0,
+      "maturity": "2029-07-02",
+      "issue_date": "2026-07-02"
+    },
+    "61894": {
+      "stock_code": "6189",
+      "company": "豐藝",
+      "conv_price": 56.65,
+      "maturity": "2028-11-10",
+      "issue_date": "2023-11-10"
+    },
+    "61907": {
+      "stock_code": "6190",
+      "company": "萬泰科",
+      "conv_price": 41.7,
+      "maturity": "2028-11-06",
+      "issue_date": "2025-11-06"
+    },
+    "61973": {
+      "stock_code": "6197",
+      "company": "佳必琪",
+      "conv_price": 160.0,
+      "maturity": "2027-10-15",
+      "issue_date": "2024-10-15"
+    },
+    "61993": {
+      "stock_code": "6199",
+      "company": "天品",
+      "conv_price": 104.6,
+      "maturity": "2029-01-20",
+      "issue_date": "2026-01-20"
+    },
+    "61994": {
+      "stock_code": "6199",
+      "company": "天品",
+      "conv_price": 114.8,
+      "maturity": "2029-01-21",
+      "issue_date": "2026-01-21"
+    },
+    "62075": {
+      "stock_code": "6207",
+      "company": "雷科",
+      "conv_price": 52.1,
+      "maturity": "2028-08-26",
+      "issue_date": "2025-08-26"
+    },
+    "62076": {
+      "stock_code": "6207",
+      "company": "雷科",
+      "conv_price": 50.6,
+      "maturity": "2028-09-05",
+      "issue_date": "2025-09-05"
+    },
+    "62093": {
+      "stock_code": "6209",
+      "company": "今國光",
+      "conv_price": 38.6,
+      "maturity": "2028-10-23",
+      "issue_date": "2025-10-23"
+    },
+    "62194": {
+      "stock_code": "6219",
+      "company": "富旺",
+      "conv_price": 21.17,
+      "maturity": "2028-10-16",
+      "issue_date": "2025-10-16"
+    },
+    "622010": {
+      "stock_code": "6220",
+      "company": "岳豐",
+      "conv_price": 33.0,
+      "maturity": "2029-06-10",
+      "issue_date": "2026-06-10"
+    },
+    "62236": {
+      "stock_code": "6223",
+      "company": "旺矽",
+      "conv_price": 6223.0,
+      "maturity": "2031-06-15",
+      "issue_date": "2026-06-15"
+    },
+    "62433": {
+      "stock_code": "6243",
+      "company": "迅杰",
+      "conv_price": 65.8,
+      "maturity": "2027-06-25",
+      "issue_date": "2024-06-25"
+    },
+    "62695": {
+      "stock_code": "6269",
+      "company": "台郡",
+      "conv_price": 93.0,
+      "maturity": "2027-08-02",
+      "issue_date": "2024-08-02"
+    },
+    "62696": {
+      "stock_code": "6269",
+      "company": "台郡",
+      "conv_price": 101.0,
+      "maturity": "2027-08-02",
+      "issue_date": "2024-08-02"
+    },
+    "62745": {
+      "stock_code": "6274",
+      "company": "台燿",
+      "conv_price": 386.0,
+      "maturity": "2030-11-13",
+      "issue_date": "2025-11-13"
+    },
+    "62756": {
+      "stock_code": "6275",
+      "company": "元山",
+      "conv_price": 30.0,
+      "maturity": "2026-09-30",
+      "issue_date": "2021-09-30"
+    },
+    "62822": {
+      "stock_code": "6282",
+      "company": "康舒",
+      "conv_price": 50.0,
+      "maturity": "2028-06-13",
+      "issue_date": "2023-06-13"
+    },
+    "62843": {
+      "stock_code": "6284",
+      "company": "佳邦",
+      "conv_price": 92.0,
+      "maturity": "2026-12-14",
+      "issue_date": "2023-12-14"
+    },
+    "629010": {
+      "stock_code": "6290",
+      "company": "良維",
+      "conv_price": 80.1,
+      "maturity": "2028-05-13",
+      "issue_date": "2025-05-13"
+    },
+    "64145": {
+      "stock_code": "6414",
+      "company": "樺漢",
+      "conv_price": 295.0,
+      "maturity": "2026-08-16",
+      "issue_date": "2023-08-16"
+    },
+    "64251": {
+      "stock_code": "6425",
+      "company": "易發",
+      "conv_price": 61.0,
+      "maturity": "2027-10-15",
+      "issue_date": "2024-10-15"
+    },
+    "64324": {
+      "stock_code": "6432",
+      "company": "今展科",
+      "conv_price": 33.84,
+      "maturity": "2027-08-16",
+      "issue_date": "2024-08-16"
+    },
+    "64422": {
+      "stock_code": "6442",
+      "company": "光聖",
+      "conv_price": 1103.5,
+      "maturity": "2028-12-01",
+      "issue_date": "2025-12-01"
+    },
+    "64423": {
+      "stock_code": "6442",
+      "company": "光聖",
+      "conv_price": 1065.9,
+      "maturity": "2028-12-11",
+      "issue_date": "2025-12-11"
+    },
+    "64512": {
+      "stock_code": "6451",
+      "company": "訊芯-KY",
+      "conv_price": 241.2,
+      "maturity": "2028-02-27",
+      "issue_date": "2025-02-27"
+    },
+    "64693": {
+      "stock_code": "6469",
+      "company": "大樹",
+      "conv_price": 149.74,
+      "maturity": "2028-07-28",
+      "issue_date": "2025-07-28"
+    },
+    "64724": {
+      "stock_code": "6472",
+      "company": "保瑞",
+      "conv_price": 500.0,
+      "maturity": "2031-04-01",
+      "issue_date": "2026-04-01"
+    },
+    "64725": {
+      "stock_code": "6472",
+      "company": "保瑞",
+      "conv_price": 485.0,
+      "maturity": "2031-04-15",
+      "issue_date": "2026-04-15"
+    },
+    "64773": {
+      "stock_code": "6477",
+      "company": "安集",
+      "conv_price": 45.2,
+      "maturity": "2026-08-04",
+      "issue_date": "2021-08-04"
+    },
+    "64774": {
+      "stock_code": "6477",
+      "company": "安集",
+      "conv_price": 53.9,
+      "maturity": "2027-07-21",
+      "issue_date": "2022-07-21"
+    },
+    "64775": {
+      "stock_code": "6477",
+      "company": "安集",
+      "conv_price": 44.3,
+      "maturity": "2028-10-09",
+      "issue_date": "2025-10-09"
+    },
+    "65096": {
+      "stock_code": "6509",
+      "company": "聚和",
+      "conv_price": 41.5,
+      "maturity": "2027-07-03",
+      "issue_date": "2024-07-03"
+    },
+    "65101": {
+      "stock_code": "6510",
+      "company": "精測",
+      "conv_price": 2016.8,
+      "maturity": "2029-01-05",
+      "issue_date": "2026-01-05"
+    },
+    "65152": {
+      "stock_code": "6515",
+      "company": "穎崴",
+      "conv_price": 3540.4,
+      "maturity": "2029-02-05",
+      "issue_date": "2026-02-05"
+    },
+    "65331": {
+      "stock_code": "6533",
+      "company": "晶心科",
+      "conv_price": 308.0,
+      "maturity": "2028-09-08",
+      "issue_date": "2025-09-08"
+    },
+    "65381": {
+      "stock_code": "6538",
+      "company": "倉和",
+      "conv_price": 104.4,
+      "maturity": "2030-06-26",
+      "issue_date": "2025-06-26"
+    },
+    "65461": {
+      "stock_code": "6546",
+      "company": "正基",
+      "conv_price": 158.8,
+      "maturity": "2027-06-05",
+      "issue_date": "2024-06-05"
+    },
+    "65462": {
+      "stock_code": "6546",
+      "company": "正基",
+      "conv_price": 88.5,
+      "maturity": "2029-06-09",
+      "issue_date": "2026-06-09"
+    },
+    "65472": {
+      "stock_code": "6547",
+      "company": "高端疫苗",
+      "conv_price": 37.0,
+      "maturity": "2029-03-19",
+      "issue_date": "2026-03-19"
+    },
+    "65521": {
+      "stock_code": "6552",
+      "company": "易華電",
+      "conv_price": 63.5,
+      "maturity": "2026-10-25",
+      "issue_date": "2021-10-25"
+    },
+    "65761": {
+      "stock_code": "6576",
+      "company": "逸達",
+      "conv_price": 84.3,
+      "maturity": "2029-03-25",
+      "issue_date": "2026-03-25"
+    },
+    "65841": {
+      "stock_code": "6584",
+      "company": "南俊國際",
+      "conv_price": 178.8,
+      "maturity": "2027-10-29",
+      "issue_date": "2024-10-29"
+    },
+    "65842": {
+      "stock_code": "6584",
+      "company": "南俊國際",
+      "conv_price": 193.0,
+      "maturity": "2027-10-30",
+      "issue_date": "2024-10-30"
+    },
+    "65851": {
+      "stock_code": "6585",
+      "company": "鼎基",
+      "conv_price": 120.9,
+      "maturity": "2026-10-26",
+      "issue_date": "2023-10-26"
+    },
+    "65852": {
+      "stock_code": "6585",
+      "company": "鼎基",
+      "conv_price": 120.6,
+      "maturity": "2026-10-27",
+      "issue_date": "2023-10-27"
+    },
+    "65914": {
+      "stock_code": "6591",
+      "company": "動力-KY",
+      "conv_price": 79.79,
+      "maturity": "2028-08-27",
+      "issue_date": "2025-08-27"
+    },
+    "66034": {
+      "stock_code": "6603",
+      "company": "富強鑫",
+      "conv_price": 26.63,
+      "maturity": "2029-05-04",
+      "issue_date": "2026-05-04"
+    },
+    "66163": {
+      "stock_code": "6616",
+      "company": "特昇-KY",
+      "conv_price": 14.8,
+      "maturity": "2028-09-20",
+      "issue_date": "2023-09-20"
+    },
+    "66241": {
+      "stock_code": "6624",
+      "company": "萬年清",
+      "conv_price": 42.2,
+      "maturity": "2029-07-05",
+      "issue_date": "2024-07-05"
+    },
+    "66292": {
+      "stock_code": "6629",
+      "company": "泰金-KY",
+      "conv_price": 135.0,
+      "maturity": "2027-09-13",
+      "issue_date": "2024-09-13"
+    },
+    "66451": {
+      "stock_code": "6645",
+      "company": "金萬林-創",
+      "conv_price": 28.31,
+      "maturity": "2027-12-04",
+      "issue_date": "2024-12-04"
+    },
+    "66642": {
+      "stock_code": "6664",
+      "company": "群翊",
+      "conv_price": 306.0,
+      "maturity": "2027-11-19",
+      "issue_date": "2024-11-19"
+    },
+    "66702": {
+      "stock_code": "6670",
+      "company": "復盛應用",
+      "conv_price": 270.0,
+      "maturity": "2028-12-26",
+      "issue_date": "2025-12-26"
+    },
+    "66721": {
+      "stock_code": "6672",
+      "company": "騰輝電子-KY",
+      "conv_price": 96.0,
+      "maturity": "2031-01-22",
+      "issue_date": "2026-01-22"
+    },
+    "66722": {
+      "stock_code": "6672",
+      "company": "騰輝電子-KY",
+      "conv_price": 93.0,
+      "maturity": "2031-02-03",
+      "issue_date": "2026-02-03"
+    },
+    "66801": {
+      "stock_code": "6680",
+      "company": "鑫創電子",
+      "conv_price": 76.2,
+      "maturity": "2029-09-02",
+      "issue_date": "2024-09-02"
+    },
+    "67062": {
+      "stock_code": "6706",
+      "company": "惠特",
+      "conv_price": 178.8,
+      "maturity": "2027-10-25",
+      "issue_date": "2024-10-25"
+    },
+    "67531": {
+      "stock_code": "6753",
+      "company": "龍德造船",
+      "conv_price": 125.0,
+      "maturity": "2027-06-25",
+      "issue_date": "2024-06-25"
+    },
+    "67681": {
+      "stock_code": "6768",
+      "company": "志強-KY",
+      "conv_price": 101.0,
+      "maturity": "2027-10-31",
+      "issue_date": "2024-10-31"
+    },
+    "67711": {
+      "stock_code": "6771",
+      "company": "平和環保-創",
+      "conv_price": 55.0,
+      "maturity": "2028-05-08",
+      "issue_date": "2025-05-08"
+    },
+    "67961": {
+      "stock_code": "6796",
+      "company": "晉弘",
+      "conv_price": 123.0,
+      "maturity": "2026-08-25",
+      "issue_date": "2023-08-25"
+    },
+    "67962": {
+      "stock_code": "6796",
+      "company": "晉弘",
+      "conv_price": 101.6,
+      "maturity": "2028-12-22",
+      "issue_date": "2025-12-22"
+    },
+    "68032": {
+      "stock_code": "6803",
+      "company": "崑鼎",
+      "conv_price": 324.0,
+      "maturity": "2031-05-21",
+      "issue_date": "2026-05-21"
+    },
+    "68041": {
+      "stock_code": "6804",
+      "company": "明係",
+      "conv_price": 71.2,
+      "maturity": "2026-06-19",
+      "issue_date": "2023-06-19"
+    },
+    "68061": {
+      "stock_code": "6806",
+      "company": "森崴能源",
+      "conv_price": 114.0,
+      "maturity": "2026-11-22",
+      "issue_date": "2023-11-22"
+    },
+    "68211": {
+      "stock_code": "6821",
+      "company": "聯寶",
+      "conv_price": 43.06,
+      "maturity": "2028-08-15",
+      "issue_date": "2025-08-15"
+    },
+    "68301": {
+      "stock_code": "6830",
+      "company": "汎銓",
+      "conv_price": 150.0,
+      "maturity": "2027-08-15",
+      "issue_date": "2024-08-15"
+    },
+    "68351": {
+      "stock_code": "6835",
+      "company": "圓裕",
+      "conv_price": 50.8,
+      "maturity": "2027-11-01",
+      "issue_date": "2024-11-01"
+    },
+    "68401": {
+      "stock_code": "6840",
+      "company": "東研信超",
+      "conv_price": 73.4,
+      "maturity": "2027-05-27",
+      "issue_date": "2024-05-27"
+    },
+    "68431": {
+      "stock_code": "6843",
+      "company": "進典",
+      "conv_price": 61.4,
+      "maturity": "2028-08-04",
+      "issue_date": "2025-08-04"
+    },
+    "68461": {
+      "stock_code": "6846",
+      "company": "綠茵",
+      "conv_price": 83.8,
+      "maturity": "2030-03-13",
+      "issue_date": "2025-03-13"
+    },
+    "68462": {
+      "stock_code": "6846",
+      "company": "綠茵",
+      "conv_price": 81.3,
+      "maturity": "2030-03-25",
+      "issue_date": "2025-03-25"
+    },
+    "68541": {
+      "stock_code": "6854",
+      "company": "錼創科技-KY創",
+      "conv_price": 250.9,
+      "maturity": "2028-02-27",
+      "issue_date": "2025-02-27"
+    },
+    "68621": {
+      "stock_code": "6862",
+      "company": "三集瑞-KY",
+      "conv_price": 197.0,
+      "maturity": "2029-03-13",
+      "issue_date": "2026-03-13"
+    },
+    "68631": {
+      "stock_code": "6863",
+      "company": "永道-KY",
+      "conv_price": 305.5,
+      "maturity": "2027-10-15",
+      "issue_date": "2024-10-15"
+    },
+    "68701": {
+      "stock_code": "6870",
+      "company": "騰雲",
+      "conv_price": 248.5,
+      "maturity": "2029-12-05",
+      "issue_date": "2024-12-05"
+    },
+    "68702": {
+      "stock_code": "6870",
+      "company": "騰雲",
+      "conv_price": 236.6,
+      "maturity": "2029-12-05",
+      "issue_date": "2024-12-05"
+    },
+    "68731": {
+      "stock_code": "6873",
+      "company": "泓德能源-創",
+      "conv_price": 120.0,
+      "maturity": "2026-09-28",
+      "issue_date": "2023-09-28"
+    },
+    "68732": {
+      "stock_code": "6873",
+      "company": "泓德能源",
+      "conv_price": 246.0,
+      "maturity": "2030-05-29",
+      "issue_date": "2025-05-29"
+    },
+    "68741": {
+      "stock_code": "6874",
+      "company": "倍力",
+      "conv_price": 108.0,
+      "maturity": "2027-11-04",
+      "issue_date": "2024-11-04"
+    },
+    "68901": {
+      "stock_code": "6890",
+      "company": "來億-KY",
+      "conv_price": 246.4,
+      "maturity": "2028-11-28",
+      "issue_date": "2025-11-28"
+    },
+    "68902": {
+      "stock_code": "6890",
+      "company": "來億-KY",
+      "conv_price": 245.2,
+      "maturity": "2028-12-10",
+      "issue_date": "2025-12-10"
+    },
+    "68941": {
+      "stock_code": "6894",
+      "company": "衛司特",
+      "conv_price": 262.4,
+      "maturity": "2029-03-09",
+      "issue_date": "2026-03-09"
+    },
+    "69041": {
+      "stock_code": "6904",
+      "company": "伯鑫",
+      "conv_price": 130.0,
+      "maturity": "2028-12-26",
+      "issue_date": "2025-12-26"
+    },
+    "69131": {
+      "stock_code": "6913",
+      "company": "鴻呈",
+      "conv_price": 126.0,
+      "maturity": "2029-03-19",
+      "issue_date": "2026-03-19"
+    },
+    "69571": {
+      "stock_code": "6957",
+      "company": "裕慶-KY",
+      "conv_price": 190.0,
+      "maturity": "2028-10-02",
+      "issue_date": "2025-10-02"
+    },
+    "69821": {
+      "stock_code": "6982",
+      "company": "大井泵浦",
+      "conv_price": 63.6,
+      "maturity": "2028-07-23",
+      "issue_date": "2025-07-23"
+    },
+    "69822": {
+      "stock_code": "6982",
+      "company": "大井泵浦",
+      "conv_price": 61.8,
+      "maturity": "2028-08-04",
+      "issue_date": "2025-08-04"
+    },
+    "74022": {
+      "stock_code": "7402",
+      "company": "邑錡",
+      "conv_price": 97.6,
+      "maturity": "2028-09-02",
+      "issue_date": "2025-09-02"
+    },
+    "75561": {
+      "stock_code": "7556",
+      "company": "意德士科技",
+      "conv_price": 182.0,
+      "maturity": "2028-08-12",
+      "issue_date": "2025-08-12"
+    },
+    "75562": {
+      "stock_code": "7556",
+      "company": "意德士科技",
+      "conv_price": 178.5,
+      "maturity": "2028-08-15",
+      "issue_date": "2025-08-15"
+    },
+    "76101": {
+      "stock_code": "7610",
+      "company": "聯友金屬-創",
+      "conv_price": 795.0,
+      "maturity": "2029-05-20",
+      "issue_date": "2026-05-20"
+    },
+    "77131": {
+      "stock_code": "7713",
+      "company": "威力德生醫",
+      "conv_price": 73.9,
+      "maturity": "2028-10-20",
+      "issue_date": "2025-10-20"
+    },
+    "80212": {
+      "stock_code": "8021",
+      "company": "尖點",
+      "conv_price": 203.5,
+      "maturity": "2031-01-20",
+      "issue_date": "2026-01-20"
+    },
+    "80273": {
+      "stock_code": "8027",
+      "company": "鈦昇",
+      "conv_price": 67.6,
+      "maturity": "2027-07-13",
+      "issue_date": "2022-07-13"
+    },
+    "80282": {
+      "stock_code": "8028",
+      "company": "昇陽半導體",
+      "conv_price": 140.3,
+      "maturity": "2030-01-22",
+      "issue_date": "2025-01-22"
+    },
+    "80426": {
+      "stock_code": "8042",
+      "company": "金山電",
+      "conv_price": 60.0,
+      "maturity": "2028-12-16",
+      "issue_date": "2025-12-16"
+    },
+    "80506": {
+      "stock_code": "8050",
+      "company": "廣積",
+      "conv_price": 75.0,
+      "maturity": "2027-11-22",
+      "issue_date": "2022-11-22"
+    },
+    "80746": {
+      "stock_code": "8074",
+      "company": "鉅橡",
+      "conv_price": 79.2,
+      "maturity": "2029-05-14",
+      "issue_date": "2026-05-14"
+    },
+    "80872": {
+      "stock_code": "8087",
+      "company": "麗升能源",
+      "conv_price": 40.4,
+      "maturity": "2028-05-02",
+      "issue_date": "2025-05-02"
+    },
+    "80914": {
+      "stock_code": "8091",
+      "company": "翔名",
+      "conv_price": 136.0,
+      "maturity": "2027-08-15",
+      "issue_date": "2024-08-15"
+    },
+    "80924": {
+      "stock_code": "8092",
+      "company": "建暐",
+      "conv_price": 14.5,
+      "maturity": "2027-03-11",
+      "issue_date": "2024-03-11"
+    },
+    "81042": {
+      "stock_code": "8104",
+      "company": "錸寶",
+      "conv_price": 80.5,
+      "maturity": "2027-01-11",
+      "issue_date": "2022-01-11"
+    },
+    "81114": {
+      "stock_code": "8111",
+      "company": "立碁",
+      "conv_price": 75.1,
+      "maturity": "2029-04-28",
+      "issue_date": "2026-04-28"
+    },
+    "811210": {
+      "stock_code": "8112",
+      "company": "至上",
+      "conv_price": 82.7,
+      "maturity": "2029-05-24",
+      "issue_date": "2024-05-24"
+    },
+    "81473": {
+      "stock_code": "8147",
+      "company": "正淩",
+      "conv_price": 134.6,
+      "maturity": "2027-10-03",
+      "issue_date": "2024-10-03"
+    },
+    "81551": {
+      "stock_code": "8155",
+      "company": "博智",
+      "conv_price": 126.8,
+      "maturity": "2030-01-10",
+      "issue_date": "2025-01-10"
+    },
+    "81714": {
+      "stock_code": "8171",
+      "company": "天宇",
+      "conv_price": 33.8,
+      "maturity": "2027-11-12",
+      "issue_date": "2024-11-12"
+    },
+    "81715": {
+      "stock_code": "8171",
+      "company": "天宇",
+      "conv_price": 35.9,
+      "maturity": "2027-11-14",
+      "issue_date": "2024-11-14"
+    },
+    "82102": {
+      "stock_code": "8210",
+      "company": "勤誠",
+      "conv_price": 1007.2,
+      "maturity": "2029-01-26",
+      "issue_date": "2026-01-26"
+    },
+    "82103": {
+      "stock_code": "8210",
+      "company": "勤誠",
+      "conv_price": 985.3,
+      "maturity": "2029-02-03",
+      "issue_date": "2026-02-03"
+    },
+    "82551": {
+      "stock_code": "8255",
+      "company": "朋程",
+      "conv_price": 210.0,
+      "maturity": "2026-08-09",
+      "issue_date": "2023-08-09"
+    },
+    "82711": {
+      "stock_code": "8271",
+      "company": "宇瞻",
+      "conv_price": 165.0,
+      "maturity": "2029-05-05",
+      "issue_date": "2026-05-05"
+    },
+    "82993": {
+      "stock_code": "8299",
+      "company": "群聯",
+      "conv_price": 2488.0,
+      "maturity": "2031-02-06",
+      "issue_date": "2026-02-06"
+    },
+    "83742": {
+      "stock_code": "8374",
+      "company": "羅昇",
+      "conv_price": 133.1,
+      "maturity": "2027-11-15",
+      "issue_date": "2024-11-15"
+    },
+    "84041": {
+      "stock_code": "8404",
+      "company": "百和興業-KY",
+      "conv_price": 26.8,
+      "maturity": "2028-10-03",
+      "issue_date": "2025-10-03"
+    },
+    "84113": {
+      "stock_code": "8411",
+      "company": "福貞-KY",
+      "conv_price": 13.3,
+      "maturity": "2030-08-01",
+      "issue_date": "2025-08-01"
+    },
+    "84221": {
+      "stock_code": "8422",
+      "company": "可寧衛",
+      "conv_price": 170.0,
+      "maturity": "2027-11-22",
+      "issue_date": "2022-11-22"
+    },
+    "84222": {
+      "stock_code": "8422",
+      "company": "可寧衛",
+      "conv_price": 200.0,
+      "maturity": "2030-04-07",
+      "issue_date": "2025-04-07"
+    },
+    "84312": {
+      "stock_code": "8431",
+      "company": "匯鑽科",
+      "conv_price": 68.0,
+      "maturity": "2029-01-05",
+      "issue_date": "2026-01-05"
+    },
+    "84332": {
+      "stock_code": "8433",
+      "company": "弘帆",
+      "conv_price": 102.0,
+      "maturity": "2027-05-24",
+      "issue_date": "2024-05-24"
+    },
+    "84333": {
+      "stock_code": "8433",
+      "company": "弘帆",
+      "conv_price": 106.1,
+      "maturity": "2027-05-27",
+      "issue_date": "2024-05-27"
+    },
+    "84422": {
+      "stock_code": "8442",
+      "company": "威宏-KY",
+      "conv_price": 84.3,
+      "maturity": "2026-10-19",
+      "issue_date": "2023-10-19"
+    },
+    "84624": {
+      "stock_code": "8462",
+      "company": "柏文",
+      "conv_price": 152.2,
+      "maturity": "2029-05-08",
+      "issue_date": "2026-05-08"
+    },
+    "84662": {
+      "stock_code": "8466",
+      "company": "美吉吉-KY",
+      "conv_price": 52.8,
+      "maturity": "2026-07-26",
+      "issue_date": "2023-07-26"
+    },
+    "84672": {
+      "stock_code": "8467",
+      "company": "波力-KY",
+      "conv_price": 193.6,
+      "maturity": "2027-05-30",
+      "issue_date": "2024-05-30"
+    },
+    "84673": {
+      "stock_code": "8467",
+      "company": "波力-KY",
+      "conv_price": 236.1,
+      "maturity": "2027-05-31",
+      "issue_date": "2024-05-31"
+    },
+    "84732": {
+      "stock_code": "8473",
+      "company": "山林水",
+      "conv_price": 40.0,
+      "maturity": "2026-09-28",
+      "issue_date": "2021-09-28"
+    },
+    "84762": {
+      "stock_code": "8476",
+      "company": "台境*",
+      "conv_price": 19.7,
+      "maturity": "2029-04-21",
+      "issue_date": "2026-04-21"
+    },
+    "84781": {
+      "stock_code": "8478",
+      "company": "東哥遊艇",
+      "conv_price": 392.2,
+      "maturity": "2027-07-15",
+      "issue_date": "2024-07-15"
+    },
+    "84881": {
+      "stock_code": "8488",
+      "company": "吉源-KY",
+      "conv_price": 18.5,
+      "maturity": "2026-12-19",
+      "issue_date": "2023-12-19"
+    },
+    "84891": {
+      "stock_code": "8489",
+      "company": "三貝德",
+      "conv_price": 28.8,
+      "maturity": "2027-12-09",
+      "issue_date": "2024-12-09"
+    },
+    "89277": {
+      "stock_code": "8927",
+      "company": "北基",
+      "conv_price": 68.27,
+      "maturity": "2027-08-16",
+      "issue_date": "2024-08-16"
+    },
+    "89278": {
+      "stock_code": "8927",
+      "company": "北基",
+      "conv_price": 63.73,
+      "maturity": "2027-08-21",
+      "issue_date": "2024-08-21"
+    },
+    "89964": {
+      "stock_code": "8996",
+      "company": "高力",
+      "conv_price": 240.0,
+      "maturity": "2028-12-06",
+      "issue_date": "2023-12-06"
+    },
+    "98026": {
+      "stock_code": "9802",
+      "company": "鈺齊-KY",
+      "conv_price": 112.9,
+      "maturity": "2027-11-15",
+      "issue_date": "2024-11-15"
+    },
+    "99063": {
+      "stock_code": "9906",
+      "company": "欣巴巴",
+      "conv_price": 111.8,
+      "maturity": "2028-02-27",
+      "issue_date": "2025-02-27"
+    },
+    "99332": {
+      "stock_code": "9933",
+      "company": "中鼎",
+      "conv_price": 51.8,
+      "maturity": "2029-07-23",
+      "issue_date": "2024-07-23"
+    },
+    "99353": {
+      "stock_code": "9935",
+      "company": "慶豐富",
+      "conv_price": 34.9,
+      "maturity": "2027-10-14",
+      "issue_date": "2024-10-14"
+    },
+    "99392": {
+      "stock_code": "9939",
+      "company": "宏全",
+      "conv_price": 168.4,
+      "maturity": "2029-10-29",
+      "issue_date": "2024-10-29"
+    },
+    "99412": {
+      "stock_code": "9941",
+      "company": "裕融",
+      "conv_price": 204.6,
+      "maturity": "2028-11-20",
+      "issue_date": "2023-11-20"
+    },
+    "99587": {
+      "stock_code": "9958",
+      "company": "世紀鋼",
+      "conv_price": 247.0,
+      "maturity": "2027-10-28",
+      "issue_date": "2024-10-28"
+    },
+    "99588": {
+      "stock_code": "9958",
+      "company": "世紀鋼",
+      "conv_price": 238.0,
+      "maturity": "2027-11-08",
+      "issue_date": "2024-11-08"
+    }
+  }
+}
