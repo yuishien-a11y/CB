@@ -1,0 +1,145 @@
+name: 每日更新可轉債基本資料
+
+on:
+  schedule:
+    - cron: '30 7 * * 1-5'  # 台灣時間 15:30（UTC+8），週一到週五
+  workflow_dispatch:          # 允許手動觸發
+
+jobs:
+  fetch-cb-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 下載可轉債基本資料 CSV
+        run: |
+          curl -L \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+            -H "Referer: https://data.gov.tw/dataset/11406" \
+            -H "Accept: text/html,application/xhtml+xml,*/*" \
+            --compressed \
+            -o ISSBD5_raw.csv \
+            "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
+          echo "下載完成，檔案大小："
+          wc -c ISSBD5_raw.csv
+
+      - name: 安裝 Python 套件
+        run: pip install chardet
+
+      - name: 解析 CSV 產生 conv_price.json
+        run: |
+          python3 << 'PYEOF'
+          import csv, json, chardet, re
+          from datetime import datetime
+
+          # 偵測編碼
+          with open('ISSBD5_raw.csv', 'rb') as f:
+              raw = f.read()
+          detected = chardet.detect(raw)
+          encoding = detected.get('encoding', 'big5')
+          print(f"偵測編碼: {encoding}")
+
+          # 解析 CSV
+          text = raw.decode(encoding, errors='replace')
+          lines = text.strip().split('\n')
+          
+          result = {}
+          header = None
+          
+          for i, line in enumerate(lines):
+            cols = [c.strip().strip('"') for c in line.split(',')]
+            if i == 0:
+                header = cols
+                print(f"欄位數: {len(header)}")
+                print(f"前10欄: {header[:10]}")
+                print(f"後10欄: {header[-10:]}")
+                continue
+            
+            if len(cols) < 10:
+                continue
+            
+            cb_code = cols[3].strip()
+            if not re.match(r'^\d{4,6}$', cb_code):
+                continue
+            
+            # 到期日 col[8]，格式 20291210
+            mat_raw = cols[8].strip()
+            maturity = ''
+            if len(mat_raw) == 8 and mat_raw.isdigit():
+                maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}"
+            
+            # 發行日 col[7]
+            issue_raw = cols[7].strip()
+            issue_date = ''
+            if len(issue_raw) == 8 and issue_raw.isdigit():
+                issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}"
+
+            # 公司代號 col[1]
+            stock_code = cols[1].strip()
+            
+            # 公司名稱 col[2]
+            company = cols[2].strip()
+
+            # 找轉換價：找header裡含「轉換」的欄位
+            conv_price = 0
+            conv_col_idx = -1
+            if header:
+                for idx, h in enumerate(header):
+                    if '轉換' in h and '價' in h and idx < len(cols):
+                        v = cols[idx].replace(',','').strip()
+                        try:
+                            conv_price = float(v)
+                            conv_col_idx = idx
+                            break
+                        except:
+                            pass
+            
+            # 若找不到，從後面找合理的小數
+            if conv_price == 0:
+                for idx in range(len(cols)-1, 19, -1):
+                    v = cols[idx].replace(',','').strip()
+                    if '.' in v:
+                        try:
+                            fv = float(v)
+                            if 0 < fv < 9999:
+                                conv_price = fv
+                                break
+                        except:
+                            pass
+
+            result[cb_code] = {
+                'stock_code': stock_code,
+                'company': company,
+                'conv_price': conv_price,
+                'maturity': maturity,
+                'issue_date': issue_date,
+            }
+          
+          output = {
+              'updated': datetime.now().strftime('%Y-%m-%d %H:%M'),
+              'count': len(result),
+              'data': result
+          }
+          
+          with open('conv_price.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+          
+          print(f"完成！共 {len(result)} 筆資料")
+          # 印出前3筆確認
+          for k, v in list(result.items())[:3]:
+              print(f"  {k}: {v}")
+          PYEOF
+
+      - name: 確認產生的 JSON
+        run: |
+          echo "JSON 前100字："
+          head -c 500 conv_price.json
+
+      - name: Commit & Push conv_price.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add conv_price.json
+          git diff --staged --quiet || git commit -m "chore: 每日更新可轉債轉換價資料 $(date +'%Y-%m-%d')"
+          git push
