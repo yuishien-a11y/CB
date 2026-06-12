@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-11 09:20",
-  "count": 384,
+  "updated": "2026-06-12 17:29",
+  "count": 381,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1325,13 +1325,6 @@
       "maturity": "2030-12-17",
       "issue_date": "2025-12-17"
     },
-    "47471": {
-      "stock_code": "4747",
-      "company": "強生製藥",
-      "conv_price": 72.55,
-      "maturity": "2026-06-12",
-      "issue_date": "2023-06-12"
-    },
     "47491": {
       "stock_code": "4749",
       "company": "新應材",
@@ -1682,13 +1675,6 @@
       "maturity": "2027-03-06",
       "issue_date": "2024-03-06"
     },
-    "61876": {
-      "stock_code": "6187",
-      "company": "萬潤",
-      "conv_price": 1150.0,
-      "maturity": "2029-07-02",
-      "issue_date": "2026-07-02"
-    },
     "61894": {
       "stock_code": "6189",
       "company": "豐藝",
@@ -1842,13 +1828,6 @@
       "conv_price": 33.84,
       "maturity": "2027-08-16",
       "issue_date": "2024-08-16"
-    },
-    "64422": {
-      "stock_code": "6442",
-      "company": "光聖",
-      "conv_price": 1103.5,
-      "maturity": "2028-12-01",
-      "issue_date": "2025-12-01"
     },
     "64423": {
       "stock_code": "6442",
