@@ -2676,5 +2676,46 @@
       "maturity": "2027-11-08",
       "issue_date": "2024-11-08"
     }
-  }
+  }import requests
+import json
+
+def fetch_all_stock_prices():
+    stock_prices = {}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+
+    # 1. 抓取上市股票 (TWSE)
+    try:
+        twse_url = 'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'
+        twse_data = requests.get(twse_url, headers=headers, timeout=10).json()
+        for item in twse_data:
+            if item.get('Code') and item.get('ClosingPrice'):
+                try:
+                    stock_prices[item['Code']] = float(item['ClosingPrice'].replace(',', ''))
+                except ValueError:
+                    pass
+    except Exception as e:
+        print(f"上市股價抓取失敗: {e}")
+
+    # 2. 抓取上櫃股票 (TPEx) - 使用最強的 Web API
+    try:
+        tpex_url = 'https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json'
+        tpex_data = requests.get(tpex_url, headers=headers, timeout=10).json()
+        for row in tpex_data.get('aaData', []):
+            code = str(row[0]).strip()
+            price_str = str(row[2]).replace(',', '')
+            if len(code) <= 5: # 確保是股票代號
+                try:
+                    stock_prices[code] = float(price_str)
+                except ValueError:
+                    pass
+    except Exception as e:
+        print(f"上櫃股價抓取失敗: {e}")
+
+    # 3. 儲存成 stock_price.json
+    with open('stock_price.json', 'w', encoding='utf-8') as f:
+        json.dump(stock_prices, f, ensure_ascii=False)
+    print(f"✅ 成功產出 stock_price.json，共 {len(stock_prices)} 筆股價資料")
+
+# 記得在你的主程式碼中呼叫它
+# fetch_all_stock_prices()
 }
