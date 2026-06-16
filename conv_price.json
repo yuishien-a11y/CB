@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 07:41",
+  "updated": "2026-06-16 08:05",
   "count": 382,
   "data": {
     "11011": {
@@ -7,7 +7,6 @@
       "company": "台泥",
       "conv_price": 36.5,
       "maturity": "2029-12-10",
-      "issue_date": "2024-12-10",
       "conv_ratio": null
     },
     "12561": {
@@ -15,7 +14,6 @@
       "company": "鮮活果汁-KY",
       "conv_price": 190.0,
       "maturity": "2028-10-08",
-      "issue_date": "2025-10-08",
       "conv_ratio": null
     },
     "13166": {
@@ -23,7 +21,6 @@
       "company": "上曜",
       "conv_price": 17.8,
       "maturity": "2027-12-27",
-      "issue_date": "2024-12-27",
       "conv_ratio": null
     },
     "13382": {
@@ -31,7 +28,6 @@
       "company": "廣華-KY",
       "conv_price": 39.4,
       "maturity": "2028-12-01",
-      "issue_date": "2023-12-01",
       "conv_ratio": null
     },
     "140201": {
@@ -39,7 +35,6 @@
       "company": "遠東新",
       "conv_price": 45.4,
       "maturity": "2029-08-08",
-      "issue_date": "2024-08-08",
       "conv_ratio": null
     },
     "140202": {
@@ -47,7 +42,6 @@
       "company": "遠東新",
       "conv_price": 33.7,
       "maturity": "2029-08-08",
-      "issue_date": "2024-08-08",
       "conv_ratio": null
     },
     "14363": {
@@ -55,7 +49,6 @@
       "company": "華友聯",
       "conv_price": 182.5,
       "maturity": "2027-08-27",
-      "issue_date": "2024-08-27",
       "conv_ratio": null
     },
     "14364": {
@@ -63,7 +56,6 @@
       "company": "華友聯",
       "conv_price": 140.3,
       "maturity": "2028-03-18",
-      "issue_date": "2025-03-18",
       "conv_ratio": null
     },
     "14381": {
@@ -71,7 +63,6 @@
       "company": "三地開發",
       "conv_price": 57.5,
       "maturity": "2029-12-19",
-      "issue_date": "2024-12-19",
       "conv_ratio": null
     },
     "14664": {
@@ -79,7 +70,6 @@
       "company": "聚隆",
       "conv_price": 18.8,
       "maturity": "2028-06-20",
-      "issue_date": "2025-06-20",
       "conv_ratio": null
     },
     "14722": {
@@ -87,7 +77,6 @@
       "company": "三洋實業",
       "conv_price": 102.0,
       "maturity": "2028-05-29",
-      "issue_date": "2025-05-29",
       "conv_ratio": null
     },
     "14723": {
@@ -95,7 +84,6 @@
       "company": "三洋實業",
       "conv_price": 105.0,
       "maturity": "2028-06-17",
-      "issue_date": "2025-06-17",
       "conv_ratio": null
     },
     "14743": {
@@ -103,7 +91,6 @@
       "company": "弘裕",
       "conv_price": 14.5,
       "maturity": "2028-03-31",
-      "issue_date": "2025-03-31",
       "conv_ratio": null
     },
     "15142": {
@@ -111,7 +98,6 @@
       "company": "亞力",
       "conv_price": 113.2,
       "maturity": "2030-01-13",
-      "issue_date": "2025-01-13",
       "conv_ratio": null
     },
     "15261": {
@@ -119,7 +105,6 @@
       "company": "日馳",
       "conv_price": 38.0,
       "maturity": "2026-09-19",
-      "issue_date": "2023-09-19",
       "conv_ratio": null
     },
     "15364": {
@@ -127,7 +112,6 @@
       "company": "和大",
       "conv_price": 72.26,
       "maturity": "2027-08-12",
-      "issue_date": "2024-08-12",
       "conv_ratio": null
     },
     "15601": {
@@ -135,7 +119,6 @@
       "company": "中砂",
       "conv_price": 292.1,
       "maturity": "2029-06-24",
-      "issue_date": "2024-06-24",
       "conv_ratio": null
     },
     "15864": {
@@ -143,7 +126,6 @@
       "company": "和勤",
       "conv_price": 33.39,
       "maturity": "2026-08-30",
-      "issue_date": "2023-08-30",
       "conv_ratio": null
     },
     "15865": {
@@ -151,7 +133,6 @@
       "company": "和勤",
       "conv_price": 32.74,
       "maturity": "2026-08-31",
-      "issue_date": "2023-08-31",
       "conv_ratio": null
     },
     "15894": {
@@ -159,7 +140,6 @@
       "company": "永冠-KY",
       "conv_price": 62.3,
       "maturity": "2028-02-20",
-      "issue_date": "2023-02-20",
       "conv_ratio": null
     },
     "15952": {
@@ -167,7 +147,6 @@
       "company": "川寶",
       "conv_price": 38.3,
       "maturity": "2029-09-02",
-      "issue_date": "2024-09-02",
       "conv_ratio": null
     },
     "15984": {
@@ -175,7 +154,6 @@
       "company": "岱宇",
       "conv_price": 33.6,
       "maturity": "2028-03-03",
-      "issue_date": "2025-03-03",
       "conv_ratio": null
     },
     "16095": {
@@ -183,7 +161,6 @@
       "company": "大亞",
       "conv_price": 53.1,
       "maturity": "2029-09-30",
-      "issue_date": "2024-09-30",
       "conv_ratio": null
     },
     "17172": {
@@ -191,7 +168,6 @@
       "company": "長興",
       "conv_price": 76.0,
       "maturity": "2031-06-08",
-      "issue_date": "2026-06-08",
       "conv_ratio": null
     },
     "17813": {
@@ -199,7 +175,6 @@
       "company": "合世",
       "conv_price": 18.0,
       "maturity": "2027-09-24",
-      "issue_date": "2024-09-24",
       "conv_ratio": null
     },
     "17863": {
@@ -207,7 +182,6 @@
       "company": "科妍",
       "conv_price": 116.5,
       "maturity": "2028-08-01",
-      "issue_date": "2025-08-01",
       "conv_ratio": null
     },
     "19094": {
@@ -215,7 +189,6 @@
       "company": "榮成",
       "conv_price": 26.2,
       "maturity": "2026-12-20",
-      "issue_date": "2021-12-20",
       "conv_ratio": null
     },
     "20344": {
@@ -223,7 +196,6 @@
       "company": "允強",
       "conv_price": 25.6,
       "maturity": "2029-10-02",
-      "issue_date": "2024-10-02",
       "conv_ratio": null
     },
     "20662": {
@@ -231,7 +203,6 @@
       "company": "世德",
       "conv_price": 101.0,
       "maturity": "2026-07-31",
-      "issue_date": "2023-07-31",
       "conv_ratio": null
     },
     "21043": {
@@ -239,7 +210,6 @@
       "company": "國際中橡",
       "conv_price": 21.2,
       "maturity": "2028-10-13",
-      "issue_date": "2023-10-13",
       "conv_ratio": null
     },
     "22013": {
@@ -247,7 +217,6 @@
       "company": "裕隆",
       "conv_price": 82.0,
       "maturity": "2028-05-25",
-      "issue_date": "2023-05-25",
       "conv_ratio": null
     },
     "22283": {
@@ -255,7 +224,6 @@
       "company": "劍麟",
       "conv_price": 95.51,
       "maturity": "2027-08-29",
-      "issue_date": "2024-08-29",
       "conv_ratio": null
     },
     "22331": {
@@ -263,7 +231,6 @@
       "company": "宇隆",
       "conv_price": 250.0,
       "maturity": "2029-01-23",
-      "issue_date": "2026-01-23",
       "conv_ratio": null
     },
     "22363": {
@@ -271,7 +238,6 @@
       "company": "百達-KY",
       "conv_price": 118.1,
       "maturity": "2031-02-10",
-      "issue_date": "2026-02-10",
       "conv_ratio": null
     },
     "22471": {
@@ -279,7 +245,6 @@
       "company": "汎德永業",
       "conv_price": 307.6,
       "maturity": "2028-06-26",
-      "issue_date": "2025-06-26",
       "conv_ratio": null
     },
     "22472": {
@@ -287,7 +252,6 @@
       "company": "汎德永業",
       "conv_price": 297.8,
       "maturity": "2028-06-30",
-      "issue_date": "2025-06-30",
       "conv_ratio": null
     },
     "23291": {
@@ -295,7 +259,6 @@
       "company": "華泰",
       "conv_price": 51.3,
       "maturity": "2029-03-18",
-      "issue_date": "2026-03-18",
       "conv_ratio": null
     },
     "23372": {
@@ -303,7 +266,6 @@
       "company": "旺宏",
       "conv_price": 23.0,
       "maturity": "2028-03-24",
-      "issue_date": "2025-03-24",
       "conv_ratio": null
     },
     "23383": {
@@ -311,7 +273,6 @@
       "company": "光罩",
       "conv_price": 88.8,
       "maturity": "2026-08-03",
-      "issue_date": "2021-08-03",
       "conv_ratio": null
     },
     "23511": {
@@ -319,7 +280,6 @@
       "company": "順德",
       "conv_price": 75.0,
       "maturity": "2028-06-17",
-      "issue_date": "2025-06-17",
       "conv_ratio": null
     },
     "23683": {
@@ -327,7 +287,6 @@
       "company": "金像電",
       "conv_price": 450.0,
       "maturity": "2030-11-24",
-      "issue_date": "2025-11-24",
       "conv_ratio": null
     },
     "23742": {
@@ -335,7 +294,6 @@
       "company": "佳能",
       "conv_price": 86.8,
       "maturity": "2031-02-02",
-      "issue_date": "2026-02-02",
       "conv_ratio": null
     },
     "24023": {
@@ -343,7 +301,6 @@
       "company": "毅嘉",
       "conv_price": 55.0,
       "maturity": "2028-11-19",
-      "issue_date": "2025-11-19",
       "conv_ratio": null
     },
     "24271": {
@@ -351,7 +308,6 @@
       "company": "三商電",
       "conv_price": 28.0,
       "maturity": "2028-12-13",
-      "issue_date": "2023-12-13",
       "conv_ratio": null
     },
     "24361": {
@@ -359,7 +315,6 @@
       "company": "偉詮電",
       "conv_price": 61.2,
       "maturity": "2026-09-11",
-      "issue_date": "2023-09-11",
       "conv_ratio": null
     },
     "24394": {
@@ -367,7 +322,6 @@
       "company": "美律",
       "conv_price": 143.1,
       "maturity": "2027-07-10",
-      "issue_date": "2024-07-10",
       "conv_ratio": null
     },
     "24395": {
@@ -375,7 +329,6 @@
       "company": "美律",
       "conv_price": 139.0,
       "maturity": "2027-07-22",
-      "issue_date": "2024-07-22",
       "conv_ratio": null
     },
     "24423": {
@@ -383,7 +336,6 @@
       "company": "新美齊",
       "conv_price": 26.1,
       "maturity": "2027-11-29",
-      "issue_date": "2024-11-29",
       "conv_ratio": null
     },
     "24424": {
@@ -391,7 +343,6 @@
       "company": "新美齊",
       "conv_price": 26.4,
       "maturity": "2027-12-25",
-      "issue_date": "2024-12-25",
       "conv_ratio": null
     },
     "24552": {
@@ -399,7 +350,6 @@
       "company": "全新",
       "conv_price": 162.9,
       "maturity": "2029-01-23",
-      "issue_date": "2026-01-23",
       "conv_ratio": null
     },
     "24553": {
@@ -407,7 +357,6 @@
       "company": "全新",
       "conv_price": 153.5,
       "maturity": "2029-01-27",
-      "issue_date": "2026-01-27",
       "conv_ratio": null
     },
     "24624": {
@@ -415,7 +364,6 @@
       "company": "良得電",
       "conv_price": 33.53,
       "maturity": "2026-08-11",
-      "issue_date": "2023-08-11",
       "conv_ratio": null
     },
     "24642": {
@@ -423,7 +371,6 @@
       "company": "盟立",
       "conv_price": 80.0,
       "maturity": "2027-09-16",
-      "issue_date": "2024-09-16",
       "conv_ratio": null
     },
     "24672": {
@@ -431,7 +378,6 @@
       "company": "志聖",
       "conv_price": 250.6,
       "maturity": "2029-01-09",
-      "issue_date": "2026-01-09",
       "conv_ratio": null
     },
     "24673": {
@@ -439,7 +385,6 @@
       "company": "志聖",
       "conv_price": 246.6,
       "maturity": "2029-01-22",
-      "issue_date": "2026-01-22",
       "conv_ratio": null
     },
     "24762": {
@@ -447,7 +392,6 @@
       "company": "鉅祥",
       "conv_price": 72.2,
       "maturity": "2027-01-26",
-      "issue_date": "2024-01-26",
       "conv_ratio": null
     },
     "24866": {
@@ -455,7 +399,6 @@
       "company": "一詮",
       "conv_price": 126.0,
       "maturity": "2027-07-01",
-      "issue_date": "2024-07-01",
       "conv_ratio": null
     },
     "25283": {
@@ -463,7 +406,6 @@
       "company": "皇普",
       "conv_price": 46.4,
       "maturity": "2029-12-31",
-      "issue_date": "2024-12-31",
       "conv_ratio": null
     },
     "25284": {
@@ -471,7 +413,6 @@
       "company": "皇普",
       "conv_price": 45.0,
       "maturity": "2030-01-17",
-      "issue_date": "2025-01-17",
       "conv_ratio": null
     },
     "25303": {
@@ -479,7 +420,6 @@
       "company": "華建",
       "conv_price": 34.7,
       "maturity": "2028-06-23",
-      "issue_date": "2025-06-23",
       "conv_ratio": null
     },
     "25304": {
@@ -487,7 +427,6 @@
       "company": "華建",
       "conv_price": 32.5,
       "maturity": "2028-06-30",
-      "issue_date": "2025-06-30",
       "conv_ratio": null
     },
     "25483": {
@@ -495,7 +434,6 @@
       "company": "華固",
       "conv_price": 138.0,
       "maturity": "2029-10-02",
-      "issue_date": "2024-10-02",
       "conv_ratio": null
     },
     "25484": {
@@ -503,7 +441,6 @@
       "company": "華固",
       "conv_price": 136.3,
       "maturity": "2029-10-18",
-      "issue_date": "2024-10-18",
       "conv_ratio": null
     },
     "26417": {
@@ -511,7 +448,6 @@
       "company": "正德",
       "conv_price": 22.7,
       "maturity": "2027-07-26",
-      "issue_date": "2024-07-26",
       "conv_ratio": null
     },
     "26418": {
@@ -519,7 +455,6 @@
       "company": "正德",
       "conv_price": 19.3,
       "maturity": "2030-08-06",
-      "issue_date": "2025-08-06",
       "conv_ratio": null
     },
     "27271": {
@@ -527,7 +462,6 @@
       "company": "王品",
       "conv_price": 295.0,
       "maturity": "2028-03-29",
-      "issue_date": "2023-03-29",
       "conv_ratio": null
     },
     "27323": {
@@ -535,7 +469,6 @@
       "company": "六角",
       "conv_price": 137.7,
       "maturity": "2027-01-26",
-      "issue_date": "2024-01-26",
       "conv_ratio": null
     },
     "27324": {
@@ -543,7 +476,6 @@
       "company": "六角",
       "conv_price": 74.3,
       "maturity": "2028-12-08",
-      "issue_date": "2025-12-08",
       "conv_ratio": null
     },
     "27431": {
@@ -551,7 +483,6 @@
       "company": "山富",
       "conv_price": 135.0,
       "maturity": "2028-08-28",
-      "issue_date": "2025-08-28",
       "conv_ratio": null
     },
     "27451": {
@@ -559,7 +490,6 @@
       "company": "五福",
       "conv_price": 111.3,
       "maturity": "2029-01-05",
-      "issue_date": "2026-01-05",
       "conv_ratio": null
     },
     "27531": {
@@ -567,7 +497,6 @@
       "company": "八方雲集",
       "conv_price": 212.0,
       "maturity": "2028-10-09",
-      "issue_date": "2025-10-09",
       "conv_ratio": null
     },
     "27532": {
@@ -575,7 +504,6 @@
       "company": "八方雲集",
       "conv_price": 210.0,
       "maturity": "2028-10-20",
-      "issue_date": "2025-10-20",
       "conv_ratio": null
     },
     "27551": {
@@ -583,7 +511,6 @@
       "company": "揚秦",
       "conv_price": 106.0,
       "maturity": "2028-01-15",
-      "issue_date": "2025-01-15",
       "conv_ratio": null
     },
     "27561": {
@@ -591,7 +518,6 @@
       "company": "聯發國際",
       "conv_price": 94.3,
       "maturity": "2027-05-30",
-      "issue_date": "2024-05-30",
       "conv_ratio": null
     },
     "29061": {
@@ -599,7 +525,6 @@
       "company": "高林",
       "conv_price": 18.0,
       "maturity": "2026-09-20",
-      "issue_date": "2023-09-20",
       "conv_ratio": null
     },
     "30112": {
@@ -607,7 +532,6 @@
       "company": "今皓",
       "conv_price": 12.5,
       "maturity": "2029-03-26",
-      "issue_date": "2026-03-26",
       "conv_ratio": null
     },
     "30134": {
@@ -615,7 +539,6 @@
       "company": "晟銘電",
       "conv_price": 144.5,
       "maturity": "2027-10-18",
-      "issue_date": "2024-10-18",
       "conv_ratio": null
     },
     "30165": {
@@ -623,7 +546,6 @@
       "company": "嘉晶",
       "conv_price": 72.6,
       "maturity": "2027-07-26",
-      "issue_date": "2024-07-26",
       "conv_ratio": null
     },
     "30321": {
@@ -631,7 +553,6 @@
       "company": "偉訓",
       "conv_price": 105.9,
       "maturity": "2028-11-13",
-      "issue_date": "2025-11-13",
       "conv_ratio": null
     },
     "30322": {
@@ -639,7 +560,6 @@
       "company": "偉訓",
       "conv_price": 101.9,
       "maturity": "2030-11-25",
-      "issue_date": "2025-11-25",
       "conv_ratio": null
     },
     "30336": {
@@ -647,7 +567,6 @@
       "company": "威健",
       "conv_price": 34.27,
       "maturity": "2027-06-01",
-      "issue_date": "2022-06-01",
       "conv_ratio": null
     },
     "30337": {
@@ -655,7 +574,6 @@
       "company": "威健",
       "conv_price": 36.67,
       "maturity": "2029-09-11",
-      "issue_date": "2024-09-11",
       "conv_ratio": null
     },
     "30371": {
@@ -663,7 +581,6 @@
       "company": "欣興",
       "conv_price": 165.4,
       "maturity": "2030-11-03",
-      "issue_date": "2025-11-03",
       "conv_ratio": null
     },
     "30401": {
@@ -671,7 +588,6 @@
       "company": "遠見",
       "conv_price": 48.3,
       "maturity": "2028-06-30",
-      "issue_date": "2025-06-30",
       "conv_ratio": null
     },
     "30454": {
@@ -679,7 +595,6 @@
       "company": "台灣大",
       "conv_price": 123.0,
       "maturity": "2030-02-24",
-      "issue_date": "2025-02-24",
       "conv_ratio": null
     },
     "30455": {
@@ -687,7 +602,6 @@
       "company": "台灣大",
       "conv_price": 115.8,
       "maturity": "2030-02-25",
-      "issue_date": "2025-02-25",
       "conv_ratio": null
     },
     "30882": {
@@ -695,7 +609,6 @@
       "company": "艾訊",
       "conv_price": 109.5,
       "maturity": "2026-08-28",
-      "issue_date": "2023-08-28",
       "conv_ratio": null
     },
     "30922": {
@@ -703,7 +616,6 @@
       "company": "鴻碩",
       "conv_price": 37.6,
       "maturity": "2026-07-04",
-      "issue_date": "2023-07-04",
       "conv_ratio": null
     },
     "30954": {
@@ -711,7 +623,6 @@
       "company": "及成",
       "conv_price": 41.1,
       "maturity": "2028-02-25",
-      "issue_date": "2025-02-25",
       "conv_ratio": null
     },
     "31222": {
@@ -719,7 +630,6 @@
       "company": "笙泉",
       "conv_price": 42.3,
       "maturity": "2027-05-03",
-      "issue_date": "2024-05-03",
       "conv_ratio": null
     },
     "31282": {
@@ -727,7 +637,6 @@
       "company": "昇銳",
       "conv_price": 44.1,
       "maturity": "2026-07-03",
-      "issue_date": "2023-07-03",
       "conv_ratio": null
     },
     "31311": {
@@ -735,7 +644,6 @@
       "company": "弘塑",
       "conv_price": 1762.2,
       "maturity": "2030-07-30",
-      "issue_date": "2025-07-30",
       "conv_ratio": null
     },
     "31312": {
@@ -743,7 +651,6 @@
       "company": "弘塑",
       "conv_price": 1626.6,
       "maturity": "2030-08-05",
-      "issue_date": "2025-08-05",
       "conv_ratio": null
     },
     "31351": {
@@ -751,7 +658,6 @@
       "company": "凌航",
       "conv_price": 52.19,
       "maturity": "2028-12-04",
-      "issue_date": "2025-12-04",
       "conv_ratio": null
     },
     "31352": {
@@ -759,7 +665,6 @@
       "company": "凌航",
       "conv_price": 129.9,
       "maturity": "2029-05-05",
-      "issue_date": "2026-05-05",
       "conv_ratio": null
     },
     "31413": {
@@ -767,7 +672,6 @@
       "company": "晶宏",
       "conv_price": 95.0,
       "maturity": "2027-05-20",
-      "issue_date": "2024-05-20",
       "conv_ratio": null
     },
     "31672": {
@@ -775,7 +679,6 @@
       "company": "大量",
       "conv_price": 170.0,
       "maturity": "2028-08-06",
-      "issue_date": "2025-08-06",
       "conv_ratio": null
     },
     "31882": {
@@ -783,7 +686,6 @@
       "company": "鑫龍騰",
       "conv_price": 31.4,
       "maturity": "2028-06-20",
-      "issue_date": "2025-06-20",
       "conv_ratio": null
     },
     "32071": {
@@ -791,7 +693,6 @@
       "company": "耀勝",
       "conv_price": 105.47,
       "maturity": "2027-03-25",
-      "issue_date": "2024-03-25",
       "conv_ratio": null
     },
     "32571": {
@@ -799,7 +700,6 @@
       "company": "虹冠電",
       "conv_price": 75.0,
       "maturity": "2029-11-01",
-      "issue_date": "2024-11-01",
       "conv_ratio": null
     },
     "32608": {
@@ -807,7 +707,6 @@
       "company": "威剛",
       "conv_price": 244.0,
       "maturity": "2029-01-08",
-      "issue_date": "2026-01-08",
       "conv_ratio": null
     },
     "32723": {
@@ -815,7 +714,6 @@
       "company": "東碩",
       "conv_price": 34.2,
       "maturity": "2029-03-07",
-      "issue_date": "2024-03-07",
       "conv_ratio": null
     },
     "32843": {
@@ -823,7 +721,6 @@
       "company": "太普高",
       "conv_price": 23.91,
       "maturity": "2028-09-15",
-      "issue_date": "2025-09-15",
       "conv_ratio": null
     },
     "32943": {
@@ -831,7 +728,6 @@
       "company": "英濟",
       "conv_price": 41.8,
       "maturity": "2029-06-18",
-      "issue_date": "2026-06-18",
       "conv_ratio": null
     },
     "33035": {
@@ -839,7 +735,6 @@
       "company": "岱稜",
       "conv_price": 62.0,
       "maturity": "2029-11-26",
-      "issue_date": "2024-11-26",
       "conv_ratio": null
     },
     "33055": {
@@ -847,7 +742,6 @@
       "company": "昇貿",
       "conv_price": 78.3,
       "maturity": "2026-12-25",
-      "issue_date": "2023-12-25",
       "conv_ratio": null
     },
     "33121": {
@@ -855,7 +749,6 @@
       "company": "弘憶股",
       "conv_price": 76.8,
       "maturity": "2027-06-25",
-      "issue_date": "2024-06-25",
       "conv_ratio": null
     },
     "33133": {
@@ -863,7 +756,6 @@
       "company": "斐成",
       "conv_price": 16.5,
       "maturity": "2027-11-29",
-      "issue_date": "2024-11-29",
       "conv_ratio": null
     },
     "33225": {
@@ -871,7 +763,6 @@
       "company": "建舜電",
       "conv_price": 23.78,
       "maturity": "2027-09-02",
-      "issue_date": "2024-09-02",
       "conv_ratio": null
     },
     "33245": {
@@ -879,7 +770,6 @@
       "company": "雙鴻",
       "conv_price": 754.0,
       "maturity": "2029-07-31",
-      "issue_date": "2024-07-31",
       "conv_ratio": null
     },
     "33246": {
@@ -887,7 +777,6 @@
       "company": "雙鴻",
       "conv_price": 1124.0,
       "maturity": "2031-03-02",
-      "issue_date": "2026-03-02",
       "conv_ratio": null
     },
     "33247": {
@@ -895,7 +784,6 @@
       "company": "雙鴻",
       "conv_price": 1105.0,
       "maturity": "2031-03-16",
-      "issue_date": "2026-03-16",
       "conv_ratio": null
     },
     "33466": {
@@ -903,7 +791,6 @@
       "company": "麗清",
       "conv_price": 38.8,
       "maturity": "2027-11-27",
-      "issue_date": "2024-11-27",
       "conv_ratio": null
     },
     "33571": {
@@ -911,7 +798,6 @@
       "company": "臺慶科",
       "conv_price": 118.0,
       "maturity": "2026-10-31",
-      "issue_date": "2023-10-31",
       "conv_ratio": null
     },
     "33621": {
@@ -919,7 +805,6 @@
       "company": "先進光",
       "conv_price": 254.0,
       "maturity": "2029-07-16",
-      "issue_date": "2024-07-16",
       "conv_ratio": null
     },
     "33763": {
@@ -927,7 +812,6 @@
       "company": "新日興",
       "conv_price": 202.0,
       "maturity": "2029-08-23",
-      "issue_date": "2024-08-23",
       "conv_ratio": null
     },
     "33881": {
@@ -935,7 +819,6 @@
       "company": "崇越電",
       "conv_price": 73.6,
       "maturity": "2027-11-09",
-      "issue_date": "2022-11-09",
       "conv_ratio": null
     },
     "33902": {
@@ -943,7 +826,6 @@
       "company": "旭軟",
       "conv_price": 26.2,
       "maturity": "2028-02-21",
-      "issue_date": "2025-02-21",
       "conv_ratio": null
     },
     "34163": {
@@ -951,7 +833,6 @@
       "company": "融程電",
       "conv_price": 136.8,
       "maturity": "2027-01-25",
-      "issue_date": "2024-01-25",
       "conv_ratio": null
     },
     "34793": {
@@ -959,7 +840,6 @@
       "company": "安勤",
       "conv_price": 121.5,
       "maturity": "2027-01-22",
-      "issue_date": "2024-01-22",
       "conv_ratio": null
     },
     "34834": {
@@ -967,7 +847,6 @@
       "company": "力致",
       "conv_price": 168.0,
       "maturity": "2027-05-22",
-      "issue_date": "2024-05-22",
       "conv_ratio": null
     },
     "34843": {
@@ -975,7 +854,6 @@
       "company": "崧騰",
       "conv_price": 48.1,
       "maturity": "2028-04-24",
-      "issue_date": "2023-04-24",
       "conv_ratio": null
     },
     "34913": {
@@ -983,7 +861,6 @@
       "company": "昇達科",
       "conv_price": 1788.0,
       "maturity": "2031-06-09",
-      "issue_date": "2026-06-09",
       "conv_ratio": null
     },
     "35161": {
@@ -991,7 +868,6 @@
       "company": "亞帝歐",
       "conv_price": 26.7,
       "maturity": "2027-10-18",
-      "issue_date": "2024-10-18",
       "conv_ratio": null
     },
     "35181": {
@@ -999,7 +875,6 @@
       "company": "柏騰",
       "conv_price": 35.0,
       "maturity": "2027-08-15",
-      "issue_date": "2024-08-15",
       "conv_ratio": null
     },
     "35221": {
@@ -1007,7 +882,6 @@
       "company": "御頂",
       "conv_price": 19.5,
       "maturity": "2026-12-18",
-      "issue_date": "2023-12-18",
       "conv_ratio": null
     },
     "35265": {
@@ -1015,7 +889,6 @@
       "company": "凡甲",
       "conv_price": 207.3,
       "maturity": "2027-02-14",
-      "issue_date": "2022-02-14",
       "conv_ratio": null
     },
     "35266": {
@@ -1023,7 +896,6 @@
       "company": "凡甲",
       "conv_price": 223.2,
       "maturity": "2029-01-29",
-      "issue_date": "2024-01-29",
       "conv_ratio": null
     },
     "35267": {
@@ -1031,7 +903,6 @@
       "company": "凡甲",
       "conv_price": 269.6,
       "maturity": "2030-07-24",
-      "issue_date": "2025-07-24",
       "conv_ratio": null
     },
     "35431": {
@@ -1039,7 +910,6 @@
       "company": "州巧",
       "conv_price": 46.3,
       "maturity": "2028-12-26",
-      "issue_date": "2025-12-26",
       "conv_ratio": null
     },
     "35482": {
@@ -1047,7 +917,6 @@
       "company": "兆利",
       "conv_price": 199.0,
       "maturity": "2027-01-08",
-      "issue_date": "2024-01-08",
       "conv_ratio": null
     },
     "35483": {
@@ -1055,7 +924,6 @@
       "company": "兆利",
       "conv_price": 170.0,
       "maturity": "2030-02-25",
-      "issue_date": "2025-02-25",
       "conv_ratio": null
     },
     "35513": {
@@ -1063,7 +931,6 @@
       "company": "世禾",
       "conv_price": 173.0,
       "maturity": "2028-10-28",
-      "issue_date": "2025-10-28",
       "conv_ratio": null
     },
     "35642": {
@@ -1071,7 +938,6 @@
       "company": "其陽",
       "conv_price": 85.0,
       "maturity": "2027-09-03",
-      "issue_date": "2024-09-03",
       "conv_ratio": null
     },
     "35831": {
@@ -1079,7 +945,6 @@
       "company": "辛耘",
       "conv_price": 359.7,
       "maturity": "2027-06-07",
-      "issue_date": "2024-06-07",
       "conv_ratio": null
     },
     "35832": {
@@ -1087,7 +952,6 @@
       "company": "辛耘",
       "conv_price": 347.5,
       "maturity": "2027-06-19",
-      "issue_date": "2024-06-19",
       "conv_ratio": null
     },
     "35871": {
@@ -1095,7 +959,6 @@
       "company": "閎康",
       "conv_price": 218.0,
       "maturity": "2026-06-20",
-      "issue_date": "2023-06-20",
       "conv_ratio": null
     },
     "35872": {
@@ -1103,7 +966,6 @@
       "company": "閎康",
       "conv_price": 198.0,
       "maturity": "2031-02-04",
-      "issue_date": "2026-02-04",
       "conv_ratio": null
     },
     "35914": {
@@ -1111,7 +973,6 @@
       "company": "艾笛森",
       "conv_price": 25.5,
       "maturity": "2027-11-22",
-      "issue_date": "2024-11-22",
       "conv_ratio": null
     },
     "36053": {
@@ -1119,7 +980,6 @@
       "company": "宏致",
       "conv_price": 51.0,
       "maturity": "2027-08-06",
-      "issue_date": "2024-08-06",
       "conv_ratio": null
     },
     "36173": {
@@ -1127,7 +987,6 @@
       "company": "碩天",
       "conv_price": 305.0,
       "maturity": "2028-06-16",
-      "issue_date": "2025-06-16",
       "conv_ratio": null
     },
     "36804": {
@@ -1135,7 +994,6 @@
       "company": "家登",
       "conv_price": 374.9,
       "maturity": "2026-10-18",
-      "issue_date": "2023-10-18",
       "conv_ratio": null
     },
     "36805": {
@@ -1143,7 +1001,6 @@
       "company": "家登",
       "conv_price": 488.9,
       "maturity": "2031-05-08",
-      "issue_date": "2026-05-08",
       "conv_ratio": null
     },
     "36806": {
@@ -1151,7 +1008,6 @@
       "company": "家登",
       "conv_price": 483.0,
       "maturity": "2031-05-21",
-      "issue_date": "2026-05-21",
       "conv_ratio": null
     },
     "36841": {
@@ -1159,7 +1015,6 @@
       "company": "榮昌",
       "conv_price": 50.7,
       "maturity": "2028-10-28",
-      "issue_date": "2025-10-28",
       "conv_ratio": null
     },
     "36872": {
@@ -1167,7 +1022,6 @@
       "company": "歐買尬",
       "conv_price": 75.9,
       "maturity": "2028-10-02",
-      "issue_date": "2025-10-02",
       "conv_ratio": null
     },
     "36873": {
@@ -1175,7 +1029,6 @@
       "company": "歐買尬",
       "conv_price": 80.1,
       "maturity": "2028-10-03",
-      "issue_date": "2025-10-03",
       "conv_ratio": null
     },
     "36894": {
@@ -1183,7 +1036,6 @@
       "company": "湧德",
       "conv_price": 65.7,
       "maturity": "2027-03-05",
-      "issue_date": "2024-03-05",
       "conv_ratio": null
     },
     "36913": {
@@ -1191,7 +1043,6 @@
       "company": "碩禾",
       "conv_price": 118.0,
       "maturity": "2027-08-30",
-      "issue_date": "2024-08-30",
       "conv_ratio": null
     },
     "37022": {
@@ -1199,7 +1050,6 @@
       "company": "大聯大",
       "conv_price": 80.5,
       "maturity": "2027-11-11",
-      "issue_date": "2024-11-11",
       "conv_ratio": null
     },
     "37023": {
@@ -1207,7 +1057,6 @@
       "company": "大聯大",
       "conv_price": 78.0,
       "maturity": "2027-11-21",
-      "issue_date": "2024-11-21",
       "conv_ratio": null
     },
     "370201": {
@@ -1215,7 +1064,6 @@
       "company": "大聯大",
       "conv_price": 160.8,
       "maturity": "2029-01-14",
-      "issue_date": "2026-01-14",
       "conv_ratio": null
     },
     "37075": {
@@ -1223,7 +1071,6 @@
       "company": "漢磊",
       "conv_price": 40.1,
       "maturity": "2030-08-20",
-      "issue_date": "2025-08-20",
       "conv_ratio": null
     },
     "37083": {
@@ -1231,7 +1078,6 @@
       "company": "上緯投控",
       "conv_price": 99.0,
       "maturity": "2026-09-27",
-      "issue_date": "2021-09-27",
       "conv_ratio": null
     },
     "37084": {
@@ -1239,7 +1085,6 @@
       "company": "上緯投控",
       "conv_price": 95.0,
       "maturity": "2026-09-28",
-      "issue_date": "2021-09-28",
       "conv_ratio": null
     },
     "37151": {
@@ -1247,7 +1092,6 @@
       "company": "定穎投控",
       "conv_price": 140.0,
       "maturity": "2029-01-21",
-      "issue_date": "2026-01-21",
       "conv_ratio": null
     },
     "37152": {
@@ -1255,7 +1099,6 @@
       "company": "定穎投控",
       "conv_price": 159.0,
       "maturity": "2029-03-24",
-      "issue_date": "2026-03-24",
       "conv_ratio": null
     },
     "37171": {
@@ -1263,7 +1106,6 @@
       "company": "聯嘉投控",
       "conv_price": 17.5,
       "maturity": "2029-01-21",
-      "issue_date": "2026-01-21",
       "conv_ratio": null
     },
     "41135": {
@@ -1271,7 +1113,6 @@
       "company": "聯上",
       "conv_price": 26.3,
       "maturity": "2030-10-27",
-      "issue_date": "2025-10-27",
       "conv_ratio": null
     },
     "41136": {
@@ -1279,7 +1120,6 @@
       "company": "聯上",
       "conv_price": 20.45,
       "maturity": "2031-03-20",
-      "issue_date": "2026-03-20",
       "conv_ratio": null
     },
     "41236": {
@@ -1287,7 +1127,6 @@
       "company": "晟德",
       "conv_price": 48.0,
       "maturity": "2028-04-26",
-      "issue_date": "2023-04-26",
       "conv_ratio": null
     },
     "41237": {
@@ -1295,7 +1134,6 @@
       "company": "晟德",
       "conv_price": 49.0,
       "maturity": "2028-04-27",
-      "issue_date": "2023-04-27",
       "conv_ratio": null
     },
     "41238": {
@@ -1303,7 +1141,6 @@
       "company": "晟德",
       "conv_price": 43.0,
       "maturity": "2031-05-04",
-      "issue_date": "2026-05-04",
       "conv_ratio": null
     },
     "41239": {
@@ -1311,7 +1148,6 @@
       "company": "晟德",
       "conv_price": 42.0,
       "maturity": "2031-05-14",
-      "issue_date": "2026-05-14",
       "conv_ratio": null
     },
     "41295": {
@@ -1319,7 +1155,6 @@
       "company": "聯合",
       "conv_price": 109.8,
       "maturity": "2030-05-29",
-      "issue_date": "2025-05-29",
       "conv_ratio": null
     },
     "41372": {
@@ -1327,7 +1162,6 @@
       "company": "麗豐-KY",
       "conv_price": 166.0,
       "maturity": "2027-08-12",
-      "issue_date": "2024-08-12",
       "conv_ratio": null
     },
     "41645": {
@@ -1335,7 +1169,6 @@
       "company": "承業醫",
       "conv_price": 48.4,
       "maturity": "2030-06-20",
-      "issue_date": "2025-06-20",
       "conv_ratio": null
     },
     "41684": {
@@ -1343,7 +1176,6 @@
       "company": "醣聯",
       "conv_price": 24.0,
       "maturity": "2028-09-18",
-      "issue_date": "2025-09-18",
       "conv_ratio": null
     },
     "41903": {
@@ -1351,7 +1183,6 @@
       "company": "佐登-KY",
       "conv_price": 56.1,
       "maturity": "2027-07-11",
-      "issue_date": "2024-07-11",
       "conv_ratio": null
     },
     "44163": {
@@ -1359,7 +1190,6 @@
       "company": "三圓",
       "conv_price": 81.0,
       "maturity": "2027-09-30",
-      "issue_date": "2022-09-30",
       "conv_ratio": null
     },
     "44383": {
@@ -1367,7 +1197,6 @@
       "company": "廣越",
       "conv_price": 76.0,
       "maturity": "2028-09-30",
-      "issue_date": "2025-09-30",
       "conv_ratio": null
     },
     "44391": {
@@ -1375,7 +1204,6 @@
       "company": "冠星-KY",
       "conv_price": 103.0,
       "maturity": "2028-03-03",
-      "issue_date": "2025-03-03",
       "conv_ratio": null
     },
     "44421": {
@@ -1383,7 +1211,6 @@
       "company": "竣邦-KY",
       "conv_price": 49.0,
       "maturity": "2028-07-28",
-      "issue_date": "2025-07-28",
       "conv_ratio": null
     },
     "45031": {
@@ -1391,7 +1218,6 @@
       "company": "金雨",
       "conv_price": 46.0,
       "maturity": "2029-05-13",
-      "issue_date": "2026-05-13",
       "conv_ratio": null
     },
     "45102": {
@@ -1399,7 +1225,6 @@
       "company": "高鋒",
       "conv_price": 49.2,
       "maturity": "2028-02-26",
-      "issue_date": "2025-02-26",
       "conv_ratio": null
     },
     "45421": {
@@ -1407,7 +1232,6 @@
       "company": "科嶠",
       "conv_price": 86.8,
       "maturity": "2027-09-06",
-      "issue_date": "2024-09-06",
       "conv_ratio": null
     },
     "45491": {
@@ -1415,7 +1239,6 @@
       "company": "桓達",
       "conv_price": 166.0,
       "maturity": "2027-11-07",
-      "issue_date": "2024-11-07",
       "conv_ratio": null
     },
     "45554": {
@@ -1423,7 +1246,6 @@
       "company": "氣立",
       "conv_price": 44.0,
       "maturity": "2028-06-09",
-      "issue_date": "2025-06-09",
       "conv_ratio": null
     },
     "45581": {
@@ -1431,7 +1253,6 @@
       "company": "寶緯",
       "conv_price": 29.8,
       "maturity": "2028-08-28",
-      "issue_date": "2025-08-28",
       "conv_ratio": null
     },
     "45641": {
@@ -1439,7 +1260,6 @@
       "company": "元翎",
       "conv_price": 27.0,
       "maturity": "2026-09-26",
-      "issue_date": "2023-09-26",
       "conv_ratio": null
     },
     "45663": {
@@ -1447,7 +1267,6 @@
       "company": "時碩工業",
       "conv_price": 52.0,
       "maturity": "2026-11-27",
-      "issue_date": "2023-11-27",
       "conv_ratio": null
     },
     "45691": {
@@ -1455,7 +1274,6 @@
       "company": "六方科-KY",
       "conv_price": 212.0,
       "maturity": "2028-01-15",
-      "issue_date": "2025-01-15",
       "conv_ratio": null
     },
     "45721": {
@@ -1463,7 +1281,6 @@
       "company": "駐龍",
       "conv_price": 175.0,
       "maturity": "2027-07-16",
-      "issue_date": "2024-07-16",
       "conv_ratio": null
     },
     "45811": {
@@ -1471,7 +1288,6 @@
       "company": "光隆精密-KY",
       "conv_price": 53.4,
       "maturity": "2028-08-15",
-      "issue_date": "2025-08-15",
       "conv_ratio": null
     },
     "47148": {
@@ -1479,7 +1295,6 @@
       "company": "永捷",
       "conv_price": 16.1,
       "maturity": "2029-05-04",
-      "issue_date": "2026-05-04",
       "conv_ratio": null
     },
     "47223": {
@@ -1487,7 +1302,6 @@
       "company": "國精化",
       "conv_price": 141.3,
       "maturity": "2028-10-01",
-      "issue_date": "2025-10-01",
       "conv_ratio": null
     },
     "47224": {
@@ -1495,7 +1309,6 @@
       "company": "國精化",
       "conv_price": 265.7,
       "maturity": "2029-05-26",
-      "issue_date": "2026-05-26",
       "conv_ratio": null
     },
     "47393": {
@@ -1503,7 +1316,6 @@
       "company": "康普",
       "conv_price": 110.0,
       "maturity": "2026-10-28",
-      "issue_date": "2021-10-28",
       "conv_ratio": null
     },
     "47394": {
@@ -1511,7 +1323,6 @@
       "company": "康普",
       "conv_price": 71.0,
       "maturity": "2030-12-17",
-      "issue_date": "2025-12-17",
       "conv_ratio": null
     },
     "47491": {
@@ -1519,7 +1330,6 @@
       "company": "新應材",
       "conv_price": 1072.0,
       "maturity": "2029-05-28",
-      "issue_date": "2026-05-28",
       "conv_ratio": null
     },
     "47602": {
@@ -1527,7 +1337,6 @@
       "company": "勤凱科技",
       "conv_price": 303.5,
       "maturity": "2029-05-22",
-      "issue_date": "2026-05-22",
       "conv_ratio": null
     },
     "47721": {
@@ -1535,7 +1344,6 @@
       "company": "台特化",
       "conv_price": 323.8,
       "maturity": "2028-11-27",
-      "issue_date": "2025-11-27",
       "conv_ratio": null
     },
     "49231": {
@@ -1543,7 +1351,6 @@
       "company": "力士",
       "conv_price": 34.66,
       "maturity": "2029-01-29",
-      "issue_date": "2026-01-29",
       "conv_ratio": null
     },
     "49311": {
@@ -1551,7 +1358,6 @@
       "company": "新盛力",
       "conv_price": 175.0,
       "maturity": "2029-05-29",
-      "issue_date": "2026-05-29",
       "conv_ratio": null
     },
     "49674": {
@@ -1559,7 +1365,6 @@
       "company": "十銓",
       "conv_price": 147.0,
       "maturity": "2029-01-15",
-      "issue_date": "2026-01-15",
       "conv_ratio": null
     },
     "49793": {
@@ -1567,7 +1372,6 @@
       "company": "華星光",
       "conv_price": 178.0,
       "maturity": "2027-12-09",
-      "issue_date": "2024-12-09",
       "conv_ratio": null
     },
     "49794": {
@@ -1575,7 +1379,6 @@
       "company": "華星光",
       "conv_price": 206.0,
       "maturity": "2027-12-25",
-      "issue_date": "2024-12-25",
       "conv_ratio": null
     },
     "50097": {
@@ -1583,7 +1386,6 @@
       "company": "榮剛",
       "conv_price": 59.2,
       "maturity": "2026-07-31",
-      "issue_date": "2023-07-31",
       "conv_ratio": null
     },
     "52011": {
@@ -1591,7 +1393,6 @@
       "company": "凱衛",
       "conv_price": 41.2,
       "maturity": "2028-10-15",
-      "issue_date": "2025-10-15",
       "conv_ratio": null
     },
     "52091": {
@@ -1599,7 +1400,6 @@
       "company": "新鼎",
       "conv_price": 177.0,
       "maturity": "2026-10-06",
-      "issue_date": "2023-10-06",
       "conv_ratio": null
     },
     "52121": {
@@ -1607,7 +1407,6 @@
       "company": "凌網",
       "conv_price": 66.5,
       "maturity": "2029-10-15",
-      "issue_date": "2024-10-15",
       "conv_ratio": null
     },
     "52303": {
@@ -1615,7 +1414,6 @@
       "company": "雷笛克光學",
       "conv_price": 22.8,
       "maturity": "2026-07-24",
-      "issue_date": "2023-07-24",
       "conv_ratio": null
     },
     "52441": {
@@ -1623,7 +1421,6 @@
       "company": "弘凱",
       "conv_price": 46.0,
       "maturity": "2029-09-25",
-      "issue_date": "2024-09-25",
       "conv_ratio": null
     },
     "52452": {
@@ -1631,7 +1428,6 @@
       "company": "智晶",
       "conv_price": 35.0,
       "maturity": "2027-12-18",
-      "issue_date": "2024-12-18",
       "conv_ratio": null
     },
     "52635": {
@@ -1639,7 +1435,6 @@
       "company": "智崴",
       "conv_price": 112.0,
       "maturity": "2027-03-04",
-      "issue_date": "2024-03-04",
       "conv_ratio": null
     },
     "52844": {
@@ -1647,7 +1442,6 @@
       "company": "jpp-KY",
       "conv_price": 353.0,
       "maturity": "2029-05-05",
-      "issue_date": "2026-05-05",
       "conv_ratio": null
     },
     "52845": {
@@ -1655,7 +1449,6 @@
       "company": "jpp-KY",
       "conv_price": 322.6,
       "maturity": "2029-05-11",
-      "issue_date": "2026-05-11",
       "conv_ratio": null
     },
     "53064": {
@@ -1663,7 +1456,6 @@
       "company": "桂盟",
       "conv_price": 130.5,
       "maturity": "2026-11-08",
-      "issue_date": "2023-11-08",
       "conv_ratio": null
     },
     "53095": {
@@ -1671,7 +1463,6 @@
       "company": "系統電",
       "conv_price": 39.7,
       "maturity": "2026-08-08",
-      "issue_date": "2023-08-08",
       "conv_ratio": null
     },
     "53096": {
@@ -1679,7 +1470,6 @@
       "company": "系統電",
       "conv_price": 63.5,
       "maturity": "2030-12-12",
-      "issue_date": "2025-12-12",
       "conv_ratio": null
     },
     "53097": {
@@ -1687,7 +1477,6 @@
       "company": "系統電",
       "conv_price": 55.0,
       "maturity": "2028-12-15",
-      "issue_date": "2025-12-15",
       "conv_ratio": null
     },
     "53211": {
@@ -1695,7 +1484,6 @@
       "company": "美而快",
       "conv_price": 92.0,
       "maturity": "2027-03-04",
-      "issue_date": "2024-03-04",
       "conv_ratio": null
     },
     "53887": {
@@ -1703,7 +1491,6 @@
       "company": "中磊",
       "conv_price": 145.0,
       "maturity": "2028-12-06",
-      "issue_date": "2023-12-06",
       "conv_ratio": null
     },
     "54342": {
@@ -1711,7 +1498,6 @@
       "company": "崇越",
       "conv_price": 200.0,
       "maturity": "2026-06-29",
-      "issue_date": "2023-06-29",
       "conv_ratio": null
     },
     "54391": {
@@ -1719,7 +1505,6 @@
       "company": "高技",
       "conv_price": 300.0,
       "maturity": "2030-09-09",
-      "issue_date": "2025-09-09",
       "conv_ratio": null
     },
     "54501": {
@@ -1727,7 +1512,6 @@
       "company": "南良",
       "conv_price": 18.8,
       "maturity": "2028-03-21",
-      "issue_date": "2023-03-21",
       "conv_ratio": null
     },
     "54573": {
@@ -1735,7 +1519,6 @@
       "company": "宣德",
       "conv_price": 69.5,
       "maturity": "2027-03-06",
-      "issue_date": "2024-03-06",
       "conv_ratio": null
     },
     "54642": {
@@ -1743,7 +1526,6 @@
       "company": "霖宏",
       "conv_price": 33.4,
       "maturity": "2029-05-25",
-      "issue_date": "2026-05-25",
       "conv_ratio": null
     },
     "55344": {
@@ -1751,7 +1533,6 @@
       "company": "長虹",
       "conv_price": 80.0,
       "maturity": "2031-03-11",
-      "issue_date": "2026-03-11",
       "conv_ratio": null
     },
     "56086": {
@@ -1759,7 +1540,6 @@
       "company": "四維航",
       "conv_price": 23.8,
       "maturity": "2026-06-21",
-      "issue_date": "2023-06-21",
       "conv_ratio": null
     },
     "56087": {
@@ -1767,7 +1547,6 @@
       "company": "四維航",
       "conv_price": 19.3,
       "maturity": "2027-12-17",
-      "issue_date": "2024-12-17",
       "conv_ratio": null
     },
     "60152": {
@@ -1775,7 +1554,6 @@
       "company": "宏遠證",
       "conv_price": 10.92,
       "maturity": "2029-01-05",
-      "issue_date": "2024-01-05",
       "conv_ratio": null
     },
     "61011": {
@@ -1783,7 +1561,6 @@
       "company": "寬魚國際",
       "conv_price": 36.9,
       "maturity": "2029-01-29",
-      "issue_date": "2026-01-29",
       "conv_ratio": null
     },
     "61012": {
@@ -1791,7 +1568,6 @@
       "company": "寬魚國際",
       "conv_price": 38.9,
       "maturity": "2029-01-30",
-      "issue_date": "2026-01-30",
       "conv_ratio": null
     },
     "61041": {
@@ -1799,7 +1575,6 @@
       "company": "創惟",
       "conv_price": 132.0,
       "maturity": "2027-08-26",
-      "issue_date": "2022-08-26",
       "conv_ratio": null
     },
     "61112": {
@@ -1807,7 +1582,6 @@
       "company": "大宇資",
       "conv_price": 67.0,
       "maturity": "2027-09-10",
-      "issue_date": "2024-09-10",
       "conv_ratio": null
     },
     "61171": {
@@ -1815,7 +1589,6 @@
       "company": "迎廣",
       "conv_price": 84.0,
       "maturity": "2027-05-27",
-      "issue_date": "2024-05-27",
       "conv_ratio": null
     },
     "61172": {
@@ -1823,7 +1596,6 @@
       "company": "迎廣",
       "conv_price": 79.3,
       "maturity": "2028-05-28",
-      "issue_date": "2025-05-28",
       "conv_ratio": null
     },
     "61255": {
@@ -1831,15 +1603,13 @@
       "company": "廣運",
       "conv_price": 114.0,
       "maturity": "2027-06-21",
-      "issue_date": "2024-06-21",
-      "conv_ratio": 100.0
+      "conv_ratio": null
     },
     "61263": {
       "stock_code": "6126",
       "company": "信音",
       "conv_price": 28.5,
       "maturity": "2026-11-30",
-      "issue_date": "2023-11-30",
       "conv_ratio": null
     },
     "61506": {
@@ -1847,7 +1617,6 @@
       "company": "撼訊",
       "conv_price": 90.2,
       "maturity": "2027-03-07",
-      "issue_date": "2024-03-07",
       "conv_ratio": null
     },
     "61565": {
@@ -1855,7 +1624,6 @@
       "company": "松上",
       "conv_price": 30.1,
       "maturity": "2028-06-25",
-      "issue_date": "2025-06-25",
       "conv_ratio": null
     },
     "61635": {
@@ -1863,7 +1631,6 @@
       "company": "華電網",
       "conv_price": 25.02,
       "maturity": "2028-10-16",
-      "issue_date": "2025-10-16",
       "conv_ratio": null
     },
     "61777": {
@@ -1871,7 +1638,6 @@
       "company": "達麗",
       "conv_price": 52.3,
       "maturity": "2028-06-25",
-      "issue_date": "2025-06-25",
       "conv_ratio": null
     },
     "61793": {
@@ -1879,7 +1645,6 @@
       "company": "亞通",
       "conv_price": 37.5,
       "maturity": "2026-07-25",
-      "issue_date": "2023-07-25",
       "conv_ratio": null
     },
     "61794": {
@@ -1887,7 +1652,6 @@
       "company": "亞通",
       "conv_price": 30.2,
       "maturity": "2027-08-28",
-      "issue_date": "2024-08-28",
       "conv_ratio": null
     },
     "61827": {
@@ -1895,7 +1659,6 @@
       "company": "合晶",
       "conv_price": 70.0,
       "maturity": "2026-07-27",
-      "issue_date": "2021-07-27",
       "conv_ratio": null
     },
     "61828": {
@@ -1903,7 +1666,6 @@
       "company": "合晶",
       "conv_price": 33.8,
       "maturity": "2029-09-27",
-      "issue_date": "2024-09-27",
       "conv_ratio": null
     },
     "61843": {
@@ -1911,7 +1673,6 @@
       "company": "大豐電",
       "conv_price": 55.5,
       "maturity": "2027-03-06",
-      "issue_date": "2024-03-06",
       "conv_ratio": null
     },
     "61894": {
@@ -1919,7 +1680,6 @@
       "company": "豐藝",
       "conv_price": 56.65,
       "maturity": "2028-11-10",
-      "issue_date": "2023-11-10",
       "conv_ratio": null
     },
     "61907": {
@@ -1927,7 +1687,6 @@
       "company": "萬泰科",
       "conv_price": 41.7,
       "maturity": "2028-11-06",
-      "issue_date": "2025-11-06",
       "conv_ratio": null
     },
     "61973": {
@@ -1935,7 +1694,6 @@
       "company": "佳必琪",
       "conv_price": 160.0,
       "maturity": "2027-10-15",
-      "issue_date": "2024-10-15",
       "conv_ratio": null
     },
     "61993": {
@@ -1943,7 +1701,6 @@
       "company": "天品",
       "conv_price": 104.6,
       "maturity": "2029-01-20",
-      "issue_date": "2026-01-20",
       "conv_ratio": null
     },
     "61994": {
@@ -1951,7 +1708,6 @@
       "company": "天品",
       "conv_price": 114.8,
       "maturity": "2029-01-21",
-      "issue_date": "2026-01-21",
       "conv_ratio": null
     },
     "62075": {
@@ -1959,7 +1715,6 @@
       "company": "雷科",
       "conv_price": 52.1,
       "maturity": "2028-08-26",
-      "issue_date": "2025-08-26",
       "conv_ratio": null
     },
     "62076": {
@@ -1967,7 +1722,6 @@
       "company": "雷科",
       "conv_price": 50.6,
       "maturity": "2028-09-05",
-      "issue_date": "2025-09-05",
       "conv_ratio": null
     },
     "62093": {
@@ -1975,7 +1729,6 @@
       "company": "今國光",
       "conv_price": 38.6,
       "maturity": "2028-10-23",
-      "issue_date": "2025-10-23",
       "conv_ratio": null
     },
     "62194": {
@@ -1983,7 +1736,6 @@
       "company": "富旺",
       "conv_price": 21.17,
       "maturity": "2028-10-16",
-      "issue_date": "2025-10-16",
       "conv_ratio": null
     },
     "622010": {
@@ -1991,7 +1743,6 @@
       "company": "岳豐",
       "conv_price": 33.0,
       "maturity": "2029-06-10",
-      "issue_date": "2026-06-10",
       "conv_ratio": null
     },
     "62236": {
@@ -1999,7 +1750,6 @@
       "company": "旺矽",
       "conv_price": 6223.0,
       "maturity": "2031-06-15",
-      "issue_date": "2026-06-15",
       "conv_ratio": null
     },
     "62433": {
@@ -2007,7 +1757,6 @@
       "company": "迅杰",
       "conv_price": 65.8,
       "maturity": "2027-06-25",
-      "issue_date": "2024-06-25",
       "conv_ratio": null
     },
     "62695": {
@@ -2015,7 +1764,6 @@
       "company": "台郡",
       "conv_price": 93.0,
       "maturity": "2027-08-02",
-      "issue_date": "2024-08-02",
       "conv_ratio": null
     },
     "62696": {
@@ -2023,7 +1771,6 @@
       "company": "台郡",
       "conv_price": 101.0,
       "maturity": "2027-08-02",
-      "issue_date": "2024-08-02",
       "conv_ratio": null
     },
     "62745": {
@@ -2031,7 +1778,6 @@
       "company": "台燿",
       "conv_price": 386.0,
       "maturity": "2030-11-13",
-      "issue_date": "2025-11-13",
       "conv_ratio": null
     },
     "62756": {
@@ -2039,7 +1785,6 @@
       "company": "元山",
       "conv_price": 30.0,
       "maturity": "2026-09-30",
-      "issue_date": "2021-09-30",
       "conv_ratio": null
     },
     "62822": {
@@ -2047,7 +1792,6 @@
       "company": "康舒",
       "conv_price": 50.0,
       "maturity": "2028-06-13",
-      "issue_date": "2023-06-13",
       "conv_ratio": null
     },
     "62843": {
@@ -2055,7 +1799,6 @@
       "company": "佳邦",
       "conv_price": 92.0,
       "maturity": "2026-12-14",
-      "issue_date": "2023-12-14",
       "conv_ratio": null
     },
     "629010": {
@@ -2063,7 +1806,6 @@
       "company": "良維",
       "conv_price": 80.1,
       "maturity": "2028-05-13",
-      "issue_date": "2025-05-13",
       "conv_ratio": null
     },
     "64145": {
@@ -2071,7 +1813,6 @@
       "company": "樺漢",
       "conv_price": 295.0,
       "maturity": "2026-08-16",
-      "issue_date": "2023-08-16",
       "conv_ratio": null
     },
     "64251": {
@@ -2079,7 +1820,6 @@
       "company": "易發",
       "conv_price": 61.0,
       "maturity": "2027-10-15",
-      "issue_date": "2024-10-15",
       "conv_ratio": null
     },
     "64324": {
@@ -2087,7 +1827,6 @@
       "company": "今展科",
       "conv_price": 33.84,
       "maturity": "2027-08-16",
-      "issue_date": "2024-08-16",
       "conv_ratio": null
     },
     "64423": {
@@ -2095,7 +1834,6 @@
       "company": "光聖",
       "conv_price": 1065.9,
       "maturity": "2028-12-11",
-      "issue_date": "2025-12-11",
       "conv_ratio": null
     },
     "64512": {
@@ -2103,7 +1841,6 @@
       "company": "訊芯-KY",
       "conv_price": 241.2,
       "maturity": "2028-02-27",
-      "issue_date": "2025-02-27",
       "conv_ratio": null
     },
     "64693": {
@@ -2111,7 +1848,6 @@
       "company": "大樹",
       "conv_price": 149.74,
       "maturity": "2028-07-28",
-      "issue_date": "2025-07-28",
       "conv_ratio": null
     },
     "64724": {
@@ -2119,7 +1855,6 @@
       "company": "保瑞",
       "conv_price": 500.0,
       "maturity": "2031-04-01",
-      "issue_date": "2026-04-01",
       "conv_ratio": null
     },
     "64725": {
@@ -2127,7 +1862,6 @@
       "company": "保瑞",
       "conv_price": 485.0,
       "maturity": "2031-04-15",
-      "issue_date": "2026-04-15",
       "conv_ratio": null
     },
     "64773": {
@@ -2135,7 +1869,6 @@
       "company": "安集",
       "conv_price": 45.2,
       "maturity": "2026-08-04",
-      "issue_date": "2021-08-04",
       "conv_ratio": null
     },
     "64774": {
@@ -2143,7 +1876,6 @@
       "company": "安集",
       "conv_price": 53.9,
       "maturity": "2027-07-21",
-      "issue_date": "2022-07-21",
       "conv_ratio": null
     },
     "64775": {
@@ -2151,7 +1883,6 @@
       "company": "安集",
       "conv_price": 44.3,
       "maturity": "2028-10-09",
-      "issue_date": "2025-10-09",
       "conv_ratio": null
     },
     "65096": {
@@ -2159,7 +1890,6 @@
       "company": "聚和",
       "conv_price": 41.5,
       "maturity": "2027-07-03",
-      "issue_date": "2024-07-03",
       "conv_ratio": null
     },
     "65101": {
@@ -2167,7 +1897,6 @@
       "company": "精測",
       "conv_price": 2016.8,
       "maturity": "2029-01-05",
-      "issue_date": "2026-01-05",
       "conv_ratio": null
     },
     "65152": {
@@ -2175,7 +1904,6 @@
       "company": "穎崴",
       "conv_price": 3540.4,
       "maturity": "2029-02-05",
-      "issue_date": "2026-02-05",
       "conv_ratio": null
     },
     "65331": {
@@ -2183,7 +1911,6 @@
       "company": "晶心科",
       "conv_price": 308.0,
       "maturity": "2028-09-08",
-      "issue_date": "2025-09-08",
       "conv_ratio": null
     },
     "65381": {
@@ -2191,7 +1918,6 @@
       "company": "倉和",
       "conv_price": 104.4,
       "maturity": "2030-06-26",
-      "issue_date": "2025-06-26",
       "conv_ratio": null
     },
     "65461": {
@@ -2199,7 +1925,6 @@
       "company": "正基",
       "conv_price": 158.8,
       "maturity": "2027-06-05",
-      "issue_date": "2024-06-05",
       "conv_ratio": null
     },
     "65462": {
@@ -2207,7 +1932,6 @@
       "company": "正基",
       "conv_price": 88.5,
       "maturity": "2029-06-09",
-      "issue_date": "2026-06-09",
       "conv_ratio": null
     },
     "65472": {
@@ -2215,7 +1939,6 @@
       "company": "高端疫苗",
       "conv_price": 37.0,
       "maturity": "2029-03-19",
-      "issue_date": "2026-03-19",
       "conv_ratio": null
     },
     "65521": {
@@ -2223,7 +1946,6 @@
       "company": "易華電",
       "conv_price": 63.5,
       "maturity": "2026-10-25",
-      "issue_date": "2021-10-25",
       "conv_ratio": null
     },
     "65761": {
@@ -2231,7 +1953,6 @@
       "company": "逸達",
       "conv_price": 84.3,
       "maturity": "2029-03-25",
-      "issue_date": "2026-03-25",
       "conv_ratio": null
     },
     "65841": {
@@ -2239,7 +1960,6 @@
       "company": "南俊國際",
       "conv_price": 178.8,
       "maturity": "2027-10-29",
-      "issue_date": "2024-10-29",
       "conv_ratio": null
     },
     "65842": {
@@ -2247,7 +1967,6 @@
       "company": "南俊國際",
       "conv_price": 193.0,
       "maturity": "2027-10-30",
-      "issue_date": "2024-10-30",
       "conv_ratio": null
     },
     "65851": {
@@ -2255,7 +1974,6 @@
       "company": "鼎基",
       "conv_price": 120.9,
       "maturity": "2026-10-26",
-      "issue_date": "2023-10-26",
       "conv_ratio": null
     },
     "65852": {
@@ -2263,7 +1981,6 @@
       "company": "鼎基",
       "conv_price": 120.6,
       "maturity": "2026-10-27",
-      "issue_date": "2023-10-27",
       "conv_ratio": null
     },
     "65914": {
@@ -2271,7 +1988,6 @@
       "company": "動力-KY",
       "conv_price": 79.79,
       "maturity": "2028-08-27",
-      "issue_date": "2025-08-27",
       "conv_ratio": null
     },
     "66034": {
@@ -2279,7 +1995,6 @@
       "company": "富強鑫",
       "conv_price": 26.63,
       "maturity": "2029-05-04",
-      "issue_date": "2026-05-04",
       "conv_ratio": null
     },
     "66163": {
@@ -2287,7 +2002,6 @@
       "company": "特昇-KY",
       "conv_price": 14.8,
       "maturity": "2028-09-20",
-      "issue_date": "2023-09-20",
       "conv_ratio": null
     },
     "66241": {
@@ -2295,7 +2009,6 @@
       "company": "萬年清",
       "conv_price": 42.2,
       "maturity": "2029-07-05",
-      "issue_date": "2024-07-05",
       "conv_ratio": null
     },
     "66292": {
@@ -2303,7 +2016,6 @@
       "company": "泰金-KY",
       "conv_price": 135.0,
       "maturity": "2027-09-13",
-      "issue_date": "2024-09-13",
       "conv_ratio": null
     },
     "66451": {
@@ -2311,7 +2023,6 @@
       "company": "金萬林-創",
       "conv_price": 28.31,
       "maturity": "2027-12-04",
-      "issue_date": "2024-12-04",
       "conv_ratio": null
     },
     "66642": {
@@ -2319,7 +2030,6 @@
       "company": "群翊",
       "conv_price": 306.0,
       "maturity": "2027-11-19",
-      "issue_date": "2024-11-19",
       "conv_ratio": null
     },
     "66702": {
@@ -2327,7 +2037,6 @@
       "company": "復盛應用",
       "conv_price": 270.0,
       "maturity": "2028-12-26",
-      "issue_date": "2025-12-26",
       "conv_ratio": null
     },
     "66721": {
@@ -2335,7 +2044,6 @@
       "company": "騰輝電子-KY",
       "conv_price": 96.0,
       "maturity": "2031-01-22",
-      "issue_date": "2026-01-22",
       "conv_ratio": null
     },
     "66722": {
@@ -2343,7 +2051,6 @@
       "company": "騰輝電子-KY",
       "conv_price": 93.0,
       "maturity": "2031-02-03",
-      "issue_date": "2026-02-03",
       "conv_ratio": null
     },
     "66801": {
@@ -2351,7 +2058,6 @@
       "company": "鑫創電子",
       "conv_price": 76.2,
       "maturity": "2029-09-02",
-      "issue_date": "2024-09-02",
       "conv_ratio": null
     },
     "67062": {
@@ -2359,7 +2065,6 @@
       "company": "惠特",
       "conv_price": 178.8,
       "maturity": "2027-10-25",
-      "issue_date": "2024-10-25",
       "conv_ratio": null
     },
     "67531": {
@@ -2367,7 +2072,6 @@
       "company": "龍德造船",
       "conv_price": 125.0,
       "maturity": "2027-06-25",
-      "issue_date": "2024-06-25",
       "conv_ratio": null
     },
     "67681": {
@@ -2375,7 +2079,6 @@
       "company": "志強-KY",
       "conv_price": 101.0,
       "maturity": "2027-10-31",
-      "issue_date": "2024-10-31",
       "conv_ratio": null
     },
     "67711": {
@@ -2383,7 +2086,6 @@
       "company": "平和環保-創",
       "conv_price": 55.0,
       "maturity": "2028-05-08",
-      "issue_date": "2025-05-08",
       "conv_ratio": null
     },
     "67961": {
@@ -2391,7 +2093,6 @@
       "company": "晉弘",
       "conv_price": 123.0,
       "maturity": "2026-08-25",
-      "issue_date": "2023-08-25",
       "conv_ratio": null
     },
     "67962": {
@@ -2399,7 +2100,6 @@
       "company": "晉弘",
       "conv_price": 101.6,
       "maturity": "2028-12-22",
-      "issue_date": "2025-12-22",
       "conv_ratio": null
     },
     "68032": {
@@ -2407,7 +2107,6 @@
       "company": "崑鼎",
       "conv_price": 324.0,
       "maturity": "2031-05-21",
-      "issue_date": "2026-05-21",
       "conv_ratio": null
     },
     "68041": {
@@ -2415,7 +2114,6 @@
       "company": "明係",
       "conv_price": 71.2,
       "maturity": "2026-06-19",
-      "issue_date": "2023-06-19",
       "conv_ratio": null
     },
     "68061": {
@@ -2423,7 +2121,6 @@
       "company": "森崴能源",
       "conv_price": 114.0,
       "maturity": "2026-11-22",
-      "issue_date": "2023-11-22",
       "conv_ratio": null
     },
     "68211": {
@@ -2431,7 +2128,6 @@
       "company": "聯寶",
       "conv_price": 43.06,
       "maturity": "2028-08-15",
-      "issue_date": "2025-08-15",
       "conv_ratio": null
     },
     "68301": {
@@ -2439,7 +2135,6 @@
       "company": "汎銓",
       "conv_price": 150.0,
       "maturity": "2027-08-15",
-      "issue_date": "2024-08-15",
       "conv_ratio": null
     },
     "68351": {
@@ -2447,7 +2142,6 @@
       "company": "圓裕",
       "conv_price": 50.8,
       "maturity": "2027-11-01",
-      "issue_date": "2024-11-01",
       "conv_ratio": null
     },
     "68401": {
@@ -2455,7 +2149,6 @@
       "company": "東研信超",
       "conv_price": 73.4,
       "maturity": "2027-05-27",
-      "issue_date": "2024-05-27",
       "conv_ratio": null
     },
     "68431": {
@@ -2463,7 +2156,6 @@
       "company": "進典",
       "conv_price": 61.4,
       "maturity": "2028-08-04",
-      "issue_date": "2025-08-04",
       "conv_ratio": null
     },
     "68461": {
@@ -2471,7 +2163,6 @@
       "company": "綠茵",
       "conv_price": 83.8,
       "maturity": "2030-03-13",
-      "issue_date": "2025-03-13",
       "conv_ratio": null
     },
     "68462": {
@@ -2479,7 +2170,6 @@
       "company": "綠茵",
       "conv_price": 81.3,
       "maturity": "2030-03-25",
-      "issue_date": "2025-03-25",
       "conv_ratio": null
     },
     "68541": {
@@ -2487,7 +2177,6 @@
       "company": "錼創科技-KY創",
       "conv_price": 250.9,
       "maturity": "2028-02-27",
-      "issue_date": "2025-02-27",
       "conv_ratio": null
     },
     "68621": {
@@ -2495,7 +2184,6 @@
       "company": "三集瑞-KY",
       "conv_price": 197.0,
       "maturity": "2029-03-13",
-      "issue_date": "2026-03-13",
       "conv_ratio": null
     },
     "68631": {
@@ -2503,7 +2191,6 @@
       "company": "永道-KY",
       "conv_price": 305.5,
       "maturity": "2027-10-15",
-      "issue_date": "2024-10-15",
       "conv_ratio": null
     },
     "68701": {
@@ -2511,7 +2198,6 @@
       "company": "騰雲",
       "conv_price": 248.5,
       "maturity": "2029-12-05",
-      "issue_date": "2024-12-05",
       "conv_ratio": null
     },
     "68702": {
@@ -2519,7 +2205,6 @@
       "company": "騰雲",
       "conv_price": 236.6,
       "maturity": "2029-12-05",
-      "issue_date": "2024-12-05",
       "conv_ratio": null
     },
     "68731": {
@@ -2527,7 +2212,6 @@
       "company": "泓德能源-創",
       "conv_price": 120.0,
       "maturity": "2026-09-28",
-      "issue_date": "2023-09-28",
       "conv_ratio": null
     },
     "68732": {
@@ -2535,7 +2219,6 @@
       "company": "泓德能源",
       "conv_price": 246.0,
       "maturity": "2030-05-29",
-      "issue_date": "2025-05-29",
       "conv_ratio": null
     },
     "68741": {
@@ -2543,7 +2226,6 @@
       "company": "倍力",
       "conv_price": 108.0,
       "maturity": "2027-11-04",
-      "issue_date": "2024-11-04",
       "conv_ratio": null
     },
     "68901": {
@@ -2551,7 +2233,6 @@
       "company": "來億-KY",
       "conv_price": 246.4,
       "maturity": "2028-11-28",
-      "issue_date": "2025-11-28",
       "conv_ratio": null
     },
     "68902": {
@@ -2559,7 +2240,6 @@
       "company": "來億-KY",
       "conv_price": 245.2,
       "maturity": "2028-12-10",
-      "issue_date": "2025-12-10",
       "conv_ratio": null
     },
     "68941": {
@@ -2567,7 +2247,6 @@
       "company": "衛司特",
       "conv_price": 262.4,
       "maturity": "2029-03-09",
-      "issue_date": "2026-03-09",
       "conv_ratio": null
     },
     "69041": {
@@ -2575,7 +2254,6 @@
       "company": "伯鑫",
       "conv_price": 130.0,
       "maturity": "2028-12-26",
-      "issue_date": "2025-12-26",
       "conv_ratio": null
     },
     "69131": {
@@ -2583,7 +2261,6 @@
       "company": "鴻呈",
       "conv_price": 126.0,
       "maturity": "2029-03-19",
-      "issue_date": "2026-03-19",
       "conv_ratio": null
     },
     "69571": {
@@ -2591,7 +2268,6 @@
       "company": "裕慶-KY",
       "conv_price": 190.0,
       "maturity": "2028-10-02",
-      "issue_date": "2025-10-02",
       "conv_ratio": null
     },
     "69821": {
@@ -2599,7 +2275,6 @@
       "company": "大井泵浦",
       "conv_price": 63.6,
       "maturity": "2028-07-23",
-      "issue_date": "2025-07-23",
       "conv_ratio": null
     },
     "69822": {
@@ -2607,7 +2282,6 @@
       "company": "大井泵浦",
       "conv_price": 61.8,
       "maturity": "2028-08-04",
-      "issue_date": "2025-08-04",
       "conv_ratio": null
     },
     "74022": {
@@ -2615,7 +2289,6 @@
       "company": "邑錡",
       "conv_price": 97.6,
       "maturity": "2028-09-02",
-      "issue_date": "2025-09-02",
       "conv_ratio": null
     },
     "75561": {
@@ -2623,7 +2296,6 @@
       "company": "意德士科技",
       "conv_price": 182.0,
       "maturity": "2028-08-12",
-      "issue_date": "2025-08-12",
       "conv_ratio": null
     },
     "75562": {
@@ -2631,7 +2303,6 @@
       "company": "意德士科技",
       "conv_price": 178.5,
       "maturity": "2028-08-15",
-      "issue_date": "2025-08-15",
       "conv_ratio": null
     },
     "76101": {
@@ -2639,7 +2310,6 @@
       "company": "聯友金屬-創",
       "conv_price": 795.0,
       "maturity": "2029-05-20",
-      "issue_date": "2026-05-20",
       "conv_ratio": null
     },
     "77131": {
@@ -2647,7 +2317,6 @@
       "company": "威力德生醫",
       "conv_price": 73.9,
       "maturity": "2028-10-20",
-      "issue_date": "2025-10-20",
       "conv_ratio": null
     },
     "80212": {
@@ -2655,7 +2324,6 @@
       "company": "尖點",
       "conv_price": 203.5,
       "maturity": "2031-01-20",
-      "issue_date": "2026-01-20",
       "conv_ratio": null
     },
     "80273": {
@@ -2663,7 +2331,6 @@
       "company": "鈦昇",
       "conv_price": 67.6,
       "maturity": "2027-07-13",
-      "issue_date": "2022-07-13",
       "conv_ratio": null
     },
     "80282": {
@@ -2671,7 +2338,6 @@
       "company": "昇陽半導體",
       "conv_price": 140.3,
       "maturity": "2030-01-22",
-      "issue_date": "2025-01-22",
       "conv_ratio": null
     },
     "80426": {
@@ -2679,7 +2345,6 @@
       "company": "金山電",
       "conv_price": 60.0,
       "maturity": "2028-12-16",
-      "issue_date": "2025-12-16",
       "conv_ratio": null
     },
     "80506": {
@@ -2687,7 +2352,6 @@
       "company": "廣積",
       "conv_price": 75.0,
       "maturity": "2027-11-22",
-      "issue_date": "2022-11-22",
       "conv_ratio": null
     },
     "80746": {
@@ -2695,7 +2359,6 @@
       "company": "鉅橡",
       "conv_price": 79.2,
       "maturity": "2029-05-14",
-      "issue_date": "2026-05-14",
       "conv_ratio": null
     },
     "80872": {
@@ -2703,7 +2366,6 @@
       "company": "麗升能源",
       "conv_price": 40.4,
       "maturity": "2028-05-02",
-      "issue_date": "2025-05-02",
       "conv_ratio": null
     },
     "80914": {
@@ -2711,7 +2373,6 @@
       "company": "翔名",
       "conv_price": 136.0,
       "maturity": "2027-08-15",
-      "issue_date": "2024-08-15",
       "conv_ratio": null
     },
     "80924": {
@@ -2719,15 +2380,13 @@
       "company": "建暐",
       "conv_price": 14.5,
       "maturity": "2027-03-11",
-      "issue_date": "2024-03-11",
-      "conv_ratio": 100.0
+      "conv_ratio": null
     },
     "81042": {
       "stock_code": "8104",
       "company": "錸寶",
       "conv_price": 80.5,
       "maturity": "2027-01-11",
-      "issue_date": "2022-01-11",
       "conv_ratio": null
     },
     "81114": {
@@ -2735,7 +2394,6 @@
       "company": "立碁",
       "conv_price": 75.1,
       "maturity": "2029-04-28",
-      "issue_date": "2026-04-28",
       "conv_ratio": null
     },
     "811210": {
@@ -2743,7 +2401,6 @@
       "company": "至上",
       "conv_price": 82.7,
       "maturity": "2029-05-24",
-      "issue_date": "2024-05-24",
       "conv_ratio": null
     },
     "811211": {
@@ -2751,7 +2408,6 @@
       "company": "至上",
       "conv_price": 95.3,
       "maturity": "2031-06-23",
-      "issue_date": "2026-06-23",
       "conv_ratio": null
     },
     "81473": {
@@ -2759,7 +2415,6 @@
       "company": "正淩",
       "conv_price": 134.6,
       "maturity": "2027-10-03",
-      "issue_date": "2024-10-03",
       "conv_ratio": null
     },
     "81551": {
@@ -2767,7 +2422,6 @@
       "company": "博智",
       "conv_price": 126.8,
       "maturity": "2030-01-10",
-      "issue_date": "2025-01-10",
       "conv_ratio": null
     },
     "81714": {
@@ -2775,7 +2429,6 @@
       "company": "天宇",
       "conv_price": 33.8,
       "maturity": "2027-11-12",
-      "issue_date": "2024-11-12",
       "conv_ratio": null
     },
     "81715": {
@@ -2783,7 +2436,6 @@
       "company": "天宇",
       "conv_price": 35.9,
       "maturity": "2027-11-14",
-      "issue_date": "2024-11-14",
       "conv_ratio": null
     },
     "82102": {
@@ -2791,7 +2443,6 @@
       "company": "勤誠",
       "conv_price": 1007.2,
       "maturity": "2029-01-26",
-      "issue_date": "2026-01-26",
       "conv_ratio": null
     },
     "82103": {
@@ -2799,7 +2450,6 @@
       "company": "勤誠",
       "conv_price": 985.3,
       "maturity": "2029-02-03",
-      "issue_date": "2026-02-03",
       "conv_ratio": null
     },
     "82551": {
@@ -2807,7 +2457,6 @@
       "company": "朋程",
       "conv_price": 210.0,
       "maturity": "2026-08-09",
-      "issue_date": "2023-08-09",
       "conv_ratio": null
     },
     "82711": {
@@ -2815,7 +2464,6 @@
       "company": "宇瞻",
       "conv_price": 165.0,
       "maturity": "2029-05-05",
-      "issue_date": "2026-05-05",
       "conv_ratio": null
     },
     "82993": {
@@ -2823,7 +2471,6 @@
       "company": "群聯",
       "conv_price": 2488.0,
       "maturity": "2031-02-06",
-      "issue_date": "2026-02-06",
       "conv_ratio": null
     },
     "83742": {
@@ -2831,7 +2478,6 @@
       "company": "羅昇",
       "conv_price": 133.1,
       "maturity": "2027-11-15",
-      "issue_date": "2024-11-15",
       "conv_ratio": null
     },
     "84041": {
@@ -2839,7 +2485,6 @@
       "company": "百和興業-KY",
       "conv_price": 26.8,
       "maturity": "2028-10-03",
-      "issue_date": "2025-10-03",
       "conv_ratio": null
     },
     "84113": {
@@ -2847,7 +2492,6 @@
       "company": "福貞-KY",
       "conv_price": 13.3,
       "maturity": "2030-08-01",
-      "issue_date": "2025-08-01",
       "conv_ratio": null
     },
     "84221": {
@@ -2855,7 +2499,6 @@
       "company": "可寧衛",
       "conv_price": 170.0,
       "maturity": "2027-11-22",
-      "issue_date": "2022-11-22",
       "conv_ratio": null
     },
     "84222": {
@@ -2863,7 +2506,6 @@
       "company": "可寧衛",
       "conv_price": 200.0,
       "maturity": "2030-04-07",
-      "issue_date": "2025-04-07",
       "conv_ratio": null
     },
     "84312": {
@@ -2871,7 +2513,6 @@
       "company": "匯鑽科",
       "conv_price": 68.0,
       "maturity": "2029-01-05",
-      "issue_date": "2026-01-05",
       "conv_ratio": null
     },
     "84332": {
@@ -2879,7 +2520,6 @@
       "company": "弘帆",
       "conv_price": 102.0,
       "maturity": "2027-05-24",
-      "issue_date": "2024-05-24",
       "conv_ratio": null
     },
     "84333": {
@@ -2887,7 +2527,6 @@
       "company": "弘帆",
       "conv_price": 106.1,
       "maturity": "2027-05-27",
-      "issue_date": "2024-05-27",
       "conv_ratio": null
     },
     "84422": {
@@ -2895,7 +2534,6 @@
       "company": "威宏-KY",
       "conv_price": 84.3,
       "maturity": "2026-10-19",
-      "issue_date": "2023-10-19",
       "conv_ratio": null
     },
     "84624": {
@@ -2903,7 +2541,6 @@
       "company": "柏文",
       "conv_price": 152.2,
       "maturity": "2029-05-08",
-      "issue_date": "2026-05-08",
       "conv_ratio": null
     },
     "84662": {
@@ -2911,7 +2548,6 @@
       "company": "美吉吉-KY",
       "conv_price": 52.8,
       "maturity": "2026-07-26",
-      "issue_date": "2023-07-26",
       "conv_ratio": null
     },
     "84672": {
@@ -2919,7 +2555,6 @@
       "company": "波力-KY",
       "conv_price": 193.6,
       "maturity": "2027-05-30",
-      "issue_date": "2024-05-30",
       "conv_ratio": null
     },
     "84673": {
@@ -2927,7 +2562,6 @@
       "company": "波力-KY",
       "conv_price": 236.1,
       "maturity": "2027-05-31",
-      "issue_date": "2024-05-31",
       "conv_ratio": null
     },
     "84732": {
@@ -2935,7 +2569,6 @@
       "company": "山林水",
       "conv_price": 40.0,
       "maturity": "2026-09-28",
-      "issue_date": "2021-09-28",
       "conv_ratio": null
     },
     "84762": {
@@ -2943,7 +2576,6 @@
       "company": "台境*",
       "conv_price": 19.7,
       "maturity": "2029-04-21",
-      "issue_date": "2026-04-21",
       "conv_ratio": null
     },
     "84781": {
@@ -2951,7 +2583,6 @@
       "company": "東哥遊艇",
       "conv_price": 392.2,
       "maturity": "2027-07-15",
-      "issue_date": "2024-07-15",
       "conv_ratio": null
     },
     "84881": {
@@ -2959,7 +2590,6 @@
       "company": "吉源-KY",
       "conv_price": 18.5,
       "maturity": "2026-12-19",
-      "issue_date": "2023-12-19",
       "conv_ratio": null
     },
     "84891": {
@@ -2967,7 +2597,6 @@
       "company": "三貝德",
       "conv_price": 28.8,
       "maturity": "2027-12-09",
-      "issue_date": "2024-12-09",
       "conv_ratio": null
     },
     "89277": {
@@ -2975,7 +2604,6 @@
       "company": "北基",
       "conv_price": 68.27,
       "maturity": "2027-08-16",
-      "issue_date": "2024-08-16",
       "conv_ratio": null
     },
     "89278": {
@@ -2983,7 +2611,6 @@
       "company": "北基",
       "conv_price": 63.73,
       "maturity": "2027-08-21",
-      "issue_date": "2024-08-21",
       "conv_ratio": null
     },
     "89964": {
@@ -2991,7 +2618,6 @@
       "company": "高力",
       "conv_price": 240.0,
       "maturity": "2028-12-06",
-      "issue_date": "2023-12-06",
       "conv_ratio": null
     },
     "98026": {
@@ -2999,7 +2625,6 @@
       "company": "鈺齊-KY",
       "conv_price": 112.9,
       "maturity": "2027-11-15",
-      "issue_date": "2024-11-15",
       "conv_ratio": null
     },
     "99063": {
@@ -3007,7 +2632,6 @@
       "company": "欣巴巴",
       "conv_price": 111.8,
       "maturity": "2028-02-27",
-      "issue_date": "2025-02-27",
       "conv_ratio": null
     },
     "99332": {
@@ -3015,7 +2639,6 @@
       "company": "中鼎",
       "conv_price": 51.8,
       "maturity": "2029-07-23",
-      "issue_date": "2024-07-23",
       "conv_ratio": null
     },
     "99353": {
@@ -3023,7 +2646,6 @@
       "company": "慶豐富",
       "conv_price": 34.9,
       "maturity": "2027-10-14",
-      "issue_date": "2024-10-14",
       "conv_ratio": null
     },
     "99392": {
@@ -3031,7 +2653,6 @@
       "company": "宏全",
       "conv_price": 168.4,
       "maturity": "2029-10-29",
-      "issue_date": "2024-10-29",
       "conv_ratio": null
     },
     "99412": {
@@ -3039,7 +2660,6 @@
       "company": "裕融",
       "conv_price": 204.6,
       "maturity": "2028-11-20",
-      "issue_date": "2023-11-20",
       "conv_ratio": null
     },
     "99587": {
@@ -3047,7 +2667,6 @@
       "company": "世紀鋼",
       "conv_price": 247.0,
       "maturity": "2027-10-28",
-      "issue_date": "2024-10-28",
       "conv_ratio": null
     },
     "99588": {
@@ -3055,7 +2674,6 @@
       "company": "世紀鋼",
       "conv_price": 238.0,
       "maturity": "2027-11-08",
-      "issue_date": "2024-11-08",
       "conv_ratio": null
     }
   }
