@@ -86,7 +86,6 @@ jobs:
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
-              print(f"✅ 成功解析 CSV，產出 {len(result)} 筆轉換價資料。")
           except Exception as e:
               print(f"❌ 解析 CSV 失敗: {e}")
           PYEOF
@@ -103,33 +102,49 @@ jobs:
           stock_prices = {}
           headers = {'User-Agent': 'Mozilla/5.0'}
           
-          # 1. 嘗試抓取上市股票 (TWSE)
+          # 1. 證交所 API
           try:
-              twse_data = requests.get('https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL', headers=headers, timeout=10).json()
-              for item in twse_data:
-                  if item.get('Code') and item.get('ClosingPrice'):
-                      try: stock_prices[item['Code']] = float(item['ClosingPrice'].replace(',', ''))
+              res = requests.get('https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL', headers=headers, timeout=10).json()
+              for s in res:
+                  if s.get('Code') and s.get('ClosingPrice'):
+                      try: stock_prices[s['Code']] = float(s['ClosingPrice'].replace(',', ''))
                       except: pass
-              print(f"從 TWSE 抓取到 {len(stock_prices)} 筆股價。")
-          except Exception as e: 
-              print(f"TWSE 抓取失敗: {e}")
+          except: pass
 
-          # 2. 嘗試抓取上櫃股票 (TPEx)
+          # 2. 櫃買中心 OpenAPI (1)
           try:
-              tpex_data = requests.get('https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json', headers=headers, timeout=10).json()
-              tpex_count = 0
-              for row in tpex_data.get('aaData', []):
-                  code = str(row[0]).strip()
-                  if len(code) <= 5:
-                      try: 
-                          stock_prices[code] = float(str(row[2]).replace(',', ''))
-                          tpex_count += 1
+              res = requests.get('https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes', headers=headers, timeout=10).json()
+              for s in res:
+                  c = str(s.get('SecuritiesCompanyCode', s.get('Code', s.get('Symbol', '')))).strip()
+                  p = s.get('Close', s.get('ClosingPrice', s.get('CurrentPrice', '')))
+                  if c and p and c not in stock_prices:
+                      try: stock_prices[c] = float(str(p).replace(',', ''))
                       except: pass
-              print(f"從 TPEx 抓取到 {tpex_count} 筆股價。目前總計: {len(stock_prices)}")
-          except Exception as e: 
-              print(f"TPEx 抓取失敗: {e}")
+          except: pass
 
-          # 3. 讀取 conv_price.json 確認是否有缺漏的股票，用 Yahoo 補齊
+          # 3. 櫃買中心 OpenAPI (2)
+          try:
+              res = requests.get('https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes', headers=headers, timeout=10).json()
+              for s in res:
+                  c = str(s.get('SecuritiesCompanyCode', s.get('Code', s.get('Symbol', '')))).strip()
+                  p = s.get('Close', s.get('ClosingPrice', s.get('CurrentPrice', '')))
+                  if c and p and c not in stock_prices:
+                      try: stock_prices[c] = float(str(p).replace(',', ''))
+                      except: pass
+          except: pass
+
+          # 4. 櫃買中心 Web API
+          try:
+              res = requests.get('https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json', headers=headers, timeout=10).json()
+              for row in res.get('aaData', []):
+                  c = str(row[0]).strip()
+                  p = str(row[2]).replace(',', '')
+                  if len(c) <= 5 and c not in stock_prices:
+                      try: stock_prices[c] = float(p)
+                      except: pass
+          except: pass
+
+          # 5. Yahoo Finance 終極備援 (往前翻找5天的最後收盤價)
           try:
               with open('conv_price.json', 'r', encoding='utf-8') as f:
                   conv_data = json.load(f)
@@ -138,39 +153,33 @@ jobs:
               missing_codes = [c for c in needed_codes if c not in stock_prices]
               
               if missing_codes:
-                  print(f"有 {len(missing_codes)} 檔股票未抓到，啟動 Yahoo Finance 備援...")
-                  # 為了穩定，分批抓取
+                  print(f"啟動 Yahoo Finance 備援，補齊 {len(missing_codes)} 檔股票...")
                   for i in range(0, len(missing_codes), 20):
                       chunk = missing_codes[i:i+20]
-                      tw_tickers = [f"{c}.TW" for c in chunk]
-                      two_tickers = [f"{c}.TWO" for c in chunk]
-                      
+                      all_tickers = [f"{c}.TW" for c in chunk] + [f"{c}.TWO" for c in chunk]
                       try:
-                          # 先試上市
-                          tw_data = yf.download(tw_tickers, period="1d", progress=False)
-                          if not tw_data.empty and 'Close' in tw_data:
-                              closes = tw_data['Close'].iloc[-1]
-                              for ticker in tw_tickers:
-                                  code = ticker.split('.')[0]
-                                  val = closes.get(ticker)
-                                  if val is not None and not np.isnan(val) and code not in stock_prices:
-                                      stock_prices[code] = round(float(val), 2)
-                                      
-                          # 再試上櫃
-                          two_data = yf.download(two_tickers, period="1d", progress=False)
-                          if not two_data.empty and 'Close' in two_data:
-                              closes = two_data['Close'].iloc[-1]
-                              for ticker in two_tickers:
-                                  code = ticker.split('.')[0]
-                                  val = closes.get(ticker)
-                                  if val is not None and not np.isnan(val) and code not in stock_prices:
-                                      stock_prices[code] = round(float(val), 2)
+                          # period="5d"：往前抓5天，避免冷門股今天沒交易
+                          data = yf.download(all_tickers, period="5d", progress=False)
+                          if not data.empty and 'Close' in data:
+                              close_data = data['Close']
+                              if isinstance(close_data, pd.DataFrame):
+                                  # ffill() 將空值用前一天的價格補齊，然後拿最後一天 (iloc[-1])
+                                  last_prices = close_data.ffill().iloc[-1].dropna()
+                                  for ticker, price in last_prices.items():
+                                      code = ticker.split('.')[0]
+                                      if price > 0 and code not in stock_prices:
+                                          stock_prices[code] = round(float(price), 2)
+                              else:
+                                  price = close_data.ffill().iloc[-1]
+                                  if pd.notna(price) and price > 0:
+                                      code = all_tickers[0].split('.')[0]
+                                      if code not in stock_prices:
+                                          stock_prices[code] = round(float(price), 2)
                       except Exception as e:
-                          print(f"Yahoo 批次抓取錯誤: {e}")
+                          print(f"Yahoo 抓取錯誤: {e}")
           except Exception as e:
-              print(f"檢查缺漏股票時發生錯誤: {e}")
+              print(f"備援發生錯誤: {e}")
 
-          # 強制存檔，確保即使有錯誤也能產生 JSON
           try:
               with open('stock_price.json', 'w', encoding='utf-8') as f:
                   json.dump(stock_prices, f, ensure_ascii=False)
