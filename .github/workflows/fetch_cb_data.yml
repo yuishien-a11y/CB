@@ -21,49 +21,65 @@ jobs:
             -o ISSBD5_raw.csv \
             "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
 
-      - name: 2. 下載發行餘額 JSON (加入關鍵 Referer 破解阻擋)
-        # 💡 核心修正：加上 -H "Referer: ..." 模擬從官網點進去的行為，櫃買中心就不會阻擋了！
-        run: |
-          curl -L \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-            -H "Referer: https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal.php?l=zh-tw" \
-            --compressed \
-            -o cvb_bal.json \
-            "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal_result.php?l=zh-tw&o=json&iDisplayLength=10000"
-
       - name: 安裝 Python 套件
         run: pip install chardet requests yfinance pandas numpy
 
-      - name: 3. 解析並合併計算「已轉換率 (%)」
+      - name: 2. 透過 Proxy 繞道抓取「餘額表」並合併資料
         run: |
           python3 << 'PYEOF'
-          import csv, json, chardet, re
+          import csv, json, chardet, re, requests
           from datetime import datetime
           from io import StringIO
           
-          # 建立發行餘額字典
+          # ==========================================
+          # 第一步：繞過防火牆，抓取發行餘額表
+          # ==========================================
           bal_data = {}
-          try:
-              with open('cvb_bal.json', 'r', encoding='utf-8') as f:
-                  bal_json = json.load(f)
-                  rows = bal_json.get('aaData', [])
-                  print(f"📌 成功讀取發行餘額檔，共取得 {len(rows)} 筆數據")
+          target_url = "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal_result.php?l=zh-tw&o=json&iDisplayLength=10000"
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Referer": "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal.php?l=zh-tw"
+          }
+          
+          # 備用代理通道 (如果被 TPEx 擋掉，就用這些通道繞過去)
+          proxies = [
+              target_url, # 先嘗試直連
+              f"https://api.allorigins.win/raw?url={target_url}",
+              f"https://api.codetabs.com/v1/proxy?quest={target_url}"
+          ]
+          
+          bal_json = None
+          for url in proxies:
+              print(f"⏳ 嘗試連線: {url[:50]}...")
+              try:
+                  res = requests.get(url, headers=headers, timeout=15)
+                  res.raise_for_status()
+                  bal_json = res.json()
+                  if 'aaData' in bal_json:
+                      print("✅ 成功取得發行餘額資料！")
+                      break
+              except Exception as e:
+                  print(f"❌ 連線失敗: {e}")
                   
-                  for row in rows:
-                      if len(row) < 7: continue
-                      code = str(row[0]).strip()
-                      code = re.sub(r'<[^>]+>', '', code).strip() # 清除可能含有的 HTML 標籤
-                      if not re.match(r'^\d{4,6}$', code): continue
-                      
-                      try:
-                          issue_amt = float(str(row[5]).replace(',', '').strip())  # 發行總額
-                          remain_amt = float(str(row[6]).replace(',', '').strip()) # 流通餘額
-                          bal_data[code] = {'issue': issue_amt, 'remain': remain_amt}
-                      except: pass
-          except Exception as e: 
-              print(f"❌ 讀取餘額表失敗: {e}")
+          if bal_json and 'aaData' in bal_json:
+              rows = bal_json.get('aaData', [])
+              print(f"📌 共撈回 {len(rows)} 筆可轉債餘額數據")
+              for row in rows:
+                  if len(row) < 7: continue
+                  code = str(row[0]).strip()
+                  code = re.sub(r'<[^>]+>', '', code).strip() # 清除 HTML 標籤
+                  if not re.match(r'^\d{4,6}$', code): continue
+                  try:
+                      issue_amt = float(str(row[5]).replace(',', '').strip())  # 發行總額
+                      remain_amt = float(str(row[6]).replace(',', '').strip()) # 流通餘額
+                      bal_data[code] = {'issue': issue_amt, 'remain': remain_amt}
+                  except: pass
+          else:
+              print("⚠️ 警告：所有備用通道均被阻擋，本次將無法顯示轉換率。")
 
-          # 讀取並合併基本資料
+          # ==========================================
+          # 第二步：讀取 CSV 並合併資料
+          # ==========================================
           try:
               with open('ISSBD5_raw.csv', 'rb') as f:
                   raw = f.read()
@@ -125,12 +141,12 @@ jobs:
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
-              print(f"✅ 成功產出 conv_price.json")
+              print(f"✅ 成功產出 conv_price.json (共 {len(result)} 筆)")
           except Exception as e:
-              print(f"❌ 解析 CSV 失敗: {e}")
+              print(f"❌ 處理 CSV 發生錯誤: {e}")
           PYEOF
 
-      - name: 4. 抓取最新股價產生 stock_price.json
+      - name: 3. 抓取最新股價產生 stock_price.json
         run: |
           python3 << 'PYEOF'
           import json, requests, numpy as np, pandas as pd, yfinance as yf
