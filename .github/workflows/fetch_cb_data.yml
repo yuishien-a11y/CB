@@ -12,90 +12,79 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: 下載可轉債基本資料 CSV
+      - name: 1. 下載基本資料 CSV (轉換價)
         run: |
           curl -L \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+            -H "User-Agent: Mozilla/5.0" \
             -H "Referer: https://data.gov.tw/dataset/11406" \
-            -H "Accept: text/html,application/xhtml+xml,*/*" \
             --compressed \
             -o ISSBD5_raw.csv \
             "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
 
+      - name: 2. 下載發行餘額 JSON (未轉換餘額)
+        # 💡 新增這段！去抓官方隱藏的餘額表
+        run: |
+          curl -L \
+            -H "User-Agent: Mozilla/5.0" \
+            --compressed \
+            -o cvb_bal.json \
+            "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal_result.php?l=zh-tw&o=json"
+
       - name: 安裝 Python 套件
         run: pip install chardet requests yfinance pandas numpy
 
-      - name: 解析 CSV 產生 conv_price.json (包含轉換率進階計算)
+      - name: 3. 解析並合併計算「已轉換率 (%)」
         run: |
           python3 << 'PYEOF'
           import csv, json, chardet, re
           from datetime import datetime
           from io import StringIO
           
+          # 先讀取「發行餘額表」，建立餘額字典
+          bal_data = {}
+          try:
+              with open('cvb_bal.json', 'r', encoding='utf-8') as f:
+                  bal_json = json.load(f)
+                  for row in bal_json.get('aaData', []):
+                      code = str(row[0]).strip()
+                      try:
+                          issue_amt = float(str(row[5]).replace(',', ''))  # 發行總額
+                          remain_amt = float(str(row[6]).replace(',', '')) # 最新餘額
+                          bal_data[code] = {'issue': issue_amt, 'remain': remain_amt}
+                      except: pass
+          except Exception as e: print("讀取餘額表失敗:", e)
+
+          # 再讀取「基本資料表」
           try:
               with open('ISSBD5_raw.csv', 'rb') as f:
                   raw = f.read()
-              detected = chardet.detect(raw)
-              encoding = detected.get('encoding', 'big5')
+              encoding = chardet.detect(raw).get('encoding', 'big5')
               text = raw.decode(encoding, errors='replace')
-              
               reader = csv.reader(StringIO(text))
               
               result = {}
-              idx_cb_code, idx_stock_code, idx_company = -1, -1, -1
-              idx_mat, idx_issue, idx_conv = -1, -1, -1
-              idx_issue_amt, idx_remain_amt = -1, -1
-              
-              # 💡 增強版數字解析器：能看懂 1,000,000 也看得懂 10億
-              def parse_amt(s):
-                  s = s.replace(',', '').strip()
-                  if not s: return -1
-                  m = re.search(r'[\d.]+', s)
-                  if not m: return -1
-                  val = float(m.group())
-                  if '億' in s: val *= 100000000
-                  elif '萬' in s: val *= 10000
-                  return val
+              idx_cb_code, idx_stock_code, idx_company, idx_mat, idx_conv = -1, -1, -1, -1, -1
               
               for i, cols in enumerate(reader):
                   cols = [c.strip() for c in cols]
                   if i == 0:
-                      header = cols
-                      for j, h in enumerate(header):
+                      for j, h in enumerate(cols):
                           h_clean = h.replace(' ', '').replace('\u3000', '')
                           if '債券代' in h_clean: idx_cb_code = j
                           elif '公司代' in h_clean: idx_stock_code = j
                           elif '公司名' in h_clean: idx_company = j
                           elif '到期日' in h_clean: idx_mat = j
-                          elif '發行日' in h_clean: idx_issue = j
                           elif '轉換' in h_clean and '價' in h_clean: idx_conv = j
-                          # 聰明抓取「發行總面額」
-                          elif ('發行' in h_clean or '面額' in h_clean) and ('總' in h_clean or '金' in h_clean or '額' in h_clean) and '餘' not in h_clean: 
-                              idx_issue_amt = j
-                          # 聰明抓取「最新發行餘額」
-                          elif '餘額' in h_clean or '未轉' in h_clean or '在外' in h_clean or '未償' in h_clean: 
-                              idx_remain_amt = j
-                      
-                      # 把官方表頭印出來，方便我們除錯
-                      print(f"📌 解析到的表頭: {header}")
-                      print(f"📌 判斷的欄位索引: 發行總額={idx_issue_amt}, 剩餘餘額={idx_remain_amt}")
-                      continue
-                      
-                  if len(cols) < 5:
                       continue
                       
                   cb_code = cols[idx_cb_code] if idx_cb_code != -1 else cols[3]
-                  if not re.match(r'^\d{4,6}$', cb_code):
-                      continue
+                  if not re.match(r'^\d{4,6}$', cb_code): continue
                   
                   stock_code = cols[idx_stock_code] if idx_stock_code != -1 else cols[1]
                   company = cols[idx_company] if idx_company != -1 else cols[2]
                   
-                  mat_raw = cols[idx_mat].strip() if idx_mat != -1 else (cols[8].strip() if len(cols)>8 else '')
+                  mat_raw = cols[idx_mat].strip() if idx_mat != -1 else cols[8].strip()
                   maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}" if len(mat_raw) == 8 and mat_raw.isdigit() else ''
-                  
-                  issue_raw = cols[idx_issue].strip() if idx_issue != -1 else (cols[7].strip() if len(cols)>7 else '')
-                  issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}" if len(issue_raw) == 8 and issue_raw.isdigit() else ''
                   
                   conv_price = 0
                   if idx_conv != -1 and idx_conv < len(cols):
@@ -106,51 +95,39 @@ jobs:
                           v = cols[idx].replace(',','').strip()
                           if '.' in v:
                               try:
-                                  fv = float(v)
-                                  if 0 < fv < 9999:
-                                      conv_price = fv
-                                      break
+                                  conv_price = float(v)
+                                  if 0 < conv_price < 9999: break
                               except: pass
                               
-                  issue_amt = -1
-                  remain_amt = -1
-                  if idx_issue_amt != -1 and idx_issue_amt < len(cols):
-                      issue_amt = parse_amt(cols[idx_issue_amt])
-                  if idx_remain_amt != -1 and idx_remain_amt < len(cols):
-                      remain_amt = parse_amt(cols[idx_remain_amt])
-                      
-                  # 💡 核心計算：(發行總額 - 剩餘餘額) / 發行總額
+                  # 💡 核心計算：匹配餘額並計算轉換率
                   conv_ratio = None
-                  if issue_amt > 0 and remain_amt >= 0 and issue_amt >= remain_amt:
-                      conv_ratio = round((issue_amt - remain_amt) / issue_amt * 100, 2)
+                  if cb_code in bal_data:
+                      issue = bal_data[cb_code]['issue']
+                      remain = bal_data[cb_code]['remain']
+                      if issue > 0 and remain >= 0 and issue >= remain:
+                          conv_ratio = round((issue - remain) / issue * 100, 2)
                       
                   result[cb_code] = {
                       'stock_code': stock_code, 'company': company, 
-                      'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date,
+                      'conv_price': conv_price, 'maturity': maturity,
                       'conv_ratio': conv_ratio
                   }
                   
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
-              print(f"✅ 成功解析 CSV，產出 {len(result)} 筆資料，已加入轉換率。")
+              print(f"✅ 成功產出 {len(result)} 筆基本資料與轉換率！")
           except Exception as e:
               print(f"❌ 解析 CSV 失敗: {e}")
           PYEOF
 
-      - name: 抓取最新股價產生 stock_price.json
+      - name: 4. 抓取最新股價產生 stock_price.json (維持 Yahoo 備援)
         run: |
           python3 << 'PYEOF'
-          import json
-          import yfinance as yf
-          import pandas as pd
-          import numpy as np
-          import requests
-          
+          import json, requests, numpy as np, pandas as pd, yfinance as yf
           stock_prices = {}
           headers = {'User-Agent': 'Mozilla/5.0'}
           
-          # 1. 證交所 API
           try:
               res = requests.get('https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL', headers=headers, timeout=10).json()
               for s in res:
@@ -159,47 +136,22 @@ jobs:
                       except: pass
           except: pass
 
-          # 2. 櫃買中心 OpenAPI (1)
-          try:
-              res = requests.get('https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes', headers=headers, timeout=10).json()
-              for s in res:
-                  c = str(s.get('SecuritiesCompanyCode', s.get('Code', s.get('Symbol', '')))).strip()
-                  p = s.get('Close', s.get('ClosingPrice', s.get('CurrentPrice', '')))
-                  if c and p and c not in stock_prices:
-                      try: stock_prices[c] = float(str(p).replace(',', ''))
-                      except: pass
-          except: pass
+          for api_url in ['https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes', 'https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes']:
+              try:
+                  res = requests.get(api_url, headers=headers, timeout=10).json()
+                  for s in res:
+                      c = str(s.get('SecuritiesCompanyCode', s.get('Code', s.get('Symbol', '')))).strip()
+                      p = s.get('Close', s.get('ClosingPrice', s.get('CurrentPrice', '')))
+                      if c and p and c not in stock_prices:
+                          try: stock_prices[c] = float(str(p).replace(',', ''))
+                          except: pass
+              except: pass
 
-          # 3. 櫃買中心 OpenAPI (2)
-          try:
-              res = requests.get('https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes', headers=headers, timeout=10).json()
-              for s in res:
-                  c = str(s.get('SecuritiesCompanyCode', s.get('Code', s.get('Symbol', '')))).strip()
-                  p = s.get('Close', s.get('ClosingPrice', s.get('CurrentPrice', '')))
-                  if c and p and c not in stock_prices:
-                      try: stock_prices[c] = float(str(p).replace(',', ''))
-                      except: pass
-          except: pass
-
-          # 4. 櫃買中心 Web API
-          try:
-              res = requests.get('https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json', headers=headers, timeout=10).json()
-              for row in res.get('aaData', []):
-                  c = str(row[0]).strip()
-                  p = str(row[2]).replace(',', '')
-                  if len(c) <= 5 and c not in stock_prices:
-                      try: stock_prices[c] = float(p)
-                      except: pass
-          except: pass
-
-          # 5. Yahoo Finance 終極備援
           try:
               with open('conv_price.json', 'r', encoding='utf-8') as f:
                   conv_data = json.load(f)
-              
               needed_codes = list(set([cb.get('stock_code') for cb in conv_data.get('data', {}).values() if cb.get('stock_code')]))
               missing_codes = [c for c in needed_codes if c not in stock_prices]
-              
               if missing_codes:
                   for i in range(0, len(missing_codes), 20):
                       chunk = missing_codes[i:i+20]
@@ -220,19 +172,14 @@ jobs:
                                       code = all_tickers[0].split('.')[0]
                                       if code not in stock_prices:
                                           stock_prices[code] = round(float(price), 2)
-                      except Exception as e:
-                          pass
-          except Exception as e:
-              pass
+                      except: pass
+          except: pass
 
-          try:
-              with open('stock_price.json', 'w', encoding='utf-8') as f:
-                  json.dump(stock_prices, f, ensure_ascii=False)
-          except Exception as e:
-              pass
+          with open('stock_price.json', 'w', encoding='utf-8') as f:
+              json.dump(stock_prices, f, ensure_ascii=False)
           PYEOF
 
-      - name: Commit & Push 所有 JSON 檔案
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
