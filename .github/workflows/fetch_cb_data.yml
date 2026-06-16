@@ -25,7 +25,7 @@ jobs:
       - name: 安裝 Python 套件
         run: pip install chardet requests yfinance pandas numpy
 
-      - name: 解析 CSV 產生 conv_price.json (加入已轉換比例計算)
+      - name: 解析 CSV 產生 conv_price.json (包含轉換率計算)
         run: |
           python3 << 'PYEOF'
           import csv, json, chardet, re
@@ -40,44 +40,49 @@ jobs:
               lines = text.strip().split('\n')
               
               result = {}
-              header = None
+              
+              idx_cb_code, idx_stock_code, idx_company = -1, -1, -1
+              idx_mat, idx_issue, idx_conv = -1, -1, -1
+              idx_issue_amt, idx_remain_amt = -1, -1
+              
               for i, line in enumerate(lines):
                   cols = [c.strip().strip('"') for c in line.split(',')]
                   if i == 0:
                       header = cols
+                      for j, h in enumerate(header):
+                          h_clean = h.replace(' ', '').replace('\u3000', '')
+                          if '債券代' in h_clean: idx_cb_code = j
+                          elif '公司代' in h_clean: idx_stock_code = j
+                          elif '公司名' in h_clean: idx_company = j
+                          elif '到期日' in h_clean: idx_mat = j
+                          elif '發行日' in h_clean: idx_issue = j
+                          elif '轉換' in h_clean and '價' in h_clean: idx_conv = j
+                          elif '發行總' in h_clean or '發行金' in h_clean: idx_issue_amt = j
+                          elif '未轉換' in h_clean or '餘額' in h_clean: idx_remain_amt = j
                       continue
-                  if len(cols) < 10:
+                      
+                  if len(cols) < max(idx_cb_code, idx_stock_code, idx_issue_amt, idx_remain_amt):
                       continue
-                  cb_code = cols[3].strip()
+                      
+                  cb_code = cols[idx_cb_code] if idx_cb_code != -1 else cols[3]
                   if not re.match(r'^\d{4,6}$', cb_code):
                       continue
                   
-                  mat_raw = cols[8].strip()
+                  stock_code = cols[idx_stock_code] if idx_stock_code != -1 else cols[1]
+                  company = cols[idx_company] if idx_company != -1 else cols[2]
+                  
+                  mat_raw = cols[idx_mat].strip() if idx_mat != -1 else cols[8].strip()
                   maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}" if len(mat_raw) == 8 and mat_raw.isdigit() else ''
-                  issue_raw = cols[7].strip()
+                  
+                  issue_raw = cols[idx_issue].strip() if idx_issue != -1 else cols[7].strip()
                   issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}" if len(issue_raw) == 8 and issue_raw.isdigit() else ''
-                  stock_code = cols[1].strip()
-                  company = cols[2].strip()
                   
                   conv_price = 0
-                  issue_amt = 0
-                  remain_amt = -1
-                  
-                  if header:
-                      for idx, h in enumerate(header):
-                          h_clean = h.replace(' ', '').replace('\u3000', '')
-                          if '轉換' in h_clean and '價' in h_clean and idx < len(cols):
-                              try: conv_price = float(cols[idx].replace(',','').strip())
-                              except: pass
-                          elif ('發行總面額' in h_clean or '發行金額' in h_clean or '發行總額' in h_clean) and idx < len(cols):
-                              try: issue_amt = float(cols[idx].replace(',','').strip())
-                              except: pass
-                          elif ('未轉換' in h_clean or '餘額' in h_clean) and '發行' not in h_clean and idx < len(cols):
-                              try: remain_amt = float(cols[idx].replace(',','').strip())
-                              except: pass
-                              
+                  if idx_conv != -1 and idx_conv < len(cols):
+                      try: conv_price = float(cols[idx_conv].replace(',','').strip())
+                      except: pass
                   if conv_price == 0:
-                      for idx in range(len(cols)-1, 19, -1):
+                      for idx in range(len(cols)-1, max(0, len(cols)-5), -1):
                           v = cols[idx].replace(',','').strip()
                           if '.' in v:
                               try:
@@ -86,12 +91,21 @@ jobs:
                                       conv_price = fv
                                       break
                               except: pass
-                  
-                  # 計算已轉換比例
+                              
+                  issue_amt = 0
+                  remain_amt = -1
+                  if idx_issue_amt != -1 and idx_issue_amt < len(cols):
+                      try: issue_amt = float(cols[idx_issue_amt].replace(',','').strip())
+                      except: pass
+                  if idx_remain_amt != -1 and idx_remain_amt < len(cols):
+                      try: remain_amt = float(cols[idx_remain_amt].replace(',','').strip())
+                      except: pass
+                      
+                  # 💡 核心計算：已轉換比例 (%)
                   conv_ratio = None
                   if issue_amt > 0 and remain_amt >= 0 and issue_amt >= remain_amt:
                       conv_ratio = round((issue_amt - remain_amt) / issue_amt * 100, 2)
-                          
+                      
                   result[cb_code] = {
                       'stock_code': stock_code, 'company': company, 
                       'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date,
@@ -101,7 +115,7 @@ jobs:
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
-              print(f"✅ 成功解析 CSV，產出 {len(result)} 筆轉換價資料 (包含已轉換比例)。")
+              print(f"✅ 成功解析 CSV，產出 {len(result)} 筆資料。")
           except Exception as e:
               print(f"❌ 解析 CSV 失敗: {e}")
           PYEOF
@@ -160,7 +174,7 @@ jobs:
                       except: pass
           except: pass
 
-          # 5. Yahoo Finance 終極備援
+          # 5. Yahoo Finance 終極備援 (往前翻找5天的最後收盤價)
           try:
               with open('conv_price.json', 'r', encoding='utf-8') as f:
                   conv_data = json.load(f)
@@ -169,7 +183,6 @@ jobs:
               missing_codes = [c for c in needed_codes if c not in stock_prices]
               
               if missing_codes:
-                  print(f"啟動 Yahoo Finance 備援，補齊 {len(missing_codes)} 檔股票...")
                   for i in range(0, len(missing_codes), 20):
                       chunk = missing_codes[i:i+20]
                       all_tickers = [f"{c}.TW" for c in chunk] + [f"{c}.TWO" for c in chunk]
