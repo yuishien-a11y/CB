@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 07:35",
+  "updated": "2026-06-16 07:41",
   "count": 382,
   "data": {
     "11011": {
@@ -1832,7 +1832,7 @@
       "conv_price": 114.0,
       "maturity": "2027-06-21",
       "issue_date": "2024-06-21",
-      "conv_ratio": null
+      "conv_ratio": 100.0
     },
     "61263": {
       "stock_code": "6126",
@@ -2720,7 +2720,7 @@
       "conv_price": 14.5,
       "maturity": "2027-03-11",
       "issue_date": "2024-03-11",
-      "conv_ratio": null
+      "conv_ratio": 100.0
     },
     "81042": {
       "stock_code": "8104",
