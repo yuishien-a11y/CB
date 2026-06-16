@@ -25,7 +25,7 @@ jobs:
       - name: 安裝 Python 套件
         run: pip install chardet requests yfinance pandas numpy
 
-      - name: 解析 CSV 產生 conv_price.json
+      - name: 解析 CSV 產生 conv_price.json (加入已轉換比例計算)
         run: |
           python3 << 'PYEOF'
           import csv, json, chardet, re
@@ -60,13 +60,22 @@ jobs:
                   company = cols[2].strip()
                   
                   conv_price = 0
+                  issue_amt = 0
+                  remain_amt = -1
+                  
                   if header:
                       for idx, h in enumerate(header):
-                          if '轉換' in h and '價' in h and idx < len(cols):
-                              try:
-                                  conv_price = float(cols[idx].replace(',','').strip())
-                                  break
+                          h_clean = h.replace(' ', '').replace('\u3000', '')
+                          if '轉換' in h_clean and '價' in h_clean and idx < len(cols):
+                              try: conv_price = float(cols[idx].replace(',','').strip())
                               except: pass
+                          elif ('發行總面額' in h_clean or '發行金額' in h_clean or '發行總額' in h_clean) and idx < len(cols):
+                              try: issue_amt = float(cols[idx].replace(',','').strip())
+                              except: pass
+                          elif ('未轉換' in h_clean or '餘額' in h_clean) and '發行' not in h_clean and idx < len(cols):
+                              try: remain_amt = float(cols[idx].replace(',','').strip())
+                              except: pass
+                              
                   if conv_price == 0:
                       for idx in range(len(cols)-1, 19, -1):
                           v = cols[idx].replace(',','').strip()
@@ -77,15 +86,22 @@ jobs:
                                       conv_price = fv
                                       break
                               except: pass
-                              
+                  
+                  # 計算已轉換比例
+                  conv_ratio = None
+                  if issue_amt > 0 and remain_amt >= 0 and issue_amt >= remain_amt:
+                      conv_ratio = round((issue_amt - remain_amt) / issue_amt * 100, 2)
+                          
                   result[cb_code] = {
                       'stock_code': stock_code, 'company': company, 
-                      'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date
+                      'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date,
+                      'conv_ratio': conv_ratio
                   }
                   
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
+              print(f"✅ 成功解析 CSV，產出 {len(result)} 筆轉換價資料 (包含已轉換比例)。")
           except Exception as e:
               print(f"❌ 解析 CSV 失敗: {e}")
           PYEOF
@@ -144,7 +160,7 @@ jobs:
                       except: pass
           except: pass
 
-          # 5. Yahoo Finance 終極備援 (往前翻找5天的最後收盤價)
+          # 5. Yahoo Finance 終極備援
           try:
               with open('conv_price.json', 'r', encoding='utf-8') as f:
                   conv_data = json.load(f)
@@ -158,12 +174,10 @@ jobs:
                       chunk = missing_codes[i:i+20]
                       all_tickers = [f"{c}.TW" for c in chunk] + [f"{c}.TWO" for c in chunk]
                       try:
-                          # period="5d"：往前抓5天，避免冷門股今天沒交易
                           data = yf.download(all_tickers, period="5d", progress=False)
                           if not data.empty and 'Close' in data:
                               close_data = data['Close']
                               if isinstance(close_data, pd.DataFrame):
-                                  # ffill() 將空值用前一天的價格補齊，然後拿最後一天 (iloc[-1])
                                   last_prices = close_data.ffill().iloc[-1].dropna()
                                   for ticker, price in last_prices.items():
                                       code = ticker.split('.')[0]
@@ -176,16 +190,15 @@ jobs:
                                       if code not in stock_prices:
                                           stock_prices[code] = round(float(price), 2)
                       except Exception as e:
-                          print(f"Yahoo 抓取錯誤: {e}")
+                          pass
           except Exception as e:
-              print(f"備援發生錯誤: {e}")
+              pass
 
           try:
               with open('stock_price.json', 'w', encoding='utf-8') as f:
                   json.dump(stock_prices, f, ensure_ascii=False)
-              print(f"✅ 最終產出 stock_price.json，共 {len(stock_prices)} 筆股價資料。")
           except Exception as e:
-              print(f"❌ 存檔失敗: {e}")
+              pass
           PYEOF
 
       - name: Commit & Push 所有 JSON 檔案
