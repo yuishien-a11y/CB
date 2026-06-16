@@ -15,20 +15,20 @@ jobs:
       - name: 1. 下載基本資料 CSV (轉換價)
         run: |
           curl -L \
-            -H "User-Agent: Mozilla/5.0" \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
             -H "Referer: https://data.gov.tw/dataset/11406" \
             --compressed \
             -o ISSBD5_raw.csv \
             "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
 
-      - name: 2. 下載發行餘額 JSON (未轉換餘額)
-        # 💡 新增這段！去抓官方隱藏的餘額表
+      - name: 2. 下載發行餘額 JSON (解鎖 10000 筆限制)
+        # 💡 關鍵修復：加上 &iDisplayLength=10000 才能一次把 380 多檔全部撈回來
         run: |
           curl -L \
-            -H "User-Agent: Mozilla/5.0" \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
             --compressed \
             -o cvb_bal.json \
-            "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal_result.php?l=zh-tw&o=json"
+            "https://www.tpex.org.tw/web/bond/publish/convertible_bond_search/cvb_bal_result.php?l=zh-tw&o=json&iDisplayLength=10000"
 
       - name: 安裝 Python 套件
         run: pip install chardet requests yfinance pandas numpy
@@ -40,21 +40,30 @@ jobs:
           from datetime import datetime
           from io import StringIO
           
-          # 先讀取「發行餘額表」，建立餘額字典
+          # 建立發行餘額字典
           bal_data = {}
           try:
               with open('cvb_bal.json', 'r', encoding='utf-8') as f:
                   bal_json = json.load(f)
-                  for row in bal_json.get('aaData', []):
+                  rows = bal_json.get('aaData', [])
+                  print(f"📌 成功下載發行餘額表，共撈回 {len(rows)} 筆可轉債餘額數據")
+                  
+                  for row in rows:
+                      if len(row) < 7: continue
                       code = str(row[0]).strip()
+                      # 清除可能夾雜的 HTML 標籤
+                      code = re.sub(r'<[^>]+>', '', code).strip()
+                      if not re.match(r'^\d{4,6}$', code): continue
+                      
                       try:
-                          issue_amt = float(str(row[5]).replace(',', ''))  # 發行總額
-                          remain_amt = float(str(row[6]).replace(',', '')) # 最新餘額
+                          issue_amt = float(str(row[5]).replace(',', '').strip())  # 發行總額
+                          remain_amt = float(str(row[6]).replace(',', '').strip()) # 流通餘額
                           bal_data[code] = {'issue': issue_amt, 'remain': remain_amt}
                       except: pass
-          except Exception as e: print("讀取餘額表失敗:", e)
+          except Exception as e: 
+              print(f"❌ 讀取餘額表失敗: {e}")
 
-          # 再讀取「基本資料表」
+          # 讀取並合併基本資料
           try:
               with open('ISSBD5_raw.csv', 'rb') as f:
                   raw = f.read()
@@ -99,7 +108,7 @@ jobs:
                                   if 0 < conv_price < 9999: break
                               except: pass
                               
-                  # 💡 核心計算：匹配餘額並計算轉換率
+                  # 計算已轉換比例
                   conv_ratio = None
                   if cb_code in bal_data:
                       issue = bal_data[cb_code]['issue']
@@ -116,12 +125,12 @@ jobs:
               output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
               with open('conv_price.json', 'w', encoding='utf-8') as f:
                   json.dump(output, f, ensure_ascii=False, indent=2)
-              print(f"✅ 成功產出 {len(result)} 筆基本資料與轉換率！")
+              print(f"✅ 成功產出 conv_price.json，包含已轉換率數據。")
           except Exception as e:
               print(f"❌ 解析 CSV 失敗: {e}")
           PYEOF
 
-      - name: 4. 抓取最新股價產生 stock_price.json (維持 Yahoo 備援)
+      - name: 4. 抓取最新股價產生 stock_price.json
         run: |
           python3 << 'PYEOF'
           import json, requests, numpy as np, pandas as pd, yfinance as yf
@@ -179,7 +188,7 @@ jobs:
               json.dump(stock_prices, f, ensure_ascii=False)
           PYEOF
 
-      - name: Commit & Push
+      - name: Commit & Push 所有最新變更
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
