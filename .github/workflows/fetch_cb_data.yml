@@ -22,8 +22,8 @@ jobs:
             -o ISSBD5_raw.csv \
             "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
 
-      - name: 安裝 Python 套件
-        run: pip install chardet requests
+      - name: 安裝 Python 套件 (加入 yfinance 破解阻擋)
+        run: pip install chardet yfinance pandas
 
       - name: 解析 CSV 產生 conv_price.json
         run: |
@@ -85,61 +85,46 @@ jobs:
           output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
           with open('conv_price.json', 'w', encoding='utf-8') as f:
               json.dump(output, f, ensure_ascii=False, indent=2)
-          print(f"✅ 完成！共 {len(result)} 筆轉換價資料")
           PYEOF
 
-      - name: 抓取最新股價產生 stock_price.json
+      - name: 抓取最新股價產生 stock_price.json (透過 Yahoo Finance)
         run: |
           python3 << 'PYEOF'
-          import requests, json
-          stock_prices = {}
-          headers = {'User-Agent': 'Mozilla/5.0'}
+          import json
+          import math
+          import yfinance as yf
           
-          # 1. 抓取上市股票
-          try:
-              twse_data = requests.get('https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL', headers=headers, timeout=10).json()
-              for item in twse_data:
-                  if item.get('Code') and item.get('ClosingPrice'):
-                      try: stock_prices[item['Code']] = float(item['ClosingPrice'].replace(',', ''))
-                      except: pass
-          except: pass
-
-          # 2. 抓取上櫃股票
-          try:
-              tpex_data = requests.get('https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json', headers=headers, timeout=10).json()
-              for row in tpex_data.get('aaData', []):
-                  code = str(row[0]).strip()
-                  if len(code) <= 5:
-                      try: stock_prices[code] = float(str(row[2]).replace(',', ''))
-                      except: pass
-          except: pass
-
-          # 3. 雙重保險：檢查有哪些遺漏的股票，透過 Yahoo Finance 補齊
-          try:
-              with open('conv_price.json', 'r', encoding='utf-8') as f:
-                  conv_data = json.load(f)
-              needed_codes = {cb.get('stock_code') for cb in conv_data.get('data', {}).values() if cb.get('stock_code')}
-              missing_codes = [c for c in needed_codes if c not in stock_prices]
-              
-              if missing_codes:
-                  print(f"⚠ 台灣官方阻擋了 {len(missing_codes)} 檔股票，啟用 Yahoo 備援補抓...")
-                  for i in range(0, len(missing_codes), 40):
-                      chunk = missing_codes[i:i+40]
-                      symbols = ",".join([f"{c}.TWO" for c in chunk] + [f"{c}.TW" for c in chunk])
-                      url = f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={symbols}"
-                      try:
-                          res = requests.get(url, headers=headers).json()
-                          for item in res.get('quoteResponse', {}).get('result', []):
-                              code = item['symbol'].split('.')[0]
-                              if 'regularMarketPrice' in item and code not in stock_prices:
-                                  stock_prices[code] = item['regularMarketPrice']
-                      except Exception as e: pass
-          except Exception as e:
-              print("備援錯誤:", e)
-
+          # 讀取剛產生的轉換價檔案，取得所有母公司的股票代號
+          with open('conv_price.json', 'r', encoding='utf-8') as f:
+              conv_data = json.load(f)
+          
+          codes = list(set([cb.get('stock_code') for cb in conv_data.get('data', {}).values() if cb.get('stock_code')]))
+          print(f"準備從 Yahoo Finance 抓取 {len(codes)} 檔股票...")
+          
+          # Yahoo 的代號規則：上市加 .TW，上櫃加 .TWO
+          tw_tickers = [f"{c}.TW" for c in codes]
+          two_tickers = [f"{c}.TWO" for c in codes]
+          all_tickers = tw_tickers + two_tickers
+          
+          # 透過 yfinance 批量瞬間下載，完全無視台灣政府防火牆
+          data = yf.download(all_tickers, period="1d", threads=True, show_errors=False)
+          
+          stock_prices = {}
+          if 'Close' in data and not data['Close'].empty:
+              closes = data['Close'].iloc[-1]
+              for code in codes:
+                  tw_val = closes.get(f"{code}.TW")
+                  two_val = closes.get(f"{code}.TWO")
+                  
+                  if tw_val is not None and not math.isnan(tw_val):
+                      stock_prices[code] = round(float(tw_val), 2)
+                  elif two_val is not None and not math.isnan(two_val):
+                      stock_prices[code] = round(float(two_val), 2)
+                      
           with open('stock_price.json', 'w', encoding='utf-8') as f:
               json.dump(stock_prices, f, ensure_ascii=False)
-          print(f"✅ 成功產出 stock_price.json，共 {len(stock_prices)} 筆股價資料")
+          
+          print(f"✅ 成功產出 stock_price.json，共 {len(stock_prices)} 筆股價資料！")
           PYEOF
 
       - name: Commit & Push 所有 JSON 檔案
