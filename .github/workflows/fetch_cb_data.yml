@@ -2,8 +2,8 @@ name: 每日更新可轉債基本資料
 
 on:
   schedule:
-    - cron: '30 7 * * 1-5'  # 台灣時間 15:30（UTC+8），週一到週五
-  workflow_dispatch:          # 允許手動觸發
+    - cron: '30 7 * * 1-5'  # 台灣時間 15:30
+  workflow_dispatch:        # 允許手動觸發
 
 jobs:
   fetch-cb-data:
@@ -21,11 +21,8 @@ jobs:
             --compressed \
             -o ISSBD5_raw.csv \
             "https://www.tpex.org.tw/storage/bond_publish/ISSBD5_data.csv"
-          echo "下載完成，檔案大小："
-          wc -c ISSBD5_raw.csv
 
       - name: 安裝 Python 套件
-        # 💡 新增安裝 requests 套件，用來抓股價
         run: pip install chardet requests
 
       - name: 解析 CSV 產生 conv_price.json
@@ -33,137 +30,119 @@ jobs:
           python3 << 'PYEOF'
           import csv, json, chardet, re
           from datetime import datetime
-
-          # 偵測編碼
+          
           with open('ISSBD5_raw.csv', 'rb') as f:
               raw = f.read()
           detected = chardet.detect(raw)
           encoding = detected.get('encoding', 'big5')
-
-          # 解析 CSV
           text = raw.decode(encoding, errors='replace')
           lines = text.strip().split('\n')
           
           result = {}
           header = None
-          
           for i, line in enumerate(lines):
-            cols = [c.strip().strip('"') for c in line.split(',')]
-            if i == 0:
-                header = cols
-                continue
-            
-            if len(cols) < 10:
-                continue
-            
-            cb_code = cols[3].strip()
-            if not re.match(r'^\d{4,6}$', cb_code):
-                continue
-            
-            # 到期日 col[8]
-            mat_raw = cols[8].strip()
-            maturity = ''
-            if len(mat_raw) == 8 and mat_raw.isdigit():
-                maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}"
-            
-            # 發行日 col[7]
-            issue_raw = cols[7].strip()
-            issue_date = ''
-            if len(issue_raw) == 8 and issue_raw.isdigit():
-                issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}"
-
-            stock_code = cols[1].strip()
-            company = cols[2].strip()
-
-            conv_price = 0
-            if header:
-                for idx, h in enumerate(header):
-                    if '轉換' in h and '價' in h and idx < len(cols):
-                        v = cols[idx].replace(',','').strip()
-                        try:
-                            conv_price = float(v)
-                            break
-                        except:
-                            pass
-            
-            if conv_price == 0:
-                for idx in range(len(cols)-1, 19, -1):
-                    v = cols[idx].replace(',','').strip()
-                    if '.' in v:
-                        try:
-                            fv = float(v)
-                            if 0 < fv < 9999:
-                                conv_price = fv
-                                break
-                        except:
-                            pass
-
-            result[cb_code] = {
-                'stock_code': stock_code,
-                'company': company,
-                'conv_price': conv_price,
-                'maturity': maturity,
-                'issue_date': issue_date,
-            }
-          
-          output = {
-              'updated': datetime.now().strftime('%Y-%m-%d %H:%M'),
-              'count': len(result),
-              'data': result
-          }
-          
+              cols = [c.strip().strip('"') for c in line.split(',')]
+              if i == 0:
+                  header = cols
+                  continue
+              if len(cols) < 10:
+                  continue
+              cb_code = cols[3].strip()
+              if not re.match(r'^\d{4,6}$', cb_code):
+                  continue
+              
+              mat_raw = cols[8].strip()
+              maturity = f"{mat_raw[:4]}-{mat_raw[4:6]}-{mat_raw[6:8]}" if len(mat_raw) == 8 and mat_raw.isdigit() else ''
+              issue_raw = cols[7].strip()
+              issue_date = f"{issue_raw[:4]}-{issue_raw[4:6]}-{issue_raw[6:8]}" if len(issue_raw) == 8 and issue_raw.isdigit() else ''
+              stock_code = cols[1].strip()
+              company = cols[2].strip()
+              
+              conv_price = 0
+              if header:
+                  for idx, h in enumerate(header):
+                      if '轉換' in h and '價' in h and idx < len(cols):
+                          try:
+                              conv_price = float(cols[idx].replace(',','').strip())
+                              break
+                          except: pass
+              if conv_price == 0:
+                  for idx in range(len(cols)-1, 19, -1):
+                      v = cols[idx].replace(',','').strip()
+                      if '.' in v:
+                          try:
+                              fv = float(v)
+                              if 0 < fv < 9999:
+                                  conv_price = fv
+                                  break
+                          except: pass
+                          
+              result[cb_code] = {
+                  'stock_code': stock_code, 'company': company, 
+                  'conv_price': conv_price, 'maturity': maturity, 'issue_date': issue_date
+              }
+              
+          output = {'updated': datetime.now().strftime('%Y-%m-%d %H:%M'), 'count': len(result), 'data': result}
           with open('conv_price.json', 'w', encoding='utf-8') as f:
               json.dump(output, f, ensure_ascii=False, indent=2)
-          
-          print(f"✅ 完成！共 {len(result)} 筆可轉債轉換價資料")
+          print(f"✅ 完成！共 {len(result)} 筆轉換價資料")
           PYEOF
 
       - name: 抓取最新股價產生 stock_price.json
-        # 💡 這是新增的步驟：自動抓取上市與上櫃股價
         run: |
           python3 << 'PYEOF'
-          import requests
-          import json
-
+          import requests, json
           stock_prices = {}
-          headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-
-          # 1. 抓取上市股票 (TWSE)
+          headers = {'User-Agent': 'Mozilla/5.0'}
+          
+          # 1. 抓取上市股票
           try:
-              twse_url = 'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'
-              twse_data = requests.get(twse_url, headers=headers, timeout=10).json()
+              twse_data = requests.get('https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL', headers=headers, timeout=10).json()
               for item in twse_data:
                   if item.get('Code') and item.get('ClosingPrice'):
-                      try:
-                          stock_prices[item['Code']] = float(item['ClosingPrice'].replace(',', ''))
-                      except ValueError:
-                          pass
-          except Exception as e:
-              print(f"上市股價抓取失敗: {e}")
+                      try: stock_prices[item['Code']] = float(item['ClosingPrice'].replace(',', ''))
+                      except: pass
+          except: pass
 
-          # 2. 抓取上櫃股票 (TPEx) - Web API (不會被擋)
+          # 2. 抓取上櫃股票
           try:
-              tpex_url = 'https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json'
-              tpex_data = requests.get(tpex_url, headers=headers, timeout=10).json()
+              tpex_data = requests.get('https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=json', headers=headers, timeout=10).json()
               for row in tpex_data.get('aaData', []):
                   code = str(row[0]).strip()
-                  price_str = str(row[2]).replace(',', '')
-                  if len(code) <= 5: 
-                      try:
-                          stock_prices[code] = float(price_str)
-                      except ValueError:
-                          pass
-          except Exception as e:
-              print(f"上櫃股價抓取失敗: {e}")
+                  if len(code) <= 5:
+                      try: stock_prices[code] = float(str(row[2]).replace(',', ''))
+                      except: pass
+          except: pass
 
-          # 3. 儲存成 stock_price.json
+          # 3. 雙重保險：檢查有哪些遺漏的股票，透過 Yahoo Finance 補齊
+          try:
+              with open('conv_price.json', 'r', encoding='utf-8') as f:
+                  conv_data = json.load(f)
+              needed_codes = {cb.get('stock_code') for cb in conv_data.get('data', {}).values() if cb.get('stock_code')}
+              missing_codes = [c for c in needed_codes if c not in stock_prices]
+              
+              if missing_codes:
+                  print(f"⚠ 台灣官方阻擋了 {len(missing_codes)} 檔股票，啟用 Yahoo 備援補抓...")
+                  for i in range(0, len(missing_codes), 40):
+                      chunk = missing_codes[i:i+40]
+                      symbols = ",".join([f"{c}.TWO" for c in chunk] + [f"{c}.TW" for c in chunk])
+                      url = f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={symbols}"
+                      try:
+                          res = requests.get(url, headers=headers).json()
+                          for item in res.get('quoteResponse', {}).get('result', []):
+                              code = item['symbol'].split('.')[0]
+                              if 'regularMarketPrice' in item and code not in stock_prices:
+                                  stock_prices[code] = item['regularMarketPrice']
+                      except Exception as e: pass
+          except Exception as e:
+              print("備援錯誤:", e)
+
           with open('stock_price.json', 'w', encoding='utf-8') as f:
               json.dump(stock_prices, f, ensure_ascii=False)
           print(f"✅ 成功產出 stock_price.json，共 {len(stock_prices)} 筆股價資料")
           PYEOF
 
       - name: Commit & Push 所有 JSON 檔案
-        # 💡 同時將 conv_price.json 與 stock_price.json 推送到 GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
