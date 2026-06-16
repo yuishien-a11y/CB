@@ -30,6 +30,7 @@ jobs:
           python3 << 'PYEOF'
           import csv, json, chardet, re
           from datetime import datetime
+          from io import StringIO
           
           try:
               with open('ISSBD5_raw.csv', 'rb') as f:
@@ -37,16 +38,17 @@ jobs:
               detected = chardet.detect(raw)
               encoding = detected.get('encoding', 'big5')
               text = raw.decode(encoding, errors='replace')
-              lines = text.strip().split('\n')
+              
+              # 💡 使用標準 csv 函式庫，完美解決數字中帶有逗號的問題
+              reader = csv.reader(StringIO(text))
               
               result = {}
-              
               idx_cb_code, idx_stock_code, idx_company = -1, -1, -1
               idx_mat, idx_issue, idx_conv = -1, -1, -1
               idx_issue_amt, idx_remain_amt = -1, -1
               
-              for i, line in enumerate(lines):
-                  cols = [c.strip().strip('"') for c in line.split(',')]
+              for i, cols in enumerate(reader):
+                  cols = [c.strip() for c in cols]
                   if i == 0:
                       header = cols
                       for j, h in enumerate(header):
@@ -61,6 +63,7 @@ jobs:
                           elif '未轉換' in h_clean or '餘額' in h_clean: idx_remain_amt = j
                       continue
                       
+                  # 確保欄位數夠長
                   if len(cols) < max(idx_cb_code, idx_stock_code, idx_issue_amt, idx_remain_amt):
                       continue
                       
