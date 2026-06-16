@@ -2717,5 +2717,5 @@ def fetch_all_stock_prices():
     print(f"✅ 成功產出 stock_price.json，共 {len(stock_prices)} 筆股價資料")
 
 # 記得在你的主程式碼中呼叫它
-# fetch_all_stock_prices()
+fetch_all_stock_prices()
 }
