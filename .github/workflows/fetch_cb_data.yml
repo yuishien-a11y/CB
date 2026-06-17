@@ -73,7 +73,7 @@ jobs:
                           elif ('發行' in h_clean or '面額' in h_clean) and ('總' in h_clean or '金' in h_clean or '額' in h_clean) and '餘' not in h_clean: 
                               idx_issue_amt = j
                           # 聰明抓取「最新發行餘額」
-                          elif '餘額' in h_clean or '未轉' in h_clean or '在外' in h_clean or '未償' in h_clean: 
+                          elif '目前餘額' in h_clean or ('餘額' in h_clean and '發行' not in h_clean) or '未轉' in h_clean or '在外' in h_clean or '未償' in h_clean: 
                               idx_remain_amt = j
                       
                       # 把官方表頭印出來，方便我們除錯
