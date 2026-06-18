@@ -114,9 +114,15 @@ jobs:
                               
                   issue_amt = -1
                   remain_amt = -1
-                  if idx_issue_amt != -1 and idx_issue_amt < len(cols):
+                  # 強制用固定欄位：col[9]=發行總額, col[10]=目前餘額
+                  try: issue_amt = parse_amt(cols[9]) if len(cols) > 9 else -1
+                  except: issue_amt = -1
+                  try: remain_amt = parse_amt(cols[10]) if len(cols) > 10 else -1
+                  except: remain_amt = -1
+                  # 備援：用動態偵測的欄位
+                  if issue_amt <= 0 and idx_issue_amt != -1 and idx_issue_amt < len(cols):
                       issue_amt = parse_amt(cols[idx_issue_amt])
-                  if idx_remain_amt != -1 and idx_remain_amt < len(cols):
+                  if remain_amt <= 0 and idx_remain_amt != -1 and idx_remain_amt < len(cols) and idx_remain_amt != idx_issue_amt:
                       remain_amt = parse_amt(cols[idx_remain_amt])
                       
                   # 💡 核心計算：(發行總額 - 剩餘餘額) / 發行總額
