@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-18 18:14",
-  "count": 382,
+  "updated": "2026-06-19 16:42",
+  "count": 383,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1354,6 +1354,14 @@
       "issue_date": "2024-07-11",
       "conv_ratio": 8.33
     },
+    "41904": {
+      "stock_code": "4190",
+      "company": "佐登-KY",
+      "conv_price": 26.6,
+      "maturity": "2029-06-30",
+      "issue_date": "2026-06-30",
+      "conv_ratio": 0.0
+    },
     "44163": {
       "stock_code": "4416",
       "company": "三圓",
@@ -2210,6 +2218,14 @@
       "issue_date": "2026-06-09",
       "conv_ratio": 0.0
     },
+    "65463": {
+      "stock_code": "6546",
+      "company": "正基",
+      "conv_price": 81.5,
+      "maturity": "2029-06-30",
+      "issue_date": "2026-06-30",
+      "conv_ratio": 0.0
+    },
     "65472": {
       "stock_code": "6547",
       "company": "高端疫苗",
@@ -2409,14 +2425,6 @@
       "maturity": "2031-05-21",
       "issue_date": "2026-05-21",
       "conv_ratio": 0.0
-    },
-    "68041": {
-      "stock_code": "6804",
-      "company": "明係",
-      "conv_price": 71.2,
-      "maturity": "2026-06-19",
-      "issue_date": "2023-06-19",
-      "conv_ratio": 0.45
     },
     "68061": {
       "stock_code": "6806",
