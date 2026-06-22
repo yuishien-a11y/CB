@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-19 16:42",
-  "count": 383,
+  "updated": "2026-06-22 08:45",
+  "count": 381,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1090,14 +1090,6 @@
       "issue_date": "2024-06-19",
       "conv_ratio": 0.33
     },
-    "35871": {
-      "stock_code": "3587",
-      "company": "閎康",
-      "conv_price": 218.0,
-      "maturity": "2026-06-20",
-      "issue_date": "2023-06-20",
-      "conv_ratio": 96.73
-    },
     "35872": {
       "stock_code": "3587",
       "company": "閎康",
@@ -1761,14 +1753,6 @@
       "maturity": "2031-03-11",
       "issue_date": "2026-03-11",
       "conv_ratio": 0.0
-    },
-    "56086": {
-      "stock_code": "5608",
-      "company": "四維航",
-      "conv_price": 23.8,
-      "maturity": "2026-06-21",
-      "issue_date": "2023-06-21",
-      "conv_ratio": 0.04
     },
     "56087": {
       "stock_code": "5608",
