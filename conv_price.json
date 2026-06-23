@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-22 19:57",
-  "count": 381,
+  "updated": "2026-06-23 16:44",
+  "count": 382,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1656,6 +1656,14 @@
       "conv_price": 322.6,
       "maturity": "2029-05-11",
       "issue_date": "2026-05-11",
+      "conv_ratio": 0.0
+    },
+    "52892": {
+      "stock_code": "5289",
+      "company": "宜鼎",
+      "conv_price": 2180.0,
+      "maturity": "2029-07-01",
+      "issue_date": "2026-07-01",
       "conv_ratio": 0.0
     },
     "53064": {
