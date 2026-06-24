@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 16:44",
+  "updated": "2026-06-24 16:03",
   "count": 382,
   "data": {
     "11011": {
@@ -1914,6 +1914,14 @@
       "issue_date": "2024-03-06",
       "conv_ratio": 12.9
     },
+    "61876": {
+      "stock_code": "6187",
+      "company": "萬潤",
+      "conv_price": 1150.0,
+      "maturity": "2029-07-02",
+      "issue_date": "2026-07-02",
+      "conv_ratio": 28.68
+    },
     "61894": {
       "stock_code": "6189",
       "company": "豐藝",
@@ -2089,14 +2097,6 @@
       "maturity": "2027-08-16",
       "issue_date": "2024-08-16",
       "conv_ratio": 18.84
-    },
-    "64423": {
-      "stock_code": "6442",
-      "company": "光聖",
-      "conv_price": 1065.9,
-      "maturity": "2028-12-11",
-      "issue_date": "2025-12-11",
-      "conv_ratio": 82.75
     },
     "64512": {
       "stock_code": "6451",
