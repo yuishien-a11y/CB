@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-24 16:03",
-  "count": 382,
+  "updated": "2026-06-25 16:36",
+  "count": 383,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -745,14 +745,6 @@
       "maturity": "2030-08-05",
       "issue_date": "2025-08-05",
       "conv_ratio": 39.35
-    },
-    "31351": {
-      "stock_code": "3135",
-      "company": "凌航",
-      "conv_price": 52.19,
-      "maturity": "2028-12-04",
-      "issue_date": "2025-12-04",
-      "conv_ratio": 99.43
     },
     "31352": {
       "stock_code": "3135",
@@ -2258,6 +2250,14 @@
       "issue_date": "2024-10-30",
       "conv_ratio": 99.47
     },
+    "65843": {
+      "stock_code": "6584",
+      "company": "南俊國際",
+      "conv_price": 685.0,
+      "maturity": "2029-07-02",
+      "issue_date": "2026-07-02",
+      "conv_ratio": 0.0
+    },
     "65851": {
       "stock_code": "6585",
       "company": "鼎基",
@@ -2721,6 +2721,14 @@
       "maturity": "2027-03-11",
       "issue_date": "2024-03-11",
       "conv_ratio": 45.94
+    },
+    "80962": {
+      "stock_code": "8096",
+      "company": "擎亞",
+      "conv_price": 158.0,
+      "maturity": "2029-07-02",
+      "issue_date": "2026-07-02",
+      "conv_ratio": 0.0
     },
     "81042": {
       "stock_code": "8104",
