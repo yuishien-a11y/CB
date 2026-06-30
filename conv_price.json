@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-29 17:24",
-  "count": 381,
+  "updated": "2026-06-30 16:29",
+  "count": 382,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2345,6 +2345,14 @@
       "maturity": "2029-09-02",
       "issue_date": "2024-09-02",
       "conv_ratio": 10.8
+    },
+    "66931": {
+      "stock_code": "6693",
+      "company": "廣閎科",
+      "conv_price": 0.0,
+      "maturity": "2029-07-09",
+      "issue_date": "2026-07-09",
+      "conv_ratio": 0.0
     },
     "67062": {
       "stock_code": "6706",
