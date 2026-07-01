@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-30 16:29",
-  "count": 382,
+  "updated": "2026-07-01 16:41",
+  "count": 381,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1904,7 +1904,7 @@
       "conv_price": 1150.0,
       "maturity": "2029-07-02",
       "issue_date": "2026-07-02",
-      "conv_ratio": 28.68
+      "conv_ratio": 0.0
     },
     "61894": {
       "stock_code": "6189",
@@ -1928,7 +1928,7 @@
       "conv_price": 160.0,
       "maturity": "2027-10-15",
       "issue_date": "2024-10-15",
-      "conv_ratio": 1.91
+      "conv_ratio": 20.57
     },
     "61993": {
       "stock_code": "6199",
@@ -2345,14 +2345,6 @@
       "maturity": "2029-09-02",
       "issue_date": "2024-09-02",
       "conv_ratio": 10.8
-    },
-    "66931": {
-      "stock_code": "6693",
-      "company": "廣閎科",
-      "conv_price": 0.0,
-      "maturity": "2029-07-09",
-      "issue_date": "2026-07-09",
-      "conv_ratio": 0.0
     },
     "67062": {
       "stock_code": "6706",
