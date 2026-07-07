@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 11:48",
+  "updated": "2026-07-07 10:38",
   "count": 379,
   "data": {
     "11011": {
@@ -2008,7 +2008,7 @@
       "conv_price": 50.0,
       "maturity": "2028-06-13",
       "issue_date": "2023-06-13",
-      "conv_ratio": 0.01
+      "conv_ratio": 0.08
     },
     "62843": {
       "stock_code": "6284",
@@ -2128,7 +2128,7 @@
       "conv_price": 3540.4,
       "maturity": "2029-02-05",
       "issue_date": "2026-02-05",
-      "conv_ratio": 42.23
+      "conv_ratio": 48.01
     },
     "65331": {
       "stock_code": "6533",
@@ -2400,7 +2400,7 @@
       "conv_price": 150.0,
       "maturity": "2027-08-15",
       "issue_date": "2024-08-15",
-      "conv_ratio": 49.24
+      "conv_ratio": 77.74
     },
     "68351": {
       "stock_code": "6835",
