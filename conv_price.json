@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-09 10:43",
-  "count": 379,
+  "updated": "2026-07-10 10:35",
+  "count": 378,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -777,14 +777,6 @@
       "maturity": "2029-11-01",
       "issue_date": "2024-11-01",
       "conv_ratio": 0.0
-    },
-    "32608": {
-      "stock_code": "3260",
-      "company": "威剛",
-      "conv_price": 244.0,
-      "maturity": "2029-01-08",
-      "issue_date": "2026-01-08",
-      "conv_ratio": 92.31
     },
     "32723": {
       "stock_code": "3272",
