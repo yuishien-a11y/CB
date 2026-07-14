@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-13 10:39",
-  "count": 378,
+  "updated": "2026-07-14 09:26",
+  "count": 380,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -625,6 +625,14 @@
       "maturity": "2027-07-26",
       "issue_date": "2024-07-26",
       "conv_ratio": 25.92
+    },
+    "30285": {
+      "stock_code": "3028",
+      "company": "增你強",
+      "conv_price": 80.0,
+      "maturity": "2031-07-21",
+      "issue_date": "2026-07-21",
+      "conv_ratio": 0.0
     },
     "30321": {
       "stock_code": "3032",
@@ -1798,8 +1806,8 @@
       "stock_code": "6134",
       "company": "萬旭",
       "conv_price": 34.0,
-      "maturity": "2029-07-17",
-      "issue_date": "2026-07-17",
+      "maturity": "2029-07-20",
+      "issue_date": "2026-07-20",
       "conv_ratio": 0.0
     },
     "61506": {
@@ -2641,6 +2649,14 @@
       "maturity": "2027-11-22",
       "issue_date": "2022-11-22",
       "conv_ratio": 52.64
+    },
+    "80541": {
+      "stock_code": "8054",
+      "company": "安國",
+      "conv_price": 122.6,
+      "maturity": "2029-07-22",
+      "issue_date": "2026-07-22",
+      "conv_ratio": 13.93
     },
     "80746": {
       "stock_code": "8074",
