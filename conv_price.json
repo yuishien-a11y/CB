@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-15 09:30",
-  "count": 380,
+  "updated": "2026-07-16 09:35",
+  "count": 382,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -457,6 +457,14 @@
       "maturity": "2027-07-01",
       "issue_date": "2024-07-01",
       "conv_ratio": 95.87
+    },
+    "24867": {
+      "stock_code": "2486",
+      "company": "一詮",
+      "conv_price": 256.0,
+      "maturity": "2029-07-23",
+      "issue_date": "2026-07-23",
+      "conv_ratio": 0.0
     },
     "25283": {
       "stock_code": "2528",
@@ -2881,6 +2889,14 @@
       "maturity": "2026-10-19",
       "issue_date": "2023-10-19",
       "conv_ratio": 9.62
+    },
+    "84423": {
+      "stock_code": "8442",
+      "company": "威宏-KY",
+      "conv_price": 42.5,
+      "maturity": "2029-07-24",
+      "issue_date": "2026-07-24",
+      "conv_ratio": null
     },
     "84624": {
       "stock_code": "8462",
