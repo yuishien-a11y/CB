@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-16 09:35",
-  "count": 382,
+  "updated": "2026-07-17 09:28",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -637,9 +637,9 @@
     "30285": {
       "stock_code": "3028",
       "company": "增你強",
-      "conv_price": 80.0,
-      "maturity": "2031-07-21",
-      "issue_date": "2026-07-21",
+      "conv_price": 78.0,
+      "maturity": "2031-07-24",
+      "issue_date": "2026-07-24",
       "conv_ratio": 0.0
     },
     "30321": {
@@ -2330,6 +2330,14 @@
       "issue_date": "2024-09-02",
       "conv_ratio": 10.8
     },
+    "66931": {
+      "stock_code": "6693",
+      "company": "廣閎科",
+      "conv_price": 228.1,
+      "maturity": "2029-07-24",
+      "issue_date": "2026-07-24",
+      "conv_ratio": 0.0
+    },
     "67062": {
       "stock_code": "6706",
       "company": "惠特",
@@ -2474,6 +2482,14 @@
       "issue_date": "2024-10-15",
       "conv_ratio": 0.0
     },
+    "68692": {
+      "stock_code": "6869",
+      "company": "雲豹能源",
+      "conv_price": 72.3,
+      "maturity": "2029-07-24",
+      "issue_date": "2026-07-24",
+      "conv_ratio": 0.0
+    },
     "68701": {
       "stock_code": "6870",
       "company": "騰雲",
@@ -2536,6 +2552,14 @@
       "conv_price": 262.4,
       "maturity": "2029-03-09",
       "issue_date": "2026-03-09",
+      "conv_ratio": 0.0
+    },
+    "69031": {
+      "stock_code": "6903",
+      "company": "巨漢",
+      "conv_price": 406.6,
+      "maturity": "2029-07-24",
+      "issue_date": "2026-07-24",
       "conv_ratio": 0.0
     },
     "69041": {
@@ -2664,7 +2688,7 @@
       "conv_price": 122.6,
       "maturity": "2029-07-22",
       "issue_date": "2026-07-22",
-      "conv_ratio": 13.93
+      "conv_ratio": 0.0
     },
     "80746": {
       "stock_code": "8074",
@@ -2896,7 +2920,7 @@
       "conv_price": 42.5,
       "maturity": "2029-07-24",
       "issue_date": "2026-07-24",
-      "conv_ratio": null
+      "conv_ratio": 0.0
     },
     "84624": {
       "stock_code": "8462",
