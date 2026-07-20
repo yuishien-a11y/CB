@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-17 09:28",
-  "count": 385,
+  "updated": "2026-07-20 10:26",
+  "count": 383,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -449,14 +449,6 @@
       "maturity": "2027-01-26",
       "issue_date": "2024-01-26",
       "conv_ratio": 69.81
-    },
-    "24866": {
-      "stock_code": "2486",
-      "company": "一詮",
-      "conv_price": 126.0,
-      "maturity": "2027-07-01",
-      "issue_date": "2024-07-01",
-      "conv_ratio": 95.87
     },
     "24867": {
       "stock_code": "2486",
@@ -1529,14 +1521,6 @@
       "maturity": "2029-05-29",
       "issue_date": "2026-05-29",
       "conv_ratio": 0.0
-    },
-    "49674": {
-      "stock_code": "4967",
-      "company": "十銓",
-      "conv_price": 147.0,
-      "maturity": "2029-01-15",
-      "issue_date": "2026-01-15",
-      "conv_ratio": 86.52
     },
     "49793": {
       "stock_code": "4979",
