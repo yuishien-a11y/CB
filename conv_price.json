@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-21 10:03",
-  "count": 383,
+  "updated": "2026-07-22 10:01",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1626,6 +1626,14 @@
       "issue_date": "2026-07-01",
       "conv_ratio": 0.0
     },
+    "52912": {
+      "stock_code": "5291",
+      "company": "邑昇",
+      "conv_price": 53.0,
+      "maturity": "2029-07-29",
+      "issue_date": "2026-07-29",
+      "conv_ratio": 0.0
+    },
     "53064": {
       "stock_code": "5306",
       "company": "桂盟",
@@ -2889,6 +2897,14 @@
       "maturity": "2027-05-27",
       "issue_date": "2024-05-27",
       "conv_ratio": 97.62
+    },
+    "84381": {
+      "stock_code": "8438",
+      "company": "昶昕",
+      "conv_price": 90.8,
+      "maturity": "2029-08-05",
+      "issue_date": "2026-08-05",
+      "conv_ratio": 0.0
     },
     "84422": {
       "stock_code": "8442",
