@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-23 10:01",
-  "count": 386,
+  "updated": "2026-07-24 09:57",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1577,14 +1577,6 @@
       "maturity": "2029-10-15",
       "issue_date": "2024-10-15",
       "conv_ratio": 0.0
-    },
-    "52303": {
-      "stock_code": "5230",
-      "company": "雷笛克光學",
-      "conv_price": 22.8,
-      "maturity": "2026-07-24",
-      "issue_date": "2023-07-24",
-      "conv_ratio": 80.13
     },
     "52441": {
       "stock_code": "5244",
