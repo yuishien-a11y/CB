@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-24 09:57",
-  "count": 385,
+  "updated": "2026-07-27 10:54",
+  "count": 380,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1162,22 +1162,6 @@
       "issue_date": "2024-08-30",
       "conv_ratio": 0.0
     },
-    "37022": {
-      "stock_code": "3702",
-      "company": "大聯大",
-      "conv_price": 80.5,
-      "maturity": "2027-11-11",
-      "issue_date": "2024-11-11",
-      "conv_ratio": 68.3
-    },
-    "37023": {
-      "stock_code": "3702",
-      "company": "大聯大",
-      "conv_price": 78.0,
-      "maturity": "2027-11-21",
-      "issue_date": "2024-11-21",
-      "conv_ratio": 68.32
-    },
     "370201": {
       "stock_code": "3702",
       "company": "大聯大",
@@ -1842,14 +1826,6 @@
       "issue_date": "2025-06-25",
       "conv_ratio": 0.1
     },
-    "61793": {
-      "stock_code": "6179",
-      "company": "亞通",
-      "conv_price": 37.5,
-      "maturity": "2026-07-25",
-      "issue_date": "2023-07-25",
-      "conv_ratio": 84.23
-    },
     "61794": {
       "stock_code": "6179",
       "company": "亞通",
@@ -1857,14 +1833,6 @@
       "maturity": "2027-08-28",
       "issue_date": "2024-08-28",
       "conv_ratio": 0.77
-    },
-    "61827": {
-      "stock_code": "6182",
-      "company": "合晶",
-      "conv_price": 70.0,
-      "maturity": "2026-07-27",
-      "issue_date": "2021-07-27",
-      "conv_ratio": 70.27
     },
     "61828": {
       "stock_code": "6182",
@@ -2778,6 +2746,14 @@
       "issue_date": "2025-01-10",
       "conv_ratio": 80.26
     },
+    "81552": {
+      "stock_code": "8155",
+      "company": "博智",
+      "conv_price": 338.0,
+      "maturity": "2031-08-03",
+      "issue_date": "2026-08-03",
+      "conv_ratio": 0.0
+    },
     "81714": {
       "stock_code": "8171",
       "company": "天宇",
@@ -2898,14 +2874,6 @@
       "issue_date": "2024-05-27",
       "conv_ratio": 97.62
     },
-    "84381": {
-      "stock_code": "8438",
-      "company": "昶昕",
-      "conv_price": 90.8,
-      "maturity": "2029-08-05",
-      "issue_date": "2026-08-05",
-      "conv_ratio": 0.0
-    },
     "84422": {
       "stock_code": "8442",
       "company": "威宏-KY",
@@ -2929,14 +2897,6 @@
       "maturity": "2029-05-08",
       "issue_date": "2026-05-08",
       "conv_ratio": 0.0
-    },
-    "84662": {
-      "stock_code": "8466",
-      "company": "美吉吉-KY",
-      "conv_price": 52.8,
-      "maturity": "2026-07-26",
-      "issue_date": "2023-07-26",
-      "conv_ratio": 94.96
     },
     "84672": {
       "stock_code": "8467",
