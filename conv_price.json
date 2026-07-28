@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-27 10:54",
-  "count": 380,
+  "updated": "2026-07-28 10:09",
+  "count": 383,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1490,6 +1490,14 @@
       "issue_date": "2026-05-22",
       "conv_ratio": 0.0
     },
+    "47642": {
+      "stock_code": "4764",
+      "company": "雙鍵",
+      "conv_price": 336.8,
+      "maturity": "2029-08-05",
+      "issue_date": "2026-08-05",
+      "conv_ratio": 0.0
+    },
     "47721": {
       "stock_code": "4772",
       "company": "台特化",
@@ -1704,6 +1712,14 @@
       "conv_price": 80.0,
       "maturity": "2031-03-11",
       "issue_date": "2026-03-11",
+      "conv_ratio": 0.0
+    },
+    "55362": {
+      "stock_code": "5536",
+      "company": "聖暉*",
+      "conv_price": 1178.0,
+      "maturity": "2029-08-04",
+      "issue_date": "2026-08-04",
       "conv_ratio": 0.0
     },
     "56087": {
@@ -2873,6 +2889,14 @@
       "maturity": "2027-05-27",
       "issue_date": "2024-05-27",
       "conv_ratio": 97.62
+    },
+    "84381": {
+      "stock_code": "8438",
+      "company": "昶昕",
+      "conv_price": 90.8,
+      "maturity": "2029-08-05",
+      "issue_date": "2026-08-05",
+      "conv_ratio": 0.0
     },
     "84422": {
       "stock_code": "8442",
