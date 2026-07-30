@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-29 10:11",
-  "count": 383,
+  "updated": "2026-07-30 10:00",
+  "count": 384,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2536,6 +2536,14 @@
       "conv_price": 406.6,
       "maturity": "2029-07-24",
       "issue_date": "2026-07-24",
+      "conv_ratio": 0.0
+    },
+    "69032": {
+      "stock_code": "6903",
+      "company": "巨漢",
+      "conv_price": 369.8,
+      "maturity": "2029-08-07",
+      "issue_date": "2026-08-07",
       "conv_ratio": 0.0
     },
     "69041": {
