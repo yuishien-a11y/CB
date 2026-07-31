@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-30 10:00",
-  "count": 384,
+  "updated": "2026-07-31 10:07",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -226,14 +226,6 @@
       "issue_date": "2024-10-02",
       "conv_ratio": 0.0
     },
-    "20662": {
-      "stock_code": "2066",
-      "company": "世德",
-      "conv_price": 101.0,
-      "maturity": "2026-07-31",
-      "issue_date": "2023-07-31",
-      "conv_ratio": 40.55
-    },
     "21043": {
       "stock_code": "2104",
       "company": "國際中橡",
@@ -289,6 +281,14 @@
       "maturity": "2028-06-30",
       "issue_date": "2025-06-30",
       "conv_ratio": 0.06
+    },
+    "23031": {
+      "stock_code": "2303",
+      "company": "聯電",
+      "conv_price": 146.0,
+      "maturity": "2031-08-07",
+      "issue_date": "2026-08-07",
+      "conv_ratio": 0.0
     },
     "23291": {
       "stock_code": "2329",
@@ -753,6 +753,14 @@
       "maturity": "2027-05-20",
       "issue_date": "2024-05-20",
       "conv_ratio": 92.65
+    },
+    "31414": {
+      "stock_code": "3141",
+      "company": "晶宏",
+      "conv_price": 63.01,
+      "maturity": "2031-08-07",
+      "issue_date": "2026-08-07",
+      "conv_ratio": 0.0
     },
     "31672": {
       "stock_code": "3167",
@@ -1538,14 +1546,6 @@
       "issue_date": "2024-12-25",
       "conv_ratio": 43.55
     },
-    "50097": {
-      "stock_code": "5009",
-      "company": "榮剛",
-      "conv_price": 59.2,
-      "maturity": "2026-07-31",
-      "issue_date": "2023-07-31",
-      "conv_ratio": 0.0
-    },
     "52011": {
       "stock_code": "5201",
       "company": "凱衛",
@@ -2305,6 +2305,14 @@
       "maturity": "2029-09-02",
       "issue_date": "2024-09-02",
       "conv_ratio": 10.8
+    },
+    "66831": {
+      "stock_code": "6683",
+      "company": "雍智科技",
+      "conv_price": 1127.1,
+      "maturity": "2029-08-10",
+      "issue_date": "2026-08-10",
+      "conv_ratio": 0.0
     },
     "66931": {
       "stock_code": "6693",
