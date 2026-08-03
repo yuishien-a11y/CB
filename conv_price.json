@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-31 10:07",
-  "count": 385,
+  "updated": "2026-08-03 10:55",
+  "count": 384,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -305,14 +305,6 @@
       "maturity": "2028-03-24",
       "issue_date": "2025-03-24",
       "conv_ratio": 96.62
-    },
-    "23383": {
-      "stock_code": "2338",
-      "company": "光罩",
-      "conv_price": 88.8,
-      "maturity": "2026-08-03",
-      "issue_date": "2021-08-03",
-      "conv_ratio": 95.1
     },
     "23511": {
       "stock_code": "2351",
