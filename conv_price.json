@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-06 10:11",
-  "count": 386,
+  "updated": "2026-08-07 08:35",
+  "count": 388,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2149,7 +2149,7 @@
     "65463": {
       "stock_code": "6546",
       "company": "正基",
-      "conv_price": 78.8,
+      "conv_price": 81.5,
       "maturity": "2029-06-30",
       "issue_date": "2026-06-30",
       "conv_ratio": 0.0
@@ -2168,6 +2168,14 @@
       "conv_price": 63.5,
       "maturity": "2026-10-25",
       "issue_date": "2021-10-25",
+      "conv_ratio": 0.0
+    },
+    "65702": {
+      "stock_code": "6570",
+      "company": "維田",
+      "conv_price": 55.73,
+      "maturity": "2029-08-14",
+      "issue_date": "2026-08-14",
       "conv_ratio": 0.0
     },
     "65761": {
@@ -3017,6 +3025,14 @@
       "maturity": "2027-08-21",
       "issue_date": "2024-08-21",
       "conv_ratio": 0.04
+    },
+    "89365": {
+      "stock_code": "8936",
+      "company": "國統",
+      "conv_price": 55.0,
+      "maturity": "2029-08-17",
+      "issue_date": "2026-08-17",
+      "conv_ratio": 0.0
     },
     "89964": {
       "stock_code": "8996",
