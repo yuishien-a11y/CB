@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-07 08:35",
-  "count": 388,
+  "updated": "2026-08-10 08:58",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -409,14 +409,6 @@
       "maturity": "2026-08-11",
       "issue_date": "2023-08-11",
       "conv_ratio": 38.92
-    },
-    "24642": {
-      "stock_code": "2464",
-      "company": "盟立",
-      "conv_price": 80.0,
-      "maturity": "2027-09-16",
-      "issue_date": "2024-09-16",
-      "conv_ratio": 97.1
     },
     "24672": {
       "stock_code": "2467",
@@ -978,6 +970,14 @@
       "issue_date": "2026-06-09",
       "conv_ratio": 0.0
     },
+    "35122": {
+      "stock_code": "3512",
+      "company": "皇龍",
+      "conv_price": 20.5,
+      "maturity": "2029-08-18",
+      "issue_date": "2026-08-18",
+      "conv_ratio": 0.0
+    },
     "35161": {
       "stock_code": "3516",
       "company": "亞帝歐",
@@ -1177,14 +1177,6 @@
       "maturity": "2027-08-30",
       "issue_date": "2024-08-30",
       "conv_ratio": 0.0
-    },
-    "370201": {
-      "stock_code": "3702",
-      "company": "大聯大",
-      "conv_price": 160.8,
-      "maturity": "2029-01-14",
-      "issue_date": "2026-01-14",
-      "conv_ratio": 90.73
     },
     "37075": {
       "stock_code": "3707",
@@ -1538,6 +1530,14 @@
       "issue_date": "2026-05-29",
       "conv_ratio": 0.0
     },
+    "49675": {
+      "stock_code": "4967",
+      "company": "十銓",
+      "conv_price": 213.5,
+      "maturity": "2031-08-18",
+      "issue_date": "2026-08-18",
+      "conv_ratio": 0.0
+    },
     "49793": {
       "stock_code": "4979",
       "company": "華星光",
@@ -1642,14 +1642,6 @@
       "issue_date": "2023-11-08",
       "conv_ratio": 0.01
     },
-    "53095": {
-      "stock_code": "5309",
-      "company": "系統電",
-      "conv_price": 39.7,
-      "maturity": "2026-08-08",
-      "issue_date": "2023-08-08",
-      "conv_ratio": 99.82
-    },
     "53096": {
       "stock_code": "5309",
       "company": "系統電",
@@ -1728,6 +1720,14 @@
       "conv_price": 1178.0,
       "maturity": "2029-08-04",
       "issue_date": "2026-08-04",
+      "conv_ratio": 0.0
+    },
+    "55363": {
+      "stock_code": "5536",
+      "company": "聖暉*",
+      "conv_price": 1158.0,
+      "maturity": "2029-08-17",
+      "issue_date": "2026-08-17",
       "conv_ratio": 0.0
     },
     "56087": {
@@ -2185,22 +2185,6 @@
       "maturity": "2029-03-25",
       "issue_date": "2026-03-25",
       "conv_ratio": 0.0
-    },
-    "65841": {
-      "stock_code": "6584",
-      "company": "南俊國際",
-      "conv_price": 178.8,
-      "maturity": "2027-10-29",
-      "issue_date": "2024-10-29",
-      "conv_ratio": 99.29
-    },
-    "65842": {
-      "stock_code": "6584",
-      "company": "南俊國際",
-      "conv_price": 193.0,
-      "maturity": "2027-10-30",
-      "issue_date": "2024-10-30",
-      "conv_ratio": 99.93
     },
     "65843": {
       "stock_code": "6584",
@@ -2833,14 +2817,6 @@
       "maturity": "2029-02-03",
       "issue_date": "2026-02-03",
       "conv_ratio": 0.0
-    },
-    "82551": {
-      "stock_code": "8255",
-      "company": "朋程",
-      "conv_price": 210.0,
-      "maturity": "2026-08-09",
-      "issue_date": "2023-08-09",
-      "conv_ratio": 0.05
     },
     "82711": {
       "stock_code": "8271",
