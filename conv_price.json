@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-13 08:51",
-  "count": 385,
+  "updated": "2026-08-14 08:45",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1536,6 +1536,14 @@
       "conv_price": 213.5,
       "maturity": "2031-08-18",
       "issue_date": "2026-08-18",
+      "conv_ratio": 0.0
+    },
+    "49731": {
+      "stock_code": "4973",
+      "company": "廣穎電通",
+      "conv_price": 169.6,
+      "maturity": "2029-08-21",
+      "issue_date": "2026-08-21",
       "conv_ratio": 0.0
     },
     "49793": {
