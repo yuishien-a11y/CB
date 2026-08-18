@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-17 08:08",
-  "count": 385,
+  "updated": "2026-08-18 08:03",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -785,6 +785,14 @@
       "maturity": "2027-03-25",
       "issue_date": "2024-03-25",
       "conv_ratio": 42.96
+    },
+    "32191": {
+      "stock_code": "3219",
+      "company": "倚強科",
+      "conv_price": 66.4,
+      "maturity": "2029-08-25",
+      "issue_date": "2026-08-25",
+      "conv_ratio": 0.0
     },
     "32571": {
       "stock_code": "3257",
