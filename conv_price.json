@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-18 08:03",
-  "count": 386,
+  "updated": "2026-08-19 08:04",
+  "count": 388,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -761,6 +761,14 @@
       "maturity": "2031-08-07",
       "issue_date": "2026-08-07",
       "conv_ratio": 0.0
+    },
+    "31494": {
+      "stock_code": "3149",
+      "company": "正達",
+      "conv_price": 68.1,
+      "maturity": "2029-08-31",
+      "issue_date": "2026-08-31",
+      "conv_ratio": null
     },
     "31672": {
       "stock_code": "3167",
@@ -2624,6 +2632,14 @@
       "conv_price": 795.0,
       "maturity": "2029-05-20",
       "issue_date": "2026-05-20",
+      "conv_ratio": 0.0
+    },
+    "76311": {
+      "stock_code": "7631",
+      "company": "聚賢研發-創",
+      "conv_price": 150.8,
+      "maturity": "2029-08-26",
+      "issue_date": "2026-08-26",
       "conv_ratio": 0.0
     },
     "77131": {
