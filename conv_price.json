@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-19 08:04",
-  "count": 388,
+  "updated": "2026-08-20 08:06",
+  "count": 389,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -3032,6 +3032,14 @@
       "conv_price": 55.0,
       "maturity": "2029-08-17",
       "issue_date": "2026-08-17",
+      "conv_ratio": 0.0
+    },
+    "89366": {
+      "stock_code": "8936",
+      "company": "國統",
+      "conv_price": 53.8,
+      "maturity": "2029-08-28",
+      "issue_date": "2026-08-28",
       "conv_ratio": 0.0
     },
     "89964": {
