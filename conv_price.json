@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-20 08:06",
-  "count": 389,
+  "updated": "2026-08-21 08:06",
+  "count": 388,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -313,14 +313,6 @@
       "maturity": "2028-06-17",
       "issue_date": "2025-06-17",
       "conv_ratio": 76.01
-    },
-    "23683": {
-      "stock_code": "2368",
-      "company": "金像電",
-      "conv_price": 450.0,
-      "maturity": "2030-11-24",
-      "issue_date": "2025-11-24",
-      "conv_ratio": 83.48
     },
     "23742": {
       "stock_code": "2374",
@@ -768,7 +760,7 @@
       "conv_price": 68.1,
       "maturity": "2029-08-31",
       "issue_date": "2026-08-31",
-      "conv_ratio": null
+      "conv_ratio": 0.0
     },
     "31672": {
       "stock_code": "3167",
