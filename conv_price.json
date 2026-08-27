@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-26 08:09",
-  "count": 387,
+  "updated": "2026-08-27 18:22",
+  "count": 389,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -137,6 +137,14 @@
       "maturity": "2029-06-24",
       "issue_date": "2024-06-24",
       "conv_ratio": 80.33
+    },
+    "15602": {
+      "stock_code": "1560",
+      "company": "中砂",
+      "conv_price": 708.3,
+      "maturity": "2029-09-03",
+      "issue_date": "2026-09-03",
+      "conv_ratio": 0.0
     },
     "15864": {
       "stock_code": "1586",
@@ -288,6 +296,14 @@
       "conv_price": 146.0,
       "maturity": "2031-08-07",
       "issue_date": "2026-08-07",
+      "conv_ratio": 0.0
+    },
+    "23032": {
+      "stock_code": "2303",
+      "company": "聯電",
+      "conv_price": 130.7,
+      "maturity": "2031-09-03",
+      "issue_date": "2026-09-03",
       "conv_ratio": 0.0
     },
     "23291": {
