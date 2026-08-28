@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-27 18:22",
-  "count": 389,
+  "updated": "2026-08-28 19:34",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -705,14 +705,6 @@
       "maturity": "2029-08-13",
       "issue_date": "2026-08-13",
       "conv_ratio": 0.0
-    },
-    "30882": {
-      "stock_code": "3088",
-      "company": "艾訊",
-      "conv_price": 109.5,
-      "maturity": "2026-08-28",
-      "issue_date": "2023-08-28",
-      "conv_ratio": 78.96
     },
     "30954": {
       "stock_code": "3095",
@@ -3041,14 +3033,6 @@
       "maturity": "2029-08-28",
       "issue_date": "2026-08-28",
       "conv_ratio": 0.0
-    },
-    "89964": {
-      "stock_code": "8996",
-      "company": "高力",
-      "conv_price": 240.0,
-      "maturity": "2028-12-06",
-      "issue_date": "2023-12-06",
-      "conv_ratio": 97.42
     },
     "98026": {
       "stock_code": "9802",
