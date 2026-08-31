@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-28 19:34",
-  "count": 387,
+  "updated": "2026-08-31 15:19",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -145,22 +145,6 @@
       "maturity": "2029-09-03",
       "issue_date": "2026-09-03",
       "conv_ratio": 0.0
-    },
-    "15864": {
-      "stock_code": "1586",
-      "company": "和勤",
-      "conv_price": 33.39,
-      "maturity": "2026-08-30",
-      "issue_date": "2023-08-30",
-      "conv_ratio": 0.0
-    },
-    "15865": {
-      "stock_code": "1586",
-      "company": "和勤",
-      "conv_price": 32.74,
-      "maturity": "2026-08-31",
-      "issue_date": "2023-08-31",
-      "conv_ratio": 3.27
     },
     "15952": {
       "stock_code": "1595",
@@ -409,6 +393,14 @@
       "maturity": "2029-01-27",
       "issue_date": "2026-01-27",
       "conv_ratio": 27.24
+    },
+    "24643": {
+      "stock_code": "2464",
+      "company": "盟立",
+      "conv_price": 202.8,
+      "maturity": "2029-09-07",
+      "issue_date": "2026-09-07",
+      "conv_ratio": 0.0
     },
     "24672": {
       "stock_code": "2467",
