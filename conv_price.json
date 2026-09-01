@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-31 15:19",
-  "count": 386,
+  "updated": "2026-09-01 12:42",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1920,7 +1920,7 @@
       "conv_price": 160.0,
       "maturity": "2027-10-15",
       "issue_date": "2024-10-15",
-      "conv_ratio": 55.07
+      "conv_ratio": 59.05
     },
     "61993": {
       "stock_code": "6199",
@@ -2369,14 +2369,6 @@
       "maturity": "2031-05-21",
       "issue_date": "2026-05-21",
       "conv_ratio": 0.0
-    },
-    "68061": {
-      "stock_code": "6806",
-      "company": "森崴能源",
-      "conv_price": 114.0,
-      "maturity": "2026-11-22",
-      "issue_date": "2023-11-22",
-      "conv_ratio": 32.27
     },
     "68211": {
       "stock_code": "6821",
