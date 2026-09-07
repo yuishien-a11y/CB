@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04 12:13",
+  "updated": "2026-09-07 13:38",
   "count": 385,
   "data": {
     "11011": {
@@ -368,7 +368,7 @@
       "conv_price": 26.1,
       "maturity": "2027-11-29",
       "issue_date": "2024-11-29",
-      "conv_ratio": 25.21
+      "conv_ratio": 25.28
     },
     "24424": {
       "stock_code": "2442",
@@ -376,7 +376,7 @@
       "conv_price": 26.4,
       "maturity": "2027-12-25",
       "issue_date": "2024-12-25",
-      "conv_ratio": 16.27
+      "conv_ratio": 17.22
     },
     "24552": {
       "stock_code": "2455",
@@ -656,7 +656,7 @@
       "conv_price": 165.4,
       "maturity": "2030-11-03",
       "issue_date": "2025-11-03",
-      "conv_ratio": 97.56
+      "conv_ratio": 75.59
     },
     "30401": {
       "stock_code": "3040",
@@ -1016,7 +1016,7 @@
       "conv_price": 207.3,
       "maturity": "2027-02-14",
       "issue_date": "2022-02-14",
-      "conv_ratio": 82.47
+      "conv_ratio": 82.62
     },
     "35266": {
       "stock_code": "3526",
@@ -1024,7 +1024,7 @@
       "conv_price": 223.2,
       "maturity": "2029-01-29",
       "issue_date": "2024-01-29",
-      "conv_ratio": 29.07
+      "conv_ratio": 31.98
     },
     "35267": {
       "stock_code": "3526",
@@ -1384,7 +1384,7 @@
       "conv_price": 86.8,
       "maturity": "2027-09-06",
       "issue_date": "2024-09-06",
-      "conv_ratio": 86.73
+      "conv_ratio": 99.97
     },
     "45491": {
       "stock_code": "4549",
@@ -1792,7 +1792,7 @@
       "conv_price": 67.0,
       "maturity": "2027-09-10",
       "issue_date": "2024-09-10",
-      "conv_ratio": 0.0
+      "conv_ratio": 0.07
     },
     "61171": {
       "stock_code": "6117",
@@ -2120,7 +2120,7 @@
       "conv_price": 3540.4,
       "maturity": "2029-02-05",
       "issue_date": "2026-02-05",
-      "conv_ratio": 48.01
+      "conv_ratio": 50.52
     },
     "65331": {
       "stock_code": "6533",
@@ -2496,7 +2496,7 @@
       "conv_price": 245.2,
       "maturity": "2028-12-10",
       "issue_date": "2025-12-10",
-      "conv_ratio": 9.58
+      "conv_ratio": 9.62
     },
     "68941": {
       "stock_code": "6894",
@@ -2544,7 +2544,7 @@
       "conv_price": 190.0,
       "maturity": "2028-10-02",
       "issue_date": "2025-10-02",
-      "conv_ratio": 0.9
+      "conv_ratio": 4.12
     },
     "69821": {
       "stock_code": "6982",
