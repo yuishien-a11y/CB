@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-07 13:38",
-  "count": 385,
+  "updated": "2026-09-08 12:15",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1377,6 +1377,14 @@
       "maturity": "2028-02-26",
       "issue_date": "2025-02-26",
       "conv_ratio": 5.28
+    },
+    "45415": {
+      "stock_code": "4541",
+      "company": "晟田",
+      "conv_price": 68.8,
+      "maturity": "2031-09-21",
+      "issue_date": "2026-09-21",
+      "conv_ratio": 0.0
     },
     "45421": {
       "stock_code": "4542",
