@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 12:15",
+  "updated": "2026-09-09 12:26",
   "count": 386,
   "data": {
     "11011": {
@@ -864,7 +864,7 @@
       "conv_price": 23.78,
       "maturity": "2027-09-02",
       "issue_date": "2024-09-02",
-      "conv_ratio": 90.4
+      "conv_ratio": 75.4
     },
     "33245": {
       "stock_code": "3324",
