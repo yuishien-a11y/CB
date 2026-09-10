@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-09 12:26",
-  "count": 386,
+  "updated": "2026-09-10 12:20",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -921,14 +921,6 @@
       "maturity": "2029-08-23",
       "issue_date": "2024-08-23",
       "conv_ratio": 0.79
-    },
-    "33881": {
-      "stock_code": "3388",
-      "company": "崇越電",
-      "conv_price": 73.6,
-      "maturity": "2027-11-09",
-      "issue_date": "2022-11-09",
-      "conv_ratio": 96.04
     },
     "33902": {
       "stock_code": "3390",
