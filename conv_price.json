@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10 12:20",
+  "updated": "2026-09-11 12:18",
   "count": 385,
   "data": {
     "11011": {
@@ -337,14 +337,6 @@
       "maturity": "2028-12-13",
       "issue_date": "2023-12-13",
       "conv_ratio": 6.32
-    },
-    "24361": {
-      "stock_code": "2436",
-      "company": "偉詮電",
-      "conv_price": 61.2,
-      "maturity": "2026-09-11",
-      "issue_date": "2023-09-11",
-      "conv_ratio": 95.8
     },
     "24394": {
       "stock_code": "2439",
@@ -800,6 +792,14 @@
       "conv_price": 75.0,
       "maturity": "2029-11-01",
       "issue_date": "2024-11-01",
+      "conv_ratio": 0.0
+    },
+    "32609": {
+      "stock_code": "3260",
+      "company": "威剛",
+      "conv_price": 435.5,
+      "maturity": "2029-09-18",
+      "issue_date": "2026-09-18",
       "conv_ratio": 0.0
     },
     "32723": {
