@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-11 12:18",
-  "count": 385,
+  "updated": "2026-09-14 14:21",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -746,6 +746,14 @@
       "issue_date": "2026-08-07",
       "conv_ratio": 0.0
     },
+    "31415": {
+      "stock_code": "3141",
+      "company": "晶宏",
+      "conv_price": 81.83,
+      "maturity": "2029-09-22",
+      "issue_date": "2026-09-22",
+      "conv_ratio": 0.0
+    },
     "31494": {
       "stock_code": "3149",
       "company": "正達",
@@ -1072,6 +1080,14 @@
       "conv_price": 850.0,
       "maturity": "2029-07-30",
       "issue_date": "2026-07-30",
+      "conv_ratio": 0.0
+    },
+    "35834": {
+      "stock_code": "3583",
+      "company": "辛耘",
+      "conv_price": 825.0,
+      "maturity": "2029-09-22",
+      "issue_date": "2026-09-22",
       "conv_ratio": 0.0
     },
     "35872": {
@@ -2049,14 +2065,6 @@
       "maturity": "2027-08-16",
       "issue_date": "2024-08-16",
       "conv_ratio": 90.28
-    },
-    "64512": {
-      "stock_code": "6451",
-      "company": "訊芯-KY",
-      "conv_price": 241.2,
-      "maturity": "2028-02-27",
-      "issue_date": "2025-02-27",
-      "conv_ratio": 98.85
     },
     "64693": {
       "stock_code": "6469",
