@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-14 14:21",
-  "count": 386,
+  "updated": "2026-09-15 12:50",
+  "count": 389,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -490,6 +490,14 @@
       "issue_date": "2025-08-06",
       "conv_ratio": 7.92
     },
+    "26462": {
+      "stock_code": "2646",
+      "company": "星宇航空",
+      "conv_price": 21.2,
+      "maturity": "2031-09-30",
+      "issue_date": "2026-09-30",
+      "conv_ratio": 0.0
+    },
     "27271": {
       "stock_code": "2727",
       "company": "王品",
@@ -561,6 +569,14 @@
       "maturity": "2027-05-30",
       "issue_date": "2024-05-30",
       "conv_ratio": 62.2
+    },
+    "27562": {
+      "stock_code": "2756",
+      "company": "聯發國際",
+      "conv_price": 61.2,
+      "maturity": "2029-09-23",
+      "issue_date": "2026-09-23",
+      "conv_ratio": 0.0
     },
     "29061": {
       "stock_code": "2906",
@@ -1392,6 +1408,14 @@
       "conv_price": 68.8,
       "maturity": "2031-09-21",
       "issue_date": "2026-09-21",
+      "conv_ratio": 0.0
+    },
+    "45416": {
+      "stock_code": "4541",
+      "company": "晟田",
+      "conv_price": 62.8,
+      "maturity": "2031-09-22",
+      "issue_date": "2026-09-22",
       "conv_ratio": 0.0
     },
     "45421": {
