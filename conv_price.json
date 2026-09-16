@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-15 12:50",
-  "count": 389,
+  "updated": "2026-09-16 12:46",
+  "count": 388,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -298,14 +298,6 @@
       "issue_date": "2026-03-18",
       "conv_ratio": 0.0
     },
-    "23372": {
-      "stock_code": "2337",
-      "company": "旺宏",
-      "conv_price": 23.0,
-      "maturity": "2028-03-24",
-      "issue_date": "2025-03-24",
-      "conv_ratio": 99.98
-    },
     "23511": {
       "stock_code": "2351",
       "company": "順德",
@@ -573,7 +565,7 @@
     "27562": {
       "stock_code": "2756",
       "company": "聯發國際",
-      "conv_price": 61.2,
+      "conv_price": 64.3,
       "maturity": "2029-09-23",
       "issue_date": "2026-09-23",
       "conv_ratio": 0.0
