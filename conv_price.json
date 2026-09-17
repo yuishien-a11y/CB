@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 12:46",
+  "updated": "2026-09-17 12:43",
   "count": 388,
   "data": {
     "11011": {
@@ -618,6 +618,14 @@
       "issue_date": "2026-07-24",
       "conv_ratio": 0.0
     },
+    "30286": {
+      "stock_code": "3028",
+      "company": "增你強",
+      "conv_price": 67.8,
+      "maturity": "2031-09-29",
+      "issue_date": "2026-09-29",
+      "conv_ratio": 0.0
+    },
     "30321": {
       "stock_code": "3032",
       "company": "偉訓",
@@ -849,14 +857,6 @@
       "maturity": "2029-11-26",
       "issue_date": "2024-11-26",
       "conv_ratio": 0.0
-    },
-    "33055": {
-      "stock_code": "3305",
-      "company": "昇貿",
-      "conv_price": 78.3,
-      "maturity": "2026-12-25",
-      "issue_date": "2023-12-25",
-      "conv_ratio": 99.26
     },
     "33121": {
       "stock_code": "3312",
