@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 12:43",
+  "updated": "2026-09-18 12:19",
   "count": 388,
   "data": {
     "11011": {
@@ -481,6 +481,14 @@
       "maturity": "2030-08-06",
       "issue_date": "2025-08-06",
       "conv_ratio": 7.92
+    },
+    "26461": {
+      "stock_code": "2646",
+      "company": "星宇航空",
+      "conv_price": 21.4,
+      "maturity": "2031-09-29",
+      "issue_date": "2026-09-29",
+      "conv_ratio": 0.0
     },
     "26462": {
       "stock_code": "2646",
@@ -1409,14 +1417,6 @@
       "maturity": "2031-09-22",
       "issue_date": "2026-09-22",
       "conv_ratio": 0.0
-    },
-    "45421": {
-      "stock_code": "4542",
-      "company": "科嶠",
-      "conv_price": 86.8,
-      "maturity": "2027-09-06",
-      "issue_date": "2024-09-06",
-      "conv_ratio": 99.97
     },
     "45491": {
       "stock_code": "4549",
