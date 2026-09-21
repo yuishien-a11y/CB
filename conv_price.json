@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18 12:19",
-  "count": 388,
+  "updated": "2026-09-21 14:28",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -112,14 +112,6 @@
       "conv_price": 113.2,
       "maturity": "2030-01-13",
       "issue_date": "2025-01-13",
-      "conv_ratio": 0.0
-    },
-    "15261": {
-      "stock_code": "1526",
-      "company": "日馳",
-      "conv_price": 38.0,
-      "maturity": "2026-09-19",
-      "issue_date": "2023-09-19",
       "conv_ratio": 0.0
     },
     "15364": {
@@ -578,14 +570,6 @@
       "issue_date": "2026-09-23",
       "conv_ratio": 0.0
     },
-    "29061": {
-      "stock_code": "2906",
-      "company": "高林",
-      "conv_price": 18.0,
-      "maturity": "2026-09-20",
-      "issue_date": "2023-09-20",
-      "conv_ratio": 54.0
-    },
     "30112": {
       "stock_code": "3011",
       "company": "今皓",
@@ -729,22 +713,6 @@
       "maturity": "2027-05-03",
       "issue_date": "2024-05-03",
       "conv_ratio": 91.65
-    },
-    "31311": {
-      "stock_code": "3131",
-      "company": "弘塑",
-      "conv_price": 1762.2,
-      "maturity": "2030-07-30",
-      "issue_date": "2025-07-30",
-      "conv_ratio": 81.86
-    },
-    "31312": {
-      "stock_code": "3131",
-      "company": "弘塑",
-      "conv_price": 1626.6,
-      "maturity": "2030-08-05",
-      "issue_date": "2025-08-05",
-      "conv_ratio": 73.78
     },
     "31352": {
       "stock_code": "3135",
@@ -2944,6 +2912,14 @@
       "conv_price": 42.5,
       "maturity": "2029-07-24",
       "issue_date": "2026-07-24",
+      "conv_ratio": 0.0
+    },
+    "84424": {
+      "stock_code": "8442",
+      "company": "威宏-KY",
+      "conv_price": 48.0,
+      "maturity": "2029-09-30",
+      "issue_date": "2026-09-30",
       "conv_ratio": 0.0
     },
     "84624": {
