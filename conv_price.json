@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-21 14:28",
-  "count": 385,
+  "updated": "2026-09-22 12:47",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -568,6 +568,14 @@
       "conv_price": 64.3,
       "maturity": "2029-09-23",
       "issue_date": "2026-09-23",
+      "conv_ratio": 0.0
+    },
+    "30062": {
+      "stock_code": "3006",
+      "company": "晶豪科",
+      "conv_price": 308.0,
+      "maturity": "2029-10-02",
+      "issue_date": "2026-10-02",
       "conv_ratio": 0.0
     },
     "30112": {
