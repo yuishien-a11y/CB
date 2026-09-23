@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-22 12:47",
-  "count": 386,
+  "updated": "2026-09-23 12:56",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1865,6 +1865,14 @@
       "maturity": "2028-10-16",
       "issue_date": "2025-10-16",
       "conv_ratio": 56.9
+    },
+    "61743": {
+      "stock_code": "6174",
+      "company": "安碁",
+      "conv_price": 46.4,
+      "maturity": "2029-10-02",
+      "issue_date": "2026-10-02",
+      "conv_ratio": 0.0
     },
     "61777": {
       "stock_code": "6177",
