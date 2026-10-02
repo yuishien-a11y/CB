@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-01 14:42",
-  "count": 380,
+  "updated": "2026-10-02 14:02",
+  "count": 381,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -56,7 +56,7 @@
       "conv_price": 182.5,
       "maturity": "2027-08-27",
       "issue_date": "2024-08-27",
-      "conv_ratio": 98.8
+      "conv_ratio": 98.87
     },
     "14364": {
       "stock_code": "1436",
@@ -64,7 +64,7 @@
       "conv_price": 140.3,
       "maturity": "2028-03-18",
       "issue_date": "2025-03-18",
-      "conv_ratio": 2.4
+      "conv_ratio": 3.09
     },
     "14381": {
       "stock_code": "1438",
@@ -208,7 +208,7 @@
       "conv_price": 21.2,
       "maturity": "2028-10-13",
       "issue_date": "2023-10-13",
-      "conv_ratio": 0.0
+      "conv_ratio": 2.74
     },
     "22013": {
       "stock_code": "2201",
@@ -400,7 +400,7 @@
       "conv_price": 72.2,
       "maturity": "2027-01-26",
       "issue_date": "2024-01-26",
-      "conv_ratio": 71.91
+      "conv_ratio": 72.3
     },
     "24867": {
       "stock_code": "2486",
@@ -552,7 +552,7 @@
       "conv_price": 106.0,
       "maturity": "2028-01-15",
       "issue_date": "2025-01-15",
-      "conv_ratio": 66.55
+      "conv_ratio": 79.2
     },
     "27561": {
       "stock_code": "2756",
@@ -600,7 +600,7 @@
       "conv_price": 72.6,
       "maturity": "2027-07-26",
       "issue_date": "2024-07-26",
-      "conv_ratio": 34.8
+      "conv_ratio": 58.38
     },
     "30166": {
       "stock_code": "3016",
@@ -656,7 +656,7 @@
       "conv_price": 36.67,
       "maturity": "2029-09-11",
       "issue_date": "2024-09-11",
-      "conv_ratio": 36.72
+      "conv_ratio": 37.14
     },
     "30371": {
       "stock_code": "3037",
@@ -664,7 +664,7 @@
       "conv_price": 165.4,
       "maturity": "2030-11-03",
       "issue_date": "2025-11-03",
-      "conv_ratio": 75.59
+      "conv_ratio": 77.07
     },
     "30401": {
       "stock_code": "3040",
@@ -680,7 +680,7 @@
       "conv_price": 123.0,
       "maturity": "2030-02-24",
       "issue_date": "2025-02-24",
-      "conv_ratio": 0.29
+      "conv_ratio": 1.88
     },
     "30455": {
       "stock_code": "3045",
@@ -688,7 +688,7 @@
       "conv_price": 115.8,
       "maturity": "2030-02-25",
       "issue_date": "2025-02-25",
-      "conv_ratio": 0.0
+      "conv_ratio": 1.21
     },
     "30811": {
       "stock_code": "3081",
@@ -856,7 +856,7 @@
       "conv_price": 23.78,
       "maturity": "2027-09-02",
       "issue_date": "2024-09-02",
-      "conv_ratio": 75.4
+      "conv_ratio": 76.6
     },
     "33245": {
       "stock_code": "3324",
@@ -896,7 +896,7 @@
       "conv_price": 118.0,
       "maturity": "2026-10-31",
       "issue_date": "2023-10-31",
-      "conv_ratio": 87.02
+      "conv_ratio": 95.17
     },
     "33621": {
       "stock_code": "3362",
@@ -928,7 +928,7 @@
       "conv_price": 136.8,
       "maturity": "2027-01-25",
       "issue_date": "2024-01-25",
-      "conv_ratio": 24.04
+      "conv_ratio": 24.12
     },
     "34793": {
       "stock_code": "3479",
@@ -1000,7 +1000,7 @@
       "conv_price": 207.3,
       "maturity": "2027-02-14",
       "issue_date": "2022-02-14",
-      "conv_ratio": 82.62
+      "conv_ratio": 83.71
     },
     "35266": {
       "stock_code": "3526",
@@ -1008,7 +1008,7 @@
       "conv_price": 223.2,
       "maturity": "2029-01-29",
       "issue_date": "2024-01-29",
-      "conv_ratio": 31.98
+      "conv_ratio": 32.21
     },
     "35267": {
       "stock_code": "3526",
@@ -1056,7 +1056,7 @@
       "conv_price": 85.0,
       "maturity": "2027-09-03",
       "issue_date": "2024-09-03",
-      "conv_ratio": 0.0
+      "conv_ratio": 14.8
     },
     "35833": {
       "stock_code": "3583",
@@ -1096,7 +1096,7 @@
       "conv_price": 51.0,
       "maturity": "2027-08-06",
       "issue_date": "2024-08-06",
-      "conv_ratio": 95.39
+      "conv_ratio": 98.2
     },
     "36054": {
       "stock_code": "3605",
@@ -1120,7 +1120,7 @@
       "conv_price": 374.9,
       "maturity": "2026-10-18",
       "issue_date": "2023-10-18",
-      "conv_ratio": 71.02
+      "conv_ratio": 87.77
     },
     "36805": {
       "stock_code": "3680",
@@ -1184,7 +1184,7 @@
       "conv_price": 140.0,
       "maturity": "2029-01-21",
       "issue_date": "2026-01-21",
-      "conv_ratio": 0.0
+      "conv_ratio": 0.02
     },
     "37152": {
       "stock_code": "3715",
@@ -1272,7 +1272,7 @@
       "conv_price": 48.4,
       "maturity": "2030-06-20",
       "issue_date": "2025-06-20",
-      "conv_ratio": 0.0
+      "conv_ratio": 1.78
     },
     "41684": {
       "stock_code": "4168",
@@ -1496,7 +1496,7 @@
       "conv_price": 34.66,
       "maturity": "2029-01-29",
       "issue_date": "2026-01-29",
-      "conv_ratio": 48.88
+      "conv_ratio": 58.4
     },
     "49311": {
       "stock_code": "4931",
@@ -1528,7 +1528,7 @@
       "conv_price": 178.0,
       "maturity": "2027-12-09",
       "issue_date": "2024-12-09",
-      "conv_ratio": 46.52
+      "conv_ratio": 48.25
     },
     "49794": {
       "stock_code": "4979",
@@ -1536,7 +1536,7 @@
       "conv_price": 206.0,
       "maturity": "2027-12-25",
       "issue_date": "2024-12-25",
-      "conv_ratio": 46.3
+      "conv_ratio": 47.1
     },
     "52011": {
       "stock_code": "5201",
@@ -1576,7 +1576,7 @@
       "conv_price": 35.0,
       "maturity": "2027-12-18",
       "issue_date": "2024-12-18",
-      "conv_ratio": 1.6
+      "conv_ratio": 12.97
     },
     "52635": {
       "stock_code": "5263",
@@ -1688,7 +1688,7 @@
       "conv_price": 33.4,
       "maturity": "2029-05-25",
       "issue_date": "2026-05-25",
-      "conv_ratio": 58.31
+      "conv_ratio": 70.31
     },
     "55344": {
       "stock_code": "5534",
@@ -1728,7 +1728,7 @@
       "conv_price": 10.92,
       "maturity": "2029-01-05",
       "issue_date": "2024-01-05",
-      "conv_ratio": 97.45
+      "conv_ratio": 99.38
     },
     "61011": {
       "stock_code": "6101",
@@ -1792,7 +1792,7 @@
       "conv_price": 28.5,
       "maturity": "2026-11-30",
       "issue_date": "2023-11-30",
-      "conv_ratio": 73.02
+      "conv_ratio": 75.14
     },
     "61343": {
       "stock_code": "6134",
@@ -1808,7 +1808,7 @@
       "conv_price": 90.2,
       "maturity": "2027-03-07",
       "issue_date": "2024-03-07",
-      "conv_ratio": 0.0
+      "conv_ratio": 0.38
     },
     "61565": {
       "stock_code": "6156",
@@ -1848,7 +1848,7 @@
       "conv_price": 30.2,
       "maturity": "2027-08-28",
       "issue_date": "2024-08-28",
-      "conv_ratio": 40.08
+      "conv_ratio": 52.47
     },
     "61828": {
       "stock_code": "6182",
@@ -1856,7 +1856,7 @@
       "conv_price": 33.8,
       "maturity": "2029-09-27",
       "issue_date": "2024-09-27",
-      "conv_ratio": 86.29
+      "conv_ratio": 89.87
     },
     "61843": {
       "stock_code": "6184",
@@ -1888,7 +1888,7 @@
       "conv_price": 41.7,
       "maturity": "2028-11-06",
       "issue_date": "2025-11-06",
-      "conv_ratio": 39.06
+      "conv_ratio": 45.04
     },
     "61973": {
       "stock_code": "6197",
@@ -1896,7 +1896,7 @@
       "conv_price": 160.0,
       "maturity": "2027-10-15",
       "issue_date": "2024-10-15",
-      "conv_ratio": 59.05
+      "conv_ratio": 60.95
     },
     "61993": {
       "stock_code": "6199",
@@ -1920,7 +1920,7 @@
       "conv_price": 52.1,
       "maturity": "2028-08-26",
       "issue_date": "2025-08-26",
-      "conv_ratio": 89.87
+      "conv_ratio": 91.13
     },
     "62076": {
       "stock_code": "6207",
@@ -1928,7 +1928,7 @@
       "conv_price": 50.6,
       "maturity": "2028-09-05",
       "issue_date": "2025-09-05",
-      "conv_ratio": 77.2
+      "conv_ratio": 77.35
     },
     "62093": {
       "stock_code": "6209",
@@ -1936,7 +1936,7 @@
       "conv_price": 38.6,
       "maturity": "2028-10-23",
       "issue_date": "2025-10-23",
-      "conv_ratio": 58.07
+      "conv_ratio": 59.98
     },
     "62194": {
       "stock_code": "6219",
@@ -2096,7 +2096,7 @@
       "conv_price": 104.4,
       "maturity": "2030-06-26",
       "issue_date": "2025-06-26",
-      "conv_ratio": 58.57
+      "conv_ratio": 82.27
     },
     "65461": {
       "stock_code": "6546",
@@ -2128,7 +2128,7 @@
       "conv_price": 37.0,
       "maturity": "2029-03-19",
       "issue_date": "2026-03-19",
-      "conv_ratio": 46.44
+      "conv_ratio": 83.36
     },
     "65521": {
       "stock_code": "6552",
@@ -2168,7 +2168,7 @@
       "conv_price": 120.9,
       "maturity": "2026-10-26",
       "issue_date": "2023-10-26",
-      "conv_ratio": 51.62
+      "conv_ratio": 51.64
     },
     "65852": {
       "stock_code": "6585",
@@ -2176,7 +2176,7 @@
       "conv_price": 120.6,
       "maturity": "2026-10-27",
       "issue_date": "2023-10-27",
-      "conv_ratio": 62.8
+      "conv_ratio": 71.05
     },
     "65914": {
       "stock_code": "6591",
@@ -2200,7 +2200,7 @@
       "conv_price": 14.8,
       "maturity": "2028-09-20",
       "issue_date": "2023-09-20",
-      "conv_ratio": 23.5
+      "conv_ratio": 95.83
     },
     "66241": {
       "stock_code": "6624",
@@ -2528,7 +2528,7 @@
       "conv_price": 182.0,
       "maturity": "2028-08-12",
       "issue_date": "2025-08-12",
-      "conv_ratio": 47.1
+      "conv_ratio": 49.0
     },
     "75562": {
       "stock_code": "7556",
@@ -2536,7 +2536,7 @@
       "conv_price": 178.5,
       "maturity": "2028-08-15",
       "issue_date": "2025-08-15",
-      "conv_ratio": 19.9
+      "conv_ratio": 20.4
     },
     "76101": {
       "stock_code": "7610",
@@ -2560,7 +2560,7 @@
       "conv_price": 73.9,
       "maturity": "2028-10-20",
       "issue_date": "2025-10-20",
-      "conv_ratio": 0.0
+      "conv_ratio": 0.02
     },
     "77431": {
       "stock_code": "7743",
@@ -2584,7 +2584,7 @@
       "conv_price": 67.6,
       "maturity": "2027-07-13",
       "issue_date": "2022-07-13",
-      "conv_ratio": 99.76
+      "conv_ratio": 99.99
     },
     "80282": {
       "stock_code": "8028",
@@ -2592,7 +2592,7 @@
       "conv_price": 140.3,
       "maturity": "2030-01-22",
       "issue_date": "2025-01-22",
-      "conv_ratio": 83.43
+      "conv_ratio": 84.09
     },
     "80426": {
       "stock_code": "8042",
@@ -2600,7 +2600,7 @@
       "conv_price": 60.0,
       "maturity": "2028-12-16",
       "issue_date": "2025-12-16",
-      "conv_ratio": 69.77
+      "conv_ratio": 74.71
     },
     "80506": {
       "stock_code": "8050",
@@ -2712,7 +2712,7 @@
       "conv_price": 126.8,
       "maturity": "2030-01-10",
       "issue_date": "2025-01-10",
-      "conv_ratio": 85.41
+      "conv_ratio": 86.47
     },
     "81552": {
       "stock_code": "8155",
@@ -2808,7 +2808,7 @@
       "conv_price": 13.3,
       "maturity": "2030-08-01",
       "issue_date": "2025-08-01",
-      "conv_ratio": 0.0
+      "conv_ratio": 3.01
     },
     "84221": {
       "stock_code": "8422",
@@ -2920,7 +2920,7 @@
       "conv_price": 19.7,
       "maturity": "2029-04-21",
       "issue_date": "2026-04-21",
-      "conv_ratio": 10.0
+      "conv_ratio": 10.04
     },
     "84781": {
       "stock_code": "8478",
@@ -2978,6 +2978,14 @@
       "issue_date": "2026-08-28",
       "conv_ratio": 0.0
     },
+    "89965": {
+      "stock_code": "8996",
+      "company": "高力",
+      "conv_price": 1656.0,
+      "maturity": "2031-10-12",
+      "issue_date": "2026-10-12",
+      "conv_ratio": 0.0
+    },
     "98026": {
       "stock_code": "9802",
       "company": "鈺齊-KY",
@@ -3024,7 +3032,7 @@
       "conv_price": 204.6,
       "maturity": "2028-11-20",
       "issue_date": "2023-11-20",
-      "conv_ratio": 0.03
+      "conv_ratio": 0.09
     },
     "99587": {
       "stock_code": "9958",
