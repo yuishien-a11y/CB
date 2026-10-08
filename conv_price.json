@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-07 14:41",
-  "count": 382,
+  "updated": "2026-10-08 14:49",
+  "count": 383,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2569,6 +2569,14 @@
       "maturity": "2028-10-20",
       "issue_date": "2025-10-20",
       "conv_ratio": 0.02
+    },
+    "77381": {
+      "stock_code": "7738",
+      "company": "東聯互動",
+      "conv_price": 163.5,
+      "maturity": "2029-10-16",
+      "issue_date": "2026-10-16",
+      "conv_ratio": 0.0
     },
     "77431": {
       "stock_code": "7743",
