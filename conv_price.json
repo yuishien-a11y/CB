@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-08 14:49",
-  "count": 383,
+  "updated": "2026-10-09 14:33",
+  "count": 385,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -168,6 +168,14 @@
       "conv_price": 76.0,
       "maturity": "2031-06-08",
       "issue_date": "2026-06-08",
+      "conv_ratio": 0.0
+    },
+    "17272": {
+      "stock_code": "1727",
+      "company": "中華化",
+      "conv_price": 111.6,
+      "maturity": "2031-10-20",
+      "issue_date": "2026-10-20",
       "conv_ratio": 0.0
     },
     "17813": {
@@ -2593,6 +2601,14 @@
       "maturity": "2031-01-20",
       "issue_date": "2026-01-20",
       "conv_ratio": 65.89
+    },
+    "80213": {
+      "stock_code": "8021",
+      "company": "尖點",
+      "conv_price": 528.0,
+      "maturity": "2031-10-20",
+      "issue_date": "2026-10-20",
+      "conv_ratio": 0.0
     },
     "80273": {
       "stock_code": "8027",
