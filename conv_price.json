@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-09 14:33",
-  "count": 385,
+  "updated": "2026-10-12 16:55",
+  "count": 386,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -17,6 +17,14 @@
       "maturity": "2028-10-08",
       "issue_date": "2025-10-08",
       "conv_ratio": 0.85
+    },
+    "12951": {
+      "stock_code": "1295",
+      "company": "生合",
+      "conv_price": 50.0,
+      "maturity": "2029-10-28",
+      "issue_date": "2026-10-29",
+      "conv_ratio": 0.0
     },
     "13166": {
       "stock_code": "1316",
