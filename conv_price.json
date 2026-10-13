@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-12 16:55",
-  "count": 386,
+  "updated": "2026-10-13 15:13",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -296,6 +296,14 @@
       "conv_price": 130.7,
       "maturity": "2031-09-03",
       "issue_date": "2026-09-03",
+      "conv_ratio": 0.0
+    },
+    "23161": {
+      "stock_code": "2316",
+      "company": "楠梓電",
+      "conv_price": 163.6,
+      "maturity": "2031-10-21",
+      "issue_date": "2026-10-21",
       "conv_ratio": 0.0
     },
     "23291": {
