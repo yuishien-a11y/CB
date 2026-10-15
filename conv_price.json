@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-14 13:00",
-  "count": 388,
+  "updated": "2026-10-15 12:47",
+  "count": 389,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -17,14 +17,6 @@
       "maturity": "2028-10-08",
       "issue_date": "2025-10-08",
       "conv_ratio": 0.85
-    },
-    "12951": {
-      "stock_code": "1295",
-      "company": "生合",
-      "conv_price": 50.0,
-      "maturity": "2029-10-28",
-      "issue_date": "2026-10-29",
-      "conv_ratio": 0.0
     },
     "13166": {
       "stock_code": "1316",
@@ -2034,6 +2026,14 @@
       "issue_date": "2026-10-13",
       "conv_ratio": 0.0
     },
+    "62855": {
+      "stock_code": "6285",
+      "company": "啟碁",
+      "conv_price": 242.0,
+      "maturity": "2029-10-23",
+      "issue_date": "2026-10-23",
+      "conv_ratio": 0.0
+    },
     "64251": {
       "stock_code": "6425",
       "company": "易發",
@@ -3040,6 +3040,14 @@
       "conv_price": 1656.0,
       "maturity": "2031-10-12",
       "issue_date": "2026-10-12",
+      "conv_ratio": 0.0
+    },
+    "89966": {
+      "stock_code": "8996",
+      "company": "高力",
+      "conv_price": 1635.0,
+      "maturity": "2031-10-22",
+      "issue_date": "2026-10-22",
       "conv_ratio": 0.0
     },
     "98026": {
