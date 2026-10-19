@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-16 12:39",
-  "count": 389,
+  "updated": "2026-10-19 14:54",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1129,14 +1129,6 @@
       "maturity": "2028-06-16",
       "issue_date": "2025-06-16",
       "conv_ratio": 0.0
-    },
-    "36804": {
-      "stock_code": "3680",
-      "company": "家登",
-      "conv_price": 374.9,
-      "maturity": "2026-10-18",
-      "issue_date": "2023-10-18",
-      "conv_ratio": 87.77
     },
     "36805": {
       "stock_code": "3680",
@@ -2921,14 +2913,6 @@
       "maturity": "2029-08-05",
       "issue_date": "2026-08-05",
       "conv_ratio": 0.0
-    },
-    "84422": {
-      "stock_code": "8442",
-      "company": "威宏-KY",
-      "conv_price": 84.3,
-      "maturity": "2026-10-19",
-      "issue_date": "2023-10-19",
-      "conv_ratio": 9.62
     },
     "84423": {
       "stock_code": "8442",
