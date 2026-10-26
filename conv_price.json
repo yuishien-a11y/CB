@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-23 12:47",
-  "count": 389,
+  "updated": "2026-10-26 14:29",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2178,14 +2178,6 @@
       "issue_date": "2026-03-19",
       "conv_ratio": 83.36
     },
-    "65521": {
-      "stock_code": "6552",
-      "company": "易華電",
-      "conv_price": 63.5,
-      "maturity": "2026-10-25",
-      "issue_date": "2021-10-25",
-      "conv_ratio": 0.0
-    },
     "65702": {
       "stock_code": "6570",
       "company": "維田",
@@ -2209,14 +2201,6 @@
       "maturity": "2029-07-02",
       "issue_date": "2026-07-02",
       "conv_ratio": 0.0
-    },
-    "65851": {
-      "stock_code": "6585",
-      "company": "鼎基",
-      "conv_price": 120.9,
-      "maturity": "2026-10-26",
-      "issue_date": "2023-10-26",
-      "conv_ratio": 51.64
     },
     "65852": {
       "stock_code": "6585",
