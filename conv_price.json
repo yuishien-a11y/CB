@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-27 13:29",
-  "count": 385,
+  "updated": "2026-10-28 14:21",
+  "count": 384,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -22,8 +22,8 @@
       "stock_code": "1295",
       "company": "生合",
       "conv_price": 50.0,
-      "maturity": "2029-10-29",
-      "issue_date": "2026-10-29",
+      "maturity": "2029-10-30",
+      "issue_date": "2026-10-30",
       "conv_ratio": 0.0
     },
     "13166": {
@@ -1465,14 +1465,6 @@
       "maturity": "2029-05-26",
       "issue_date": "2026-05-26",
       "conv_ratio": 0.0
-    },
-    "47393": {
-      "stock_code": "4739",
-      "company": "康普",
-      "conv_price": 110.0,
-      "maturity": "2026-10-28",
-      "issue_date": "2021-10-28",
-      "conv_ratio": 0.83
     },
     "47394": {
       "stock_code": "4739",
