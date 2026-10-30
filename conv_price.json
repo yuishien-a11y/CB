@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29 14:36",
-  "count": 386,
+  "updated": "2026-10-30 14:28",
+  "count": 387,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -432,6 +432,14 @@
       "conv_price": 256.0,
       "maturity": "2029-07-23",
       "issue_date": "2026-07-23",
+      "conv_ratio": 0.0
+    },
+    "24922": {
+      "stock_code": "2492",
+      "company": "華新科",
+      "conv_price": 497.0,
+      "maturity": "2031-11-06",
+      "issue_date": "2026-11-06",
       "conv_ratio": 0.0
     },
     "25283": {
