@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-04 15:41",
-  "count": 388,
+  "updated": "2026-11-05 15:43",
+  "count": 390,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -144,7 +144,7 @@
       "conv_price": 38.3,
       "maturity": "2029-09-02",
       "issue_date": "2024-09-02",
-      "conv_ratio": 88.83
+      "conv_ratio": 90.57
     },
     "15984": {
       "stock_code": "1598",
@@ -384,7 +384,7 @@
       "conv_price": 162.9,
       "maturity": "2029-01-23",
       "issue_date": "2026-01-23",
-      "conv_ratio": 80.88
+      "conv_ratio": 94.68
     },
     "24553": {
       "stock_code": "2455",
@@ -392,7 +392,7 @@
       "conv_price": 153.5,
       "maturity": "2029-01-27",
       "issue_date": "2026-01-27",
-      "conv_ratio": 42.16
+      "conv_ratio": 64.04
     },
     "24643": {
       "stock_code": "2464",
@@ -408,7 +408,7 @@
       "conv_price": 250.6,
       "maturity": "2029-01-09",
       "issue_date": "2026-01-09",
-      "conv_ratio": 77.34
+      "conv_ratio": 77.44
     },
     "24673": {
       "stock_code": "2467",
@@ -416,7 +416,7 @@
       "conv_price": 246.6,
       "maturity": "2029-01-22",
       "issue_date": "2026-01-22",
-      "conv_ratio": 69.05
+      "conv_ratio": 69.95
     },
     "24762": {
       "stock_code": "2476",
@@ -473,6 +473,14 @@
       "maturity": "2028-06-30",
       "issue_date": "2025-06-30",
       "conv_ratio": 4.91
+    },
+    "25305": {
+      "stock_code": "2530",
+      "company": "華建",
+      "conv_price": 20.5,
+      "maturity": "2029-11-12",
+      "issue_date": "2026-11-12",
+      "conv_ratio": 0.0
     },
     "25483": {
       "stock_code": "2548",
@@ -952,7 +960,7 @@
       "conv_price": 136.8,
       "maturity": "2027-01-25",
       "issue_date": "2024-01-25",
-      "conv_ratio": 24.12
+      "conv_ratio": 28.82
     },
     "34793": {
       "stock_code": "3479",
@@ -2456,7 +2464,7 @@
       "conv_price": 248.5,
       "maturity": "2029-12-05",
       "issue_date": "2024-12-05",
-      "conv_ratio": 47.17
+      "conv_ratio": 54.63
     },
     "68702": {
       "stock_code": "6870",
@@ -2464,7 +2472,7 @@
       "conv_price": 236.6,
       "maturity": "2029-12-05",
       "issue_date": "2024-12-05",
-      "conv_ratio": 34.71
+      "conv_ratio": 39.31
     },
     "68732": {
       "stock_code": "6873",
@@ -2504,7 +2512,7 @@
       "conv_price": 262.4,
       "maturity": "2029-03-09",
       "issue_date": "2026-03-09",
-      "conv_ratio": 4.3
+      "conv_ratio": 22.93
     },
     "69031": {
       "stock_code": "6903",
@@ -2544,7 +2552,7 @@
       "conv_price": 190.0,
       "maturity": "2028-10-02",
       "issue_date": "2025-10-02",
-      "conv_ratio": 26.22
+      "conv_ratio": 56.34
     },
     "69821": {
       "stock_code": "6982",
@@ -2664,7 +2672,7 @@
       "conv_price": 60.0,
       "maturity": "2028-12-16",
       "issue_date": "2025-12-16",
-      "conv_ratio": 74.71
+      "conv_ratio": 79.57
     },
     "80506": {
       "stock_code": "8050",
@@ -3105,6 +3113,14 @@
       "maturity": "2027-11-08",
       "issue_date": "2024-11-08",
       "conv_ratio": 52.31
+    },
+    "99589": {
+      "stock_code": "9958",
+      "company": "世紀鋼",
+      "conv_price": 88.0,
+      "maturity": "2029-11-12",
+      "issue_date": "2026-11-12",
+      "conv_ratio": 0.0
     }
   }
 }
