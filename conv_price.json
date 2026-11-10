@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-09 17:45",
-  "count": 390,
+  "updated": "2026-11-10 15:43",
+  "count": 392,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -858,6 +858,14 @@
       "issue_date": "2025-09-15",
       "conv_ratio": 1.7
     },
+    "32896": {
+      "stock_code": "3289",
+      "company": "宜特",
+      "conv_price": 112.0,
+      "maturity": "2029-11-17",
+      "issue_date": "2026-11-17",
+      "conv_ratio": 0.0
+    },
     "32943": {
       "stock_code": "3294",
       "company": "英濟",
@@ -1536,6 +1544,14 @@
       "conv_price": 323.8,
       "maturity": "2028-11-27",
       "issue_date": "2025-11-27",
+      "conv_ratio": 0.0
+    },
+    "49166": {
+      "stock_code": "4916",
+      "company": "事欣科",
+      "conv_price": 88.0,
+      "maturity": "2031-11-17",
+      "issue_date": "2026-11-17",
       "conv_ratio": 0.0
     },
     "49231": {
