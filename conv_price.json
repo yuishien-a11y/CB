@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-17 17:00",
-  "count": 391,
+  "updated": "2026-11-18 16:40",
+  "count": 390,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -136,6 +136,14 @@
       "conv_price": 708.3,
       "maturity": "2029-09-03",
       "issue_date": "2026-09-03",
+      "conv_ratio": 0.0
+    },
+    "15697": {
+      "stock_code": "1569",
+      "company": "濱川",
+      "conv_price": 92.5,
+      "maturity": "2029-11-25",
+      "issue_date": "2026-11-25",
       "conv_ratio": 0.0
     },
     "15952": {
@@ -322,6 +330,14 @@
       "issue_date": "2026-11-16",
       "conv_ratio": 0.0
     },
+    "23445": {
+      "stock_code": "2344",
+      "company": "華邦電",
+      "conv_price": 132.3,
+      "maturity": "2031-11-26",
+      "issue_date": "2026-11-26",
+      "conv_ratio": 0.0
+    },
     "23511": {
       "stock_code": "2351",
       "company": "順德",
@@ -385,22 +401,6 @@
       "maturity": "2027-12-25",
       "issue_date": "2024-12-25",
       "conv_ratio": 22.07
-    },
-    "24552": {
-      "stock_code": "2455",
-      "company": "全新",
-      "conv_price": 162.9,
-      "maturity": "2029-01-23",
-      "issue_date": "2026-01-23",
-      "conv_ratio": 94.68
-    },
-    "24553": {
-      "stock_code": "2455",
-      "company": "全新",
-      "conv_price": 153.5,
-      "maturity": "2029-01-27",
-      "issue_date": "2026-01-27",
-      "conv_ratio": 64.04
     },
     "24643": {
       "stock_code": "2464",
@@ -2657,14 +2657,6 @@
       "maturity": "2031-10-20",
       "issue_date": "2026-10-20",
       "conv_ratio": 0.0
-    },
-    "80273": {
-      "stock_code": "8027",
-      "company": "鈦昇",
-      "conv_price": 67.6,
-      "maturity": "2027-07-13",
-      "issue_date": "2022-07-13",
-      "conv_ratio": 99.99
     },
     "80282": {
       "stock_code": "8028",
