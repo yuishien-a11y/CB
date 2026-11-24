@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23 19:25",
-  "count": 390,
+  "updated": "2026-11-24 19:01",
+  "count": 391,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -2616,6 +2616,14 @@
       "conv_price": 150.8,
       "maturity": "2029-08-26",
       "issue_date": "2026-08-26",
+      "conv_ratio": 0.0
+    },
+    "77111": {
+      "stock_code": "7711",
+      "company": "永擎",
+      "conv_price": 550.0,
+      "maturity": "2031-12-02",
+      "issue_date": "2026-12-02",
       "conv_ratio": 0.0
     },
     "77131": {
