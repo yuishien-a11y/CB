@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-24 19:01",
-  "count": 391,
+  "updated": "2026-11-25 18:07",
+  "count": 393,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -697,6 +697,14 @@
       "maturity": "2029-09-11",
       "issue_date": "2024-09-11",
       "conv_ratio": 40.05
+    },
+    "30338": {
+      "stock_code": "3033",
+      "company": "威健",
+      "conv_price": 35.29,
+      "maturity": "2031-12-03",
+      "issue_date": "2026-12-03",
+      "conv_ratio": 0.0
     },
     "30371": {
       "stock_code": "3037",
@@ -1409,6 +1417,14 @@
       "maturity": "2028-02-26",
       "issue_date": "2025-02-26",
       "conv_ratio": 5.28
+    },
+    "454003": {
+      "stock_code": "4540",
+      "company": "全球傳動",
+      "conv_price": 55.6,
+      "maturity": "2029-12-04",
+      "issue_date": "2026-12-04",
+      "conv_ratio": 0.0
     },
     "45415": {
       "stock_code": "4541",
