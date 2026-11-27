@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-26 17:51",
-  "count": 393,
+  "updated": "2026-11-27 17:36",
+  "count": 390,
   "data": {
     "11011": {
       "stock_code": "1101",
@@ -1466,14 +1466,6 @@
       "issue_date": "2025-08-28",
       "conv_ratio": 0.0
     },
-    "45663": {
-      "stock_code": "4566",
-      "company": "時碩工業",
-      "conv_price": 52.0,
-      "maturity": "2026-11-27",
-      "issue_date": "2023-11-27",
-      "conv_ratio": 96.26
-    },
     "45691": {
       "stock_code": "4569",
       "company": "六方科-KY",
@@ -2897,22 +2889,6 @@
       "maturity": "2030-08-01",
       "issue_date": "2025-08-01",
       "conv_ratio": 3.01
-    },
-    "84221": {
-      "stock_code": "8422",
-      "company": "可寧衛",
-      "conv_price": 170.0,
-      "maturity": "2027-11-22",
-      "issue_date": "2022-11-22",
-      "conv_ratio": 99.83
-    },
-    "84222": {
-      "stock_code": "8422",
-      "company": "可寧衛",
-      "conv_price": 200.0,
-      "maturity": "2030-04-07",
-      "issue_date": "2025-04-07",
-      "conv_ratio": 98.45
     },
     "84223": {
       "stock_code": "8422",
